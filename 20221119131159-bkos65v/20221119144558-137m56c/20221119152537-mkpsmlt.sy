@@ -1,0 +1,1395 @@
+{
+	"ID": "20221119152537-mkpsmlt",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "2699",
+		"id": "20221119152537-mkpsmlt",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221204190229-ntgfr2b\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221205233145-l97r3n6\u0026quot;,\u0026quot;scrollTop\u0026quot;:2781,\u0026quot;focusId\u0026quot;:\u0026quot;20221205234122-0wajt9m\u0026quot;,\u0026quot;focusStart\u0026quot;:20,\u0026quot;focusEnd\u0026quot;:20}",
+		"title": "Transaction事务管理",
+		"title-img": "background-image:linear-gradient(to top, #65bd60 0%, #5ac1a8 25%, #3ec6ed 50%, #b7ddb7 75%, #fef381 100%)",
+		"updated": "20221206223125"
+	},
+	"Children": [
+		{
+			"ID": "20221204190229-ntgfr2b",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221204190229-ntgfr2b",
+				"updated": "20221204190229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Transaction 事务管理"
+				}
+			]
+		},
+		{
+			"ID": "20221204190229-ofo6s1m",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221204190229-ofo6s1m",
+				"updated": "20221204190229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "JDBC 事务与 Spring 事务"
+				}
+			]
+		},
+		{
+			"ID": "20221204190229-jikoe1m",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221204190229-jikoe1m",
+				"updated": "20221204190229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    再次简单地阐述一次数据库事务的作用："
+				}
+			]
+		},
+		{
+			"ID": "20221204190229-uf2wjwv",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20221204190229-uf2wjwv",
+				"updated": "20221204190229"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": "\u003e"
+				},
+				{
+					"ID": "20221204190229-bifnqex",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221204190229-bifnqex",
+						"updated": "20221204190229"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "数据库事务用于确保一系列的相关操作同成功同失败，以确保数据的一致性。"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221204190229-srbnfh0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221204190229-srbnfh0",
+				"updated": "20221204190229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    Spring中的事务模块，可以作用于DAO层，也可以作用于Service层，因为Service层是组合调用DAO层中的方法，所以Service层理应支持事务。"
+				}
+			]
+		},
+		{
+			"ID": "20221204190229-hzc91o1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221204190229-hzc91o1",
+				"updated": "20221204190229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    而Spring中的事务管理器是基于JDBC，所以他只能支持以JDBC为基础的持久层框架"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "sup",
+					"TextMarkTextContent": "（如Mybatis）"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "。那为什么要事务管理器呢？或者说事务管理器有什么用？"
+				}
+			]
+		},
+		{
+			"ID": "20221204190229-pqnsjlt",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221204190229-pqnsjlt",
+				"updated": "20221204190229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "为什么要 Spring 事务管理器？"
+				}
+			]
+		},
+		{
+			"ID": "20221204190229-n0ju1xx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221204190229-n0ju1xx",
+				"updated": "20221204190229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    在我们使用传统JDBC对数据库进行事务管理的时候，我们是有一套专门的流程：我们会首先通过Connection对象把自动提交关闭​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "connection.setAutoCommit(false)"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​，然后把要进行事务管理的操作的相关代码放进try代码块里​，当检测到异常时，执行catch代码块里的"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "connection.rollback();"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​如果没有异常，则执行"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "connection.commit();"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​"
+				}
+			]
+		},
+		{
+			"ID": "20221204190229-sjpfcga",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221204190229-sjpfcga",
+				"updated": "20221204190229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    而使用Mybatis的时候，也是一样的情况，只是控制事务相关的对象不是Connection了，而是sqlSession对象。我们还是要自己写"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "sqlSession.rollback();"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​或者"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "sqlSession.commit();"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​"
+				}
+			]
+		},
+		{
+			"ID": "20221204190229-dca6a23",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221204190229-dca6a23",
+				"updated": "20221204190229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    而这一切交给Spring后，就再也不用担心"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "try"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​代码块了，也不用在自己写"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "rollback"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​和"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "commit"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​了，Spring都已经设计好了。"
+				}
+			]
+		},
+		{
+			"ID": "20221204190229-pik6z1j",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221204190229-pik6z1j",
+				"updated": "20221204190229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "开启 Spring 事务"
+				}
+			]
+		},
+		{
+			"ID": "20221204190230-m4owwf9",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221204190230-m4owwf9",
+				"updated": "20221204190229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    由于不再需要你自己写"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "rollback"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​和"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "commit"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​之类的事务代码了，所以这些东西都交给一个叫做"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "DataSourceTransactionManager"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​的类去完成。"
+				}
+			]
+		},
+		{
+			"ID": "20221204190230-k98z250",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221204190230-k98z250",
+				"updated": "20221204214610"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    按照Spring的传统特色，这个事务管理器也要作为Bean交由IoC容器管理的，因为"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Transactional"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​注解是可以接收一个书屋管理器作为参数的，表明我们可以拥有多个事务管理器，Spring会按照我们提供的事务管理器的Bean的名字注入。"
+				}
+			]
+		},
+		{
+			"ID": "20221204215405-47jzs6b",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221204215405-47jzs6b",
+				"updated": "20221204215410"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "开启事务"
+				}
+			]
+		},
+		{
+			"ID": "20221204215411-bk94asd",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221204215411-bk94asd",
+				"updated": "20221204215520"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    我们需要告知Spring用注解的形式开启事务，我们需要到"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221119183857-d7cd9vm",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "Spring配置类"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "中添加"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@EnableTransactionManager"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​启动事务管理器。"
+				}
+			]
+		},
+		{
+			"ID": "20221204214648-qcl9a7i",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221204214648-qcl9a7i",
+				"updated": "20221204214701"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "配置事务管理器"
+				}
+			]
+		},
+		{
+			"ID": "20221204214702-e2p3ogx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221204214702-e2p3ogx",
+				"updated": "20221204214845"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    既然是“配置”，所以也是在config包下完成的，一般将它放在配置数据源的类里。    "
+				}
+			]
+		},
+		{
+			"ID": "20221204214915-h8c8m4q",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221204214915-h8c8m4q",
+				"updated": "20221204215140"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    由于是实例化springframework中的DataSourceTransactionManager类来生成事务管理器的，所以与"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221119152529-tjgvspn",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "整合Mybatis"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "一样，我们使用"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Bean"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​注解来自动调用配置方法来获取事务管理器："
+				}
+			]
+		},
+		{
+			"ID": "20221204215257-13zvdjz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221204215257-13zvdjz",
+				"updated": "20221204215348"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    由于事务是用来保证数据的一致性的，而数据在数据源中，所以事务管理器要知道你配置的数据源。因此，事务管理器与数据源一起配置是最佳的。"
+				}
+			]
+		},
+		{
+			"ID": "20221204215140-56i7ien",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221204215140-56i7ien",
+				"updated": "20221204215203"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Bean\npublic DataSourceTransactionManager dataSourceTransactionManager(DataSource dataSource){\n    DataSourceTransactionManager transactionManager = new DataSourceTransactionManager();\n    transactionManager.setDataSource(dataSource);\n    return transactionManager;\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221204215158-4bt893q",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221204215158-4bt893q",
+				"updated": "20221204215645"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "启用事务"
+				}
+			]
+		},
+		{
+			"ID": "20221204215646-n1z3s04",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221204215646-n1z3s04",
+				"updated": "20221205231032"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    在上面两项工作完成之后，我们就可以在Service层使用"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Transactional"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​注解开启具体操作的事务了,一般情况下，我们之所以会把注解加载Service层，是因为DAO层的实现是Mybatis去做的，一般情况下不会出问题，而Service层是对DAO层的不同调用，往往是多个操作的，这时才需要使用事务来保证数据的一致性。故"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Transactional"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​注解加在Service层。"
+				}
+			]
+		},
+		{
+			"ID": "20221204221550-0v4c2p0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221204221550-0v4c2p0",
+				"updated": "20221205225831"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Transactional"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​注解可以加载类/接口、方法上，我们一般会把它放在具体的方法上。"
+				}
+			]
+		},
+		{
+			"ID": "20221205225834-k0tosby",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221205225834-k0tosby",
+				"updated": "20221205225850"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Spring事务原理"
+				}
+			]
+		},
+		{
+			"ID": "20221205225852-vvfe8rs",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221205225852-vvfe8rs",
+				"updated": "20221205230758"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    Spring的事务是通过AOP实现的，被"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Transactional"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​注解修饰的代码会被动态代理。"
+				}
+			]
+		},
+		{
+			"ID": "20221205230756-2sbcblj",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221205230756-2sbcblj",
+				"updated": "20221205230756"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    原理可以简单理解为："
+				}
+			]
+		},
+		{
+			"ID": "20221205230256-5w748o3",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221205230256-5w748o3",
+				"updated": "20221205230724"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Pointcut(\"execution(被注解修饰的方法或类)\")\nprivate void pt(){}\n\n@Around(\"pt()\")\npublic void extend(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {\n    try{\n        proceedingJoinPoint.procced();//执行原方法\n        commit();//没异常就提交\n    }\n    catch{\n        rollback();//有异常就回滚\n    }\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221205231414-rub4fds",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221205231414-rub4fds",
+				"updated": "20221205231436"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Transactional"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​注解参数"
+				}
+			]
+		},
+		{
+			"ID": "20221205231458-y63hx22",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20221205231458-y63hx22",
+				"updated": "20221205233134"
+			},
+			"Children": [
+				{
+					"ID": "20221205231458-wfemb0s",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20221205231458-wfemb0s",
+						"updated": "20221205231458"
+					},
+					"Children": [
+						{
+							"ID": "20221205231458-7ic5pdn",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221205231458-7ic5pdn",
+								"updated": "20221205231804"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "String transactionManager"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​按Bean名称指定一个"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20221204214648-qcl9a7i",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "事务管理器"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221205231640-cf0pio7",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20221205231640-cf0pio7"
+					},
+					"Children": [
+						{
+							"ID": "20221205231640-yvk7wyf",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221205231640-yvk7wyf",
+								"updated": "20221205232030"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Propagation propagation"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​指定该事务的传播方式，默认为REQUIRED(0)表示如果当前没有事务，就创建一个新事务，如果当前存在事务，就加入该事务。"
+								}
+							]
+						},
+						{
+							"ID": "20221205231913-x7810e0",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20221205231913-x7810e0"
+							},
+							"Children": [
+								{
+									"ID": "20221205231913-9q3oii4",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20221205231913-9q3oii4"
+									},
+									"Children": [
+										{
+											"ID": "20221205231914-610lfo5",
+											"Type": "NodeCodeBlock",
+											"IsFencedCodeBlock": true,
+											"Properties": {
+												"id": "20221205231914-610lfo5",
+												"updated": "20221205231935"
+											},
+											"Children": [
+												{
+													"Type": "NodeCodeBlockFenceOpenMarker",
+													"Data": "```"
+												},
+												{
+													"Type": "NodeCodeBlockFenceInfoMarker",
+													"CodeBlockInfo": "amF2YQ=="
+												},
+												{
+													"Type": "NodeCodeBlockCode",
+													"Data": "public enum Propagation {\n    REQUIRED(0),\n    SUPPORTS(1),\n    MANDATORY(2),\n    REQUIRES_NEW(3),\n    NOT_SUPPORTED(4),\n    NEVER(5),\n    NESTED(6);\n}\n"
+												},
+												{
+													"Type": "NodeCodeBlockFenceCloseMarker",
+													"Data": "```"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221205231945-kmm6beg",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20221205231945-kmm6beg"
+					},
+					"Children": [
+						{
+							"ID": "20221205231945-9omudz5",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221205231945-9omudz5",
+								"updated": "20221205232507"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Isolation isolation"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​指定事务的隔离级别，用来防止“脏读”、“幻读”、“不可重复读”三种问题，详见"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20221205232507-5gvg50y",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "MySQL事务隔离"
+								}
+							]
+						},
+						{
+							"ID": "20221205232232-7im76qq",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20221205232232-7im76qq"
+							},
+							"Children": [
+								{
+									"ID": "20221205232232-63h3cei",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20221205232232-63h3cei"
+									},
+									"Children": [
+										{
+											"ID": "20221205232233-cigbkvc",
+											"Type": "NodeCodeBlock",
+											"IsFencedCodeBlock": true,
+											"Properties": {
+												"id": "20221205232233-cigbkvc",
+												"updated": "20221205232540"
+											},
+											"Children": [
+												{
+													"Type": "NodeCodeBlockFenceOpenMarker",
+													"Data": "```"
+												},
+												{
+													"Type": "NodeCodeBlockFenceInfoMarker",
+													"CodeBlockInfo": "amF2YQ=="
+												},
+												{
+													"Type": "NodeCodeBlockCode",
+													"Data": "public enum Isolation {\n    DEFAULT(-1),\n    READ_UNCOMMITTED(1),//读未提交\n    READ_COMMITTED(2),//读已提交\n    REPEATABLE_READ(4),//可重复读\n    SERIALIZABLE(8);//序列化\n}\n"
+												},
+												{
+													"Type": "NodeCodeBlockFenceCloseMarker",
+													"Data": "```"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221205232705-vuewuig",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20221205232705-vuewuig",
+						"updated": "20221205233134"
+					},
+					"Children": [
+						{
+							"ID": "20221205232705-o0vpwcs",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221205232705-o0vpwcs",
+								"updated": "20221205233134"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Class\u0026lt;? extends Throwable\u0026gt;[] rollbackFor"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​在Spring设计中，只有当事务代码发生了RuntimeException才会触发事务回滚，"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "inline-memo",
+									"TextMarkInlineMemoContent": "如IOException等",
+									"TextMarkTextContent": "其他的异常"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "是不会触发的，我们可以通过指定一个异常类，让Spring在事务代码遇到该异常"
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "background-color: var(--b3-font-background1);"
+									},
+									"TextMarkType": "strong text",
+									"TextMarkTextContent": "及其子类异常"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"background-color: var(--b3-font-background1);\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "时都触发事务回滚，如："
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "@Transactional(rollbackFor = Exception.class)"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​,就把所有异常的父类做成了标志，这样Spring的事务在遇到任何异常都会触发事务回滚了。"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221205230729-9d96va9",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221205230729-9d96va9",
+				"updated": "20221205231413"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Spring事务失效的几种情况"
+				}
+			]
+		},
+		{
+			"ID": "20221205233145-l97r3n6",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20221205233145-l97r3n6",
+				"updated": "20221206223125"
+			},
+			"Children": [
+				{
+					"ID": "20221205233153-awuu3ee",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20221205233153-awuu3ee",
+						"updated": "20221205233153"
+					},
+					"Children": [
+						{
+							"ID": "20221205233153-phu9cyn",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221205233153-phu9cyn",
+								"updated": "20221205233356"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "@Transactional"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​修饰的类/接口、方法不是public级别的，事务会失效。Spring只允许对public访问级别的类/接口、方法做事务。"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221205233409-owcr4be",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20221205233409-owcr4be"
+					},
+					"Children": [
+						{
+							"ID": "20221205233409-7desmit",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221205233409-7desmit",
+								"updated": "20221205233536"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "final"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​关键字修饰的类/接口、事务会失效。因为AOP使用了动态代理，而动态代理需要重写原方法，但是final不允许重写。"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221205233537-kq7jhv4",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20221205233537-kq7jhv4",
+						"updated": "20221206223125"
+					},
+					"Children": [
+						{
+							"ID": "20221205233537-bxwnty9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221205233537-bxwnty9",
+								"updated": "20221205233600"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "在一个事务方法中调用另一个事务方法，事务会失效"
+								}
+							]
+						},
+						{
+							"ID": "20221205233601-gkcehuk",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20221205233601-gkcehuk",
+								"updated": "20221206223125"
+							},
+							"Children": [
+								{
+									"ID": "20221205233601-7092dqr",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20221205233601-7092dqr",
+										"updated": "20221206223125"
+									},
+									"Children": [
+										{
+											"ID": "20221205233702-3fgo0xn",
+											"Type": "NodeCodeBlock",
+											"IsFencedCodeBlock": true,
+											"Properties": {
+												"id": "20221205233702-3fgo0xn",
+												"updated": "20221205233851"
+											},
+											"Children": [
+												{
+													"Type": "NodeCodeBlockFenceOpenMarker",
+													"Data": "```"
+												},
+												{
+													"Type": "NodeCodeBlockFenceInfoMarker",
+													"CodeBlockInfo": "amF2YQ=="
+												},
+												{
+													"Type": "NodeCodeBlockCode",
+													"Data": "@Transactional\npublic void transfer(String from, String to,double money){\n    transferDao.transferOut(from,money);\n    transferDao.transferIn(to,money);\n}\n@Transactional\npublic void tran(String from, String to,double money){\n    transfer(from, to, money);\n}\n"
+												},
+												{
+													"Type": "NodeCodeBlockFenceCloseMarker",
+													"Data": "```"
+												}
+											]
+										},
+										{
+											"ID": "20221205233844-tufa5i7",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221205233844-tufa5i7",
+												"updated": "20221205234359"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "因为"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "tran"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​方法中调用"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "transfer"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​方法，实际上是通过"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "this.transfer()"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​去调用的，而被"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "@Transactional"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​修饰后，由于要生成动态代理对象，但this指向的仍是原来的对象，而不是代理后的对象，所以事务会失效。"
+												}
+											]
+										},
+										{
+											"ID": "20221205234122-0wajt9m",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221205234122-0wajt9m",
+												"updated": "20221206223125"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "具体参见"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20221206214958-on24ftl",
+													"TextMarkBlockRefSubtype": "s",
+													"TextMarkTextContent": "AOP面向切面-AOP失效的场景"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221205234050-ri43bhf",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20221205234050-ri43bhf"
+					},
+					"Children": [
+						{
+							"ID": "20221205234050-0qrhiqh",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221205234050-0qrhiqh",
+								"updated": "20221205234811"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "未被SpringIoC容器管理的对象不能使用事务，简单来说，只有Bean对象才能用"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "@Transactional"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​注解"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221205234812-nkpm9xm",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NS4=",
+						"Num": 5
+					},
+					"Properties": {
+						"id": "20221205234812-nkpm9xm"
+					},
+					"Children": [
+						{
+							"ID": "20221205234812-zanq1sl",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221205234812-zanq1sl",
+								"updated": "20221205235124"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "多线程调用，Spring的事务是通过数据库连接即Connection对象里的rollback和commit方法去实现的，在多线程的时候，由于数据是不共享的，线程1有Connection对象，线程2没有，所以线程2就会新开一个链接，连接都不一样了，事务怎么能生效呢？"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221205235131-jxszw4o",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Ni4=",
+						"Num": 6
+					},
+					"Properties": {
+						"id": "20221205235131-jxszw4o"
+					},
+					"Children": [
+						{
+							"ID": "20221205235131-cjk2hej",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221205235131-cjk2hej",
+								"updated": "20221205235209"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "储存引擎不支持事务"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221205235304-3mou3kt",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Ny4=",
+						"Num": 7
+					},
+					"Properties": {
+						"id": "20221205235304-3mou3kt"
+					},
+					"Children": [
+						{
+							"ID": "20221205235304-7u7zd26",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221205235304-7u7zd26",
+								"updated": "20221205235311"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "未配置事务管理器"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221205235440-b99ahuu",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "OC4=",
+						"Num": 8
+					},
+					"Properties": {
+						"id": "20221205235440-b99ahuu",
+						"updated": "20221205235455"
+					},
+					"Children": [
+						{
+							"ID": "20221205235440-9ci7p5c",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221205235440-9ci7p5c",
+								"updated": "20221205235455"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "自己把异常处理了，Spring捕获不到异常，触发不了回滚"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

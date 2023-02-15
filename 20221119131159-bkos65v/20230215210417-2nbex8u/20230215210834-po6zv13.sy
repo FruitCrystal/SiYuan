@@ -1,0 +1,5514 @@
+{
+	"ID": "20230215210834-po6zv13",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "Volume.svg",
+		"id": "20230215210834-po6zv13",
+		"title": "集合类",
+		"updated": "20230215210927"
+	},
+	"Children": [
+		{
+			"ID": "20230215210927-6j2uk78",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20230215210927-6j2uk78",
+				"updated": "20230215210927"
+			}
+		},
+		{
+			"ID": "20230215210927-r4gb24n",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20230215210927-r4gb24n",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "集合类继承树"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-05po4xd",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20230215210927-05po4xd",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "src=http___img-blog.csdnimg.cn_20190822232437530.png_x-oss-process=image_watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ExMzk2NTM3Mzc2,size_16,color_FFFFFF,t_70\u0026refer=http___img-blog.csdnimg.webp"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "https://cdn.nlark.com/yuque/0/2022/webp/29698283/1659094364463-e567a4ce-b29b-4e44-966a-a8201a78607a.webp#clientId=uab7bc071-89fc-4\u0026from=drop\u0026id=ua26d75eb\u0026name=src%3Dhttp___img-blog.csdnimg.cn_20190822232437530.png_x-oss-process%3Dimage_watermark%2Ctype_ZmFuZ3poZW5naGVpdGk%2Cshadow_10%2Ctext_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ExMzk2NTM3Mzc2%2Csize_16%2Ccolor_FFFFFF%2Ct_70%26refer%3Dhttp___img-blog.csdnimg.webp\u0026originHeight=684\u0026originWidth=1602\u0026originalType=binary\u0026ratio=1\u0026rotation=0\u0026showTitle=false\u0026size=40668\u0026status=done\u0026style=none\u0026taskId=u1dd4768e-b0b8-4083-8ecd-2718b9ddfce\u0026title="
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-l83q0jj",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20230215210927-l83q0jj",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "List接口的实现类（常用的有Vector，ArrayList、linkedList）"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-6uetec8",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-6uetec8",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-8gr6en6",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-8gr6en6",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-jq6zuex",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-jq6zuex",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "都是有序的，存进去是什么顺序，取出来也是什么顺序。"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-16vox6q",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-16vox6q",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-j35ht4w",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-j35ht4w",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "可以重复，元素之间是互异的"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-6koxjlz",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-6koxjlz",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-dxotxbr",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-dxotxbr",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "LinkList最少用，最好不要用。"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-dackmw5",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-dackmw5",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "List中常用方法"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-jslchc2",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-jslchc2",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-itndwso",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-itndwso",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-67jedm8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-67jedm8",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "void add(int index,Object elemnet)"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​：在指定index位置插入ele元素"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-wptpcpi",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-wptpcpi",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-eo6gjkp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-eo6gjkp",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "boolean addAll(int index, Collection elements)"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​：从index位置开始将elements中的元素按顺序插入"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-oq1p5qu",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-oq1p5qu",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-dcleb4s",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-dcleb4s",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Object get(int index)"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​：获取指定index位置的元素"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-wwujdhd",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20230215210927-wwujdhd",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-u3q6efh",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-u3q6efh",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "int indexOf(Object obj)"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​：返回obj元素"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "首次"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "出现的位置"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-fs61k4d",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NS4=",
+						"Num": 5
+					},
+					"Properties": {
+						"id": "20230215210927-fs61k4d",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-dlpvmoo",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-dlpvmoo",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "int lastIndexOf(Object obj)"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​：返回obj元素"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "最后一次"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "出现的位置"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-02tl2n9",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Ni4=",
+						"Num": 6
+					},
+					"Properties": {
+						"id": "20230215210927-02tl2n9",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-2zhurgg",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-2zhurgg",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Object remove(int index)"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​：移除指定位置的元素，并返回该元素"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-2pfp10q",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Ny4=",
+						"Num": 7
+					},
+					"Properties": {
+						"id": "20230215210927-2pfp10q",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-a7eqj6o",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-a7eqj6o",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Object set(int index, Object obj)"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​：将指定index位置的元素替换成obj"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-pdeay17",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "OC4=",
+						"Num": 8
+					},
+					"Properties": {
+						"id": "20230215210927-pdeay17",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-gmnui61",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-gmnui61",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "List subList(int fromIndex, int toIndex)"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​：返回index为fromIndex到toInddex的集合，相当于js中的slice方法"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-s7o43hc",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-s7o43hc",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "List的三种遍历方式"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-vnd1n8n",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-vnd1n8n",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-wn59b7r",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-wn59b7r",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-ilbzyyx",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-ilbzyyx",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "使用Iterator"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-6m734mb",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-6m734mb",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "List\u003cString\u003e list = new ArrayList\u003c\u003e();\nlist.add(\"西洋菜\");\nlist.add(\"生菜\");\nliat.add(\"大白菜\");\n\nIterator it = new list.iterator();\nwhile(it.hasNext()){\n    Objext obj = it.next();\n    System.out.println(obj);\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-on9g8ja",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-on9g8ja",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-fn86ut7",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-fn86ut7",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-boby2z1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-boby2z1",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "使用增强for"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-925x0yx",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-925x0yx",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "for(String s : list){//遍历\n  System.out.println(s);\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-zhekay8",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-zhekay8",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-6o9nfuv",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-6o9nfuv",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-s7f2mre",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-s7f2mre",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "使用普通for"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-g76japc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-g76japc",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "使用size来遍历，不赘述。"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-yp3e066",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-yp3e066",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "ArrayList"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-b7ayrhu",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-b7ayrhu",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-suvhgix",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-suvhgix",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-ukp630c",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-ukp630c",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ArrayList可以加入多个NULL"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-l6lsjct",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-l6lsjct",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-li7xkyi",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-li7xkyi",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "由数组实现"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-4ll56wp",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-4ll56wp",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-5b1bl28",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-5b1bl28",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "基本等同与Vector，但是"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "Vector是线程安全"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "的，而"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "ArrayList是线程不安全"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "的（源码中ArrayList的方法没有"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "synchronized"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "关键字），因此在多线程情况下，尽量避免使用ArrayList"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-4y4c9hn",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230215210927-4y4c9hn",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "ArrayList底层结构"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-l429aiy",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-l429aiy",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-06kuhj6",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-06kuhj6",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-4je2hmj",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-4je2hmj",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ArrayList底层维护的是一个Object类型的数组elementsData。"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-tq858dg",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-tq858dg",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-jg7awpg",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-jg7awpg",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ArrayList类有3个构造方法"
+								}
+							]
+						},
+						{
+							"ID": "20230215210927-pp3gfag",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20230215210927-pp3gfag",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"ID": "20230215210927-2zvjmeg",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20230215210927-2zvjmeg",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-lb1db9m",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-lb1db9m",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "无参构造方法："
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "strong",
+													"TextMarkTextContent": "初始容量为0"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "，第一次添加后，扩容为10，如需要再次扩容，"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "strong",
+													"TextMarkTextContent": "则每次扩容1.5倍"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "（位运算符，效率高）"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230215210927-0hv1j54",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "Mi4=",
+										"Num": 2
+									},
+									"Properties": {
+										"id": "20230215210927-0hv1j54",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-ezkhbw4",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-ezkhbw4",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "int类型参数构造器，传入的参数即为"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "strong",
+													"TextMarkTextContent": "初始容量"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-a1scb32",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-a1scb32",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-bfow8je",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-bfow8je",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Collection类型参数构造器，把传入的集合中的元素，作为当前集合的默认元素"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-if4fvyx",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-if4fvyx",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Vector"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-rtyue6s",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-rtyue6s",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-29cih1f",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-29cih1f",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-g0l6hzj",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-g0l6hzj",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "其底层也是一个Object数组"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-wn31jzm",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-wn31jzm",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-xk94e02",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-xk94e02",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Vector中的操作方法都是synchronized的，都是线程安全的"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-36o5v85",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-36o5v85",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-vp0mzua",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-vp0mzua",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "需要线程同步的时候，推荐Vector，安全，但效率较低。"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-g7zn5vp",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230215210927-g7zn5vp",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Vector底层原理"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-d8mvgif",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-d8mvgif",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-h4ikbh5",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-h4ikbh5",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-k2zqjb1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-k2zqjb1",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Vector底层维护的是一个Object类型的数组elementsData。"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-at2qdzq",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-at2qdzq",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-fll90u1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-fll90u1",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Vector提供3个构造方法"
+								}
+							]
+						},
+						{
+							"ID": "20230215210927-ct8c3dv",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20230215210927-ct8c3dv",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"ID": "20230215210927-2b91gty",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20230215210927-2b91gty",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-y1l087l",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-y1l087l",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "public Vector(int initialCapacity, int capacityIncrement)"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​：指定初始容量和容量增量，当Vector需要扩容的时候，就会参照你提供的capacityIncrement"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230215210927-toeh5wr",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "Mi4=",
+										"Num": 2
+									},
+									"Properties": {
+										"id": "20230215210927-toeh5wr",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-5difha2",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-5difha2",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "public Vector(int initialCapacity)"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​：只提供初始容量"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230215210927-088l0ix",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "My4=",
+										"Num": 3
+									},
+									"Properties": {
+										"id": "20230215210927-088l0ix",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-ose68eq",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-ose68eq",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "public Vector()"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​：无参构造器，初始容量为10，源码中通过this调用了int参数类型的构造方法：即："
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "this(10);"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-j7hhcru",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-j7hhcru",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-84wq0vw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-84wq0vw",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "扩容机制："
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-t5013au",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-t5013au",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "    private Object[] grow(int minCapacity) {\n        int oldCapacity = elementData.length;//保存旧容器大小\n        int newCapacity = ArraysSupport.newLength(oldCapacity,\n                minCapacity - oldCapacity, /* 最小增量=1 */\n                capacityIncrement \u003e 0 ? capacityIncrement : oldCapacity\n                                           /* 如果有通过构造器设定增量，设定正确，则用设定好的，否则期望增量就等于旧容器容量 */);\n        return elementData = Arrays.copyOf(elementData, newCapacity);\n    }\n    private Object[] grow() {\n        return grow(elementCount + 1);//得到最小容量minCapacity，为容器大小+1\n    }\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-9obqjm9",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-9obqjm9",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "ArraysSupport.newLength源码："
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-2i06tl9",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-2i06tl9",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "    public static int newLength(int oldLength, int minGrowth, int prefGrowth) {\n        // preconditions not checked because of inlining\n        // assert oldLength \u003e= 0\n        // assert minGrowth \u003e 0\n\n        int prefLength = oldLength + Math.max(minGrowth, prefGrowth); // might overflow\n        //期望长度=旧长度+max{最小增量，期望增量}\n        if (0 \u003c prefLength \u0026\u0026 prefLength \u003c= SOFT_MAX_ARRAY_LENGTH) {\n            return prefLength;\n        } else {\n            // put code cold in a separate method\n            return hugeLength(oldLength, minGrowth);\n        }\n    }\n\n    private static int hugeLength(int oldLength, int minGrowth) {\n        int minLength = oldLength + minGrowth;\n        //最小长度=旧长度+最小增量\n        if (minLength \u003c 0) { // overflow\n            throw new OutOfMemoryError(\n                \"Required array length \" + oldLength + \" + \" + minGrowth + \" is too large\");\n        } else if (minLength \u003c= SOFT_MAX_ARRAY_LENGTH) {\n            return SOFT_MAX_ARRAY_LENGTH;\n        } else {\n            return minLength;\n        }\n    }\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-h3f5o5f",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-h3f5o5f",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "LinkedList"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-cazc54x",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-cazc54x",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-6y7sihj",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-6y7sihj",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-8izloeb",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-8izloeb",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "底层不是数组"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-273jgwn",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-273jgwn",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-edhph9t",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-edhph9t",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "线程不安全"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-6o32s0a",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-6o32s0a",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-8j4ac28",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-8j4ac28",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "我们在项目中一般是不会使用到 LinkedList 的，需要用到 LinkedList 的场景几乎都可以使用 ArrayList 来代替，并且，性能通常会更好！就连 LinkedList 的作者约书亚 · 布洛克（Josh Bloch）自己都说从来不会使用 LinkedList 。"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-2ls0tfl",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230215210927-2ls0tfl",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "LinkedList底层原理"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-q2jb642",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-q2jb642",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-hmti78q",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-hmti78q",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-ru5pk4c",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-ru5pk4c",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "LinkedList有2个构造器"
+								}
+							]
+						},
+						{
+							"ID": "20230215210927-9g9mcjw",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20230215210927-9g9mcjw",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"ID": "20230215210927-rfjsob5",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20230215210927-rfjsob5",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-nqpazfw",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-nqpazfw",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "无参，初始化一个尺寸为0的链表，first和last不算做元素，默认为null"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230215210927-tn9knpy",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "Mi4=",
+										"Num": 2
+									},
+									"Properties": {
+										"id": "20230215210927-tn9knpy",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-ur5721p",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-ur5721p",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "​"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "public LinkedList(Collection\u0026lt;? extends E\u0026gt; c)"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​设置默认元素"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-b7zwq1y",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-b7zwq1y",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-0l8s8ah",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-0l8s8ah",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "常用方法："
+								}
+							]
+						},
+						{
+							"ID": "20230215210927-4qo5n9b",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20230215210927-4qo5n9b",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"ID": "20230215210927-e9r7o78",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20230215210927-e9r7o78",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-69551qc",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-69551qc",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "void linkFirst(E e); 把一个元素插入首位"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230215210927-j3uuwfg",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "Mi4=",
+										"Num": 2
+									},
+									"Properties": {
+										"id": "20230215210927-j3uuwfg",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-05sk79t",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-05sk79t",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "void linkLast(E e); 把一个元素插入末尾"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230215210927-xa13301",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "My4=",
+										"Num": 3
+									},
+									"Properties": {
+										"id": "20230215210927-xa13301",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-3fyfz2t",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-3fyfz2t",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "void linkBefore(E e, Node\u003cE\u003e succ) ; 把一个元素插入一个节点之前"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230215210927-w49vbf3",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "NC4=",
+										"Num": 4
+									},
+									"Properties": {
+										"id": "20230215210927-w49vbf3",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-48f30vp",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-48f30vp",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "E unlinkFirst(Node\u003cE\u003e f); 把第一个元素删除，并返回"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230215210927-5mm8l25",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "NS4=",
+										"Num": 5
+									},
+									"Properties": {
+										"id": "20230215210927-5mm8l25",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-mh071p2",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-mh071p2",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "E unlink(Node\u003cE\u003e x); 删除一个节点"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-mbx1icm",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20230215210927-mbx1icm",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Set接口的实现类"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-jekica9",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-jekica9",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "常见的有：HashSet、TreeSet..."
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-r3zrwvg",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-r3zrwvg",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Set接口的通用特性"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-w3un7v2",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-w3un7v2",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-464y96c",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-464y96c",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-l9f20e9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-l9f20e9",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "无序性，存入和取出的顺序不一致，且没有引索，没有get方法"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-6fnqw9f",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-6fnqw9f",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-nyvixu9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-nyvixu9",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "取出时自动排序"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-sz8tfel",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-sz8tfel",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-xvguhxs",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-xvguhxs",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "不允许重复元素，所以至多有一个null"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-qv7ljih",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20230215210927-qv7ljih",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-kwv5aui",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-kwv5aui",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "线程不安全"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-rnx36r6",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NS4=",
+						"Num": 5
+					},
+					"Properties": {
+						"id": "20230215210927-rnx36r6",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-jdq5bmw",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-jdq5bmw",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "底层是HashMap，而HashMap的底层是数组+链表+红黑树"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-w2gn0gv",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-w2gn0gv",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "HashSet（实际是HashMap"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-2i7c7f4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-2i7c7f4",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "参见HashSet的构造器："
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-tnqoysw",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-tnqoysw",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "private transient HashMap\u003cE,Object\u003e map; \npublic HashSet() {\n        map = new HashMap\u003c\u003e();\n    }\n\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-mmu4tkc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-mmu4tkc",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "实际是new了一个HashMap."
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-8oj065a",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20230215210927-8oj065a",
+				"updated": "20230215210927"
+			}
+		},
+		{
+			"ID": "20230215210927-shr9x35",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-shr9x35",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-ln90cv8",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-ln90cv8",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-9wmxg0j",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-9wmxg0j",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "public boolean add(E e)"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​add方法实际返回一个Boolean值，当添加的元素是重复元素时，就会返回false"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-susycjo",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-susycjo",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-1xfrcnk",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-1xfrcnk",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "什么叫相同元素？"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-4rw0nyj",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-4rw0nyj",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "public class Hash {\n    public static void main(String[] args) {\n        Set s = new HashSet\u003c\u003e();\n        s.add(\"张三\");//True\n        s.add(\"张三\");//False\n        s.add(new Dog(\"小黄\"));//True\n        s.add(new Dog(\"小黄\"));//True\n        Dog dog  = new Dog(\"大黄\");\n        s.add(dog);//T\n        s.add(dog);//F\n        System.out.println(h);\n\n    }\n}\nclass Dog{\n    private String name;\n    public  Dog(String name){\n        this.name = name;\n    }\n\n    @Override\n    public String toString() {\n        return \"Dog{\" +\n                \"name='\" + name + '\\'' +\n                '}';\n    }\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-n44jldu",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-n44jldu",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "输出结果："
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-sf4dvws",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-sf4dvws",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YXNjcmlwdA=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "[张三, Dog{name='小黄'}, Dog{name='小黄'}]\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-u1op1y7",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-u1op1y7",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "为什么会这样？这两个“张三”都指向"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "strong",
+					"TextMarkTextContent": "字符串常量池"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "中的同一个元素，而下面两个小黄的Dog实例，有两个new，是两个不同的对象，在内存中是不同的东西。而dog是名为大黄的Dog实例，只new了一次，所以"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "h.add(dog);//F"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​引用的是同一个东西。\n"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "strong",
+					"TextMarkTextContent": "但是，需要注意的是："
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-q8zx399",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-q8zx399",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "Set set = new HashSet\u003c\u003e();\nset.add(new String(\"Hello!\"));//T\nset.add(new String(\"Hello!\"));//F\n//这又是为什么呢？\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-9won1of",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-9won1of",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "因为在创建字符串时，Hello字符串会被放在字符串常量池中，这两个string对象都指向常量池中的Hello字符串，所以他们是同一个东西。"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-031gne5",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-031gne5",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "HashSet的底层原理"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-u9mapt4",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-u9mapt4",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-qr26l9e",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-qr26l9e",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-n4x5qby",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-n4x5qby",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "添加一个元素时，会将这个元素的哈希值转换成引索值，而HashMap中索引值Key是不能重复的，所以HashSet不能存储重复的元素"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-7jt8yhu",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-7jt8yhu",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-p5qm0vy",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-p5qm0vy",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "找到存储数据的表，table，里面存储着Key=\u003eValue这样的键值对，添加元素的时候会检查索引值，如果索引值所处位置已经存有元素，就会调用"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "equals方法"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "比较两个元素是否相同，如果不相同，则添加到最后；如果相同，则不添加"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-f3ol97c",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-f3ol97c",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-bi981au",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-bi981au",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "当HashSet中"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "一条链"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "的的元素个数"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "达到"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "8个_TREEIFY_THRESHOLD_），且总size超过64（_MIN_TREEIFY_CAPACITY_）时，table就会进化成"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "红黑树"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-4vt1cmp",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-4vt1cmp",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "HashSet的结构图"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-3b3tv59",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-3b3tv59",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "HashSet.png"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "https://cdn.nlark.com/yuque/0/2022/png/29698283/1659421581129-ee0c162d-be1d-481b-aef0-46e09960de46.png#clientId=ud8d8cf1a-159b-4\u0026from=paste\u0026height=592\u0026id=u173cf557\u0026name=HashSet.png\u0026originHeight=592\u0026originWidth=445\u0026originalType=binary\u0026ratio=1\u0026rotation=0\u0026showTitle=false\u0026size=24538\u0026status=done\u0026style=none\u0026taskId=u2b112837-3287-4d50-98e3-de3e91d6a43\u0026title=\u0026width=445"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "\n而HashSet的size指的是所有小圆圈（Node）的数量。"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-6ij9d3n",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-6ij9d3n",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "HashSet中add的流程"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-wwuvqd1",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-wwuvqd1",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "public class App{\n    public static void main(String[] args){\n         Set set = new HashSet\u003c\u003e();\n        set.add(new Dog(\"小黄\"));\n    }\n}\nclass Dog{\n    private String name;\n    public Dog(String name){\n        this.name = name;\n    }\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-duil9oa",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-duil9oa",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "//HashSet的执行流程\nprivate static final Object PRESENT = new Object();//占位Obj\npublic boolean add(E e) {//e=Dog{name=\"小黄\"}\n        return map.put(e, PRESENT)==null;\n}\n//然后转到HashMap中执行put方法\npublic V put(K key, V value) {//key=Dog{name=\"小黄\"}，V=Object PRESENT\n        return putVal(hash(key), key, value, false, true);\n}\nstatic final int hash(Object key) {\n        int h;\n        return (key == null) ? 0 : (h = key.hashCode()) ^ (h \u003e\u003e\u003e 16);\n    //如果key为空，那么则是0，如果非空，就经过一些算法，所以最后得出来的并不是哈希值\n}\n//核心代码putVal\n final V putVal(int hash, K key, V value, boolean onlyIfAbsent,\n                   boolean evict) {\n     //hash是hash(key)，即Dog实例化对象的一个唯一代码，注意，这里hash算出来的不是哈希值！\n     //value就是对象本身\n        Node\u003cK,V\u003e[] tab; Node\u003cK,V\u003e p; int n, i;//设置一些辅助变量\n     //tab是table的备份，p是table中的一个特定的节点\n        if ((tab = table) == null || (n = tab.length) == 0)\n            //先检查表是否为空，或者表长度是否为0，决定是否扩容\n            n = (tab = resize()).length;//resize()是HashMap的扩容方法\n        if ((p = tab[i = (n - 1) \u0026 hash]) == null)//根据hash的值算出一个索引，如果该索引为空，即该位置没有元素，就把元素放进去\n            tab[i] = newNode(hash, key, value, null);\n             //tab和table都指向同一块内存区域所以修改tab也就修改了table，而table就是HashMap底层维护的一个数组，此时就完成了add（元素不重复的情况\n             //既然tab和table都指向同一个区域，为什么需要辅助变量呢\n              /*1.为了可读性，避免总是要翻上去\n                2.局部变量是线程安全的*/\n   \n        else {//如果该引索不为空，\n            Node\u003cK,V\u003e e; K k;//辅助变量\n            if (p.hash == hash \u0026\u0026((k = p.key) == key || (key != null \u0026\u0026 key.equals(k))))\n                //此时p就是已经存在的那个元素，判断它和新元素的hash是否相同\n                //再判断k（p节点的key）与新元素的key是否指向同一个对象\n                //为什么要用equals和==：==用于判断基础变量（值引用）;equals用于判断地址引用\n                e = p;//使用局部变量\n            else if (p instanceof TreeNode)//判断p是不是红黑树节点\n                e = ((TreeNode\u003cK,V\u003e)p).putTreeVal(this, tab, hash, key, value);\n                //如果是红黑树，就用putTreeVal插入元素\n        \n            else {//p不是红黑树节点\n                for (int binCount = 0; ; ++binCount) {//逐个判断元素\n                    if ((e = p.next) == null) {//判断p节点的下一位是否为空\n                        p.next = newNode(hash, key, value, null);//为空则直接插入\n                        if (binCount \u003e= TREEIFY_THRESHOLD - 1) // -1 for 1st\n                            //如果循环次数达到7次及以上，就要进行树化，转换成红黑树\n                            treeifyBin(tab, hash);\n                        break;\n                    }\n                    if (e.hash == hash \u0026\u0026((k = e.key) == key || (key != null \u0026\u0026 key.equals(k))))\n                        break;//当两个元素相同，则不添加，break;\n                    p = e;//相当于p = p.next往后迭代，以此构成循环\n                }\n            }\n            if (e != null) { // existing mapping for key\n                V oldValue = e.value;\n                if (!onlyIfAbsent || oldValue == null)\n                    e.value = value;\n                afterNodeAccess(e);\n                return oldValue;\n            }\n        }\n        ++modCount;//控制线程模块\n        if (++size \u003e threshold)\n            resize();\n        afterNodeInsertion(evict);\n        return null;\n    }\nNode\u003cK,V\u003e newNode(int hash, K key, V value, Node\u003cK,V\u003e next) {\n        return new Node\u003c\u003e(hash, key, value, next);\n}\nNode(int hash, K key, V value, Node\u003cK,V\u003e next) {\n            this.hash = hash;\n            this.key = key;\n            this.value = value;\n            this.next = next;\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-jc2vor6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-jc2vor6",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "strong",
+					"TextMarkTextContent": "需要注意的几个地方"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-oddat65",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-oddat65",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-u4xo5ef",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-u4xo5ef",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-c9jpvf0",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-c9jpvf0",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "通过hash()方法算出来的数值不是哈希值，hashCode()出来的才是哈希值"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-uz6brqv",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-uz6brqv",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-7pykdk7",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-7pykdk7",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "频繁用到辅助变量，是因为局部变量是线程安全的"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-6o60j16",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-6o60j16",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-p1r152m",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-p1r152m",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "为什么判断==后还要判断equals："
+								},
+								{
+									"Type": "NodeText",
+									"Data": "==用于判断基础变量（值引用）;equals用于判断地址引用"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-r4x2nmi",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20230215210927-r4x2nmi",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-iq1nkuy",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-iq1nkuy",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "equals方法可以被重写，所以equals的判断条件可以由程序员决定，可以自己设定"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-fgnxed0",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-fgnxed0",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "HashSet扩容机制"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-ki25du0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-ki25du0",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "主要以来HashMap中的resize()方法"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-708hyno",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-708hyno",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-atze5y8",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-atze5y8",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-aqksv7k",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-aqksv7k",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "首次向集合中添加元素时，底层table数组扩容到16"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-w34g16x",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-w34g16x",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-trqbf8y",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-trqbf8y",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "何时发生扩容？"
+								}
+							]
+						},
+						{
+							"ID": "20230215210927-xhv5q53",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20230215210927-xhv5q53",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"ID": "20230215210927-ql05cjr",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20230215210927-ql05cjr",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-6ux2msh",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-6ux2msh",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "当容量达到临界容量时发生扩容。临界容量=当前容量*"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "strong",
+													"TextMarkTextContent": "默认加载因子"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "（_DEFAULT_LOAD_FACTOR_）"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230215210927-rviqbhk",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "Mi4=",
+										"Num": 2
+									},
+									"Properties": {
+										"id": "20230215210927-rviqbhk",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-op2i0ko",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-op2i0ko",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "默认加载因子_DEFAULT_LOAD_FACTOR=0.75_"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230215210927-y6ekhff",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "My4=",
+										"Num": 3
+									},
+									"Properties": {
+										"id": "20230215210927-y6ekhff",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-xtt0h2c",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-xtt0h2c",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "所以，当容量达到75%的时候就会发生扩容"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20230215210927-81s4okk",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "NC4=",
+										"Num": 4
+									},
+									"Properties": {
+										"id": "20230215210927-81s4okk",
+										"updated": "20230215210927"
+									},
+									"Children": [
+										{
+											"ID": "20230215210927-591n6rd",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20230215210927-591n6rd",
+												"updated": "20230215210927"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "即，一个默认HashSet中16个位置，被使用了16*0.75=12个时，就会发生扩容"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-hk74wzd",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-hk74wzd",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-um8bk0a",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-um8bk0a",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "每次扩容，容量翻两倍"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-wemw4zf",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20230215210927-wemw4zf",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-3usqsti",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-3usqsti",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "在Java8中，如果HashSet中，其中任意一条链表的元素达到"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "树化阈值"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "（_TREEIFY_THRESHOLD_）8，且table的总大小达到最小树化容量（ _MIN_TREEIFY_CAPACITY_）64时，table就会发生树化，进化成红黑树。在发生树化之前，依然采用数组的扩容机制。"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-07dk531",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NS4=",
+						"Num": 5
+					},
+					"Properties": {
+						"id": "20230215210927-07dk531",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-gp8ty9y",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-gp8ty9y",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "扩容机制的触发并不是依赖于table的占用数量，而是依赖总Node节点数。假如一张table表，table[2]和table[3]中各有一条链表，每个链表都有6个Node，那么此时就会触发扩容机制，table的length扩展为32"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-2ukotnt",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-2ukotnt",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "    final Node\u003cK,V\u003e[] resize() {\n        Node\u003cK,V\u003e[] oldTab = table;\n        int oldCap = (oldTab == null) ? 0 : oldTab.length;\n        int oldThr = threshold;\n        int newCap, newThr = 0;\n        if (oldCap \u003e 0) {\n            if (oldCap \u003e= MAXIMUM_CAPACITY) {\n                threshold = Integer.MAX_VALUE;\n                return oldTab;\n            }\n            else if ((newCap = oldCap \u003c\u003c 1) \u003c MAXIMUM_CAPACITY \u0026\u0026\n                     oldCap \u003e= DEFAULT_INITIAL_CAPACITY)\n                newThr = oldThr \u003c\u003c 1; // double threshold\n        }\n        else if (oldThr \u003e 0) // initial capacity was placed in threshold\n            newCap = oldThr;\n        else {               // zero initial threshold signifies using defaults\n            newCap = DEFAULT_INITIAL_CAPACITY;\n            newThr = (int)(DEFAULT_LOAD_FACTOR * DEFAULT_INITIAL_CAPACITY);\n        }\n        if (newThr == 0) {\n            float ft = (float)newCap * loadFactor;\n            newThr = (newCap \u003c MAXIMUM_CAPACITY \u0026\u0026 ft \u003c (float)MAXIMUM_CAPACITY ?\n                      (int)ft : Integer.MAX_VALUE);\n        }\n        threshold = newThr;\n        @SuppressWarnings({\"rawtypes\",\"unchecked\"})\n        Node\u003cK,V\u003e[] newTab = (Node\u003cK,V\u003e[])new Node[newCap];\n        table = newTab;\n        if (oldTab != null) {\n            for (int j = 0; j \u003c oldCap; ++j) {\n                Node\u003cK,V\u003e e;\n                if ((e = oldTab[j]) != null) {\n                    oldTab[j] = null;\n                    if (e.next == null)\n                        newTab[e.hash \u0026 (newCap - 1)] = e;\n                    else if (e instanceof TreeNode)\n                        ((TreeNode\u003cK,V\u003e)e).split(this, newTab, j, oldCap);\n                    else { // preserve order\n                        Node\u003cK,V\u003e loHead = null, loTail = null;\n                        Node\u003cK,V\u003e hiHead = null, hiTail = null;\n                        Node\u003cK,V\u003e next;\n                        do {\n                            next = e.next;\n                            if ((e.hash \u0026 oldCap) == 0) {\n                                if (loTail == null)\n                                    loHead = e;\n                                else\n                                    loTail.next = e;\n                                loTail = e;\n                            }\n                            else {\n                                if (hiTail == null)\n                                    hiHead = e;\n                                else\n                                    hiTail.next = e;\n                                hiTail = e;\n                            }\n                        } while ((e = next) != null);\n                        if (loTail != null) {\n                            loTail.next = null;\n                            newTab[j] = loHead;\n                        }\n                        if (hiTail != null) {\n                            hiTail.next = null;\n                            newTab[j + oldCap] = hiHead;\n                        }\n                    }\n                }\n            }\n        }\n        return newTab;\n    }\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-w2wlwab",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-w2wlwab",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "LinkedHashSet"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-k8tn5o9",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-k8tn5o9",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-t7as34o",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-t7as34o",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-hskx4pf",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-hskx4pf",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "LinkedHashSet是HashSet的子类"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-vjv488b",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-vjv488b",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-a4ml34x",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-a4ml34x",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "其底层是一个LinkedHashMap，底层维护了一个 "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "数组+双向链表"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-st27w4g",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-st27w4g",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-sxzlhg9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-sxzlhg9",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "LinkedHashSet根据元素的"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "hash"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "来决定元素的存储位置，同时"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "使用链表维护元素的次序"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "，这使得元素是有序的"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-128fcpd",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20230215210927-128fcpd",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-4gb206l",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-4gb206l",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "同样不允许重复元素"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-3zfjuw6",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NS4=",
+						"Num": 5
+					},
+					"Properties": {
+						"id": "20230215210927-3zfjuw6",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-zhdqt3i",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-zhdqt3i",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "LinkHashSet底层维护的是\u003cNode\u003etable[]，而table里存储的数据是Entry类型的，所以说明Entry是Node的子类"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-i75ias9",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230215210927-i75ias9",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "LinkedHashSet的结构"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-nyh7mc6",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-nyh7mc6",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "Set set = new LinkedHashSet();\nset.add(\"abc\");\nset.add(2);\nset.add(new Dog(\"大黄\"));\nSystem.out.println(set);\n//\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-rtfuy98",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-rtfuy98",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "未命名表单 (1).png"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "https://cdn.nlark.com/yuque/0/2022/png/29698283/1659451465513-4c2497ce-5717-4f6b-a2f8-a1cd72d41d3e.png#clientId=ud8d8cf1a-159b-4\u0026from=paste\u0026height=2524\u0026id=uc343311e\u0026name=%E6%9C%AA%E5%91%BD%E5%90%8D%E8%A1%A8%E5%8D%95%20%281%29.png\u0026originHeight=2524\u0026originWidth=1518\u0026originalType=binary\u0026ratio=1\u0026rotation=0\u0026showTitle=false\u0026size=240864\u0026status=done\u0026style=none\u0026taskId=u537deb88-0d8b-4f84-b3db-ecaa949e047\u0026title=\u0026width=1518"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-iu9bxnn",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20230215210927-iu9bxnn",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Map接口及其实现类"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-7hc97a8",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-7hc97a8",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Map与HashSet的区别就在于"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-s1w7mf9",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-s1w7mf9",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-wn43liw",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-wn43liw",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-2q2ola8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-2q2ola8",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Set的Key是我们需要存储的数据，Value是JVM为我们封装好的一个常量PRESENT"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-5el0zlv",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-5el0zlv",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-mciecvy",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-mciecvy",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Map中两个都是需要自行传递的"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-an2lvd2",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-an2lvd2",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Map接口实现类的特点"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-cty4y6o",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-cty4y6o",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-kvzyp5i",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-kvzyp5i",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-1zp6dsq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-1zp6dsq",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Map用于保存具有映射关系的数据：Key=Value"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-89s7flt",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-89s7flt",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-26x5qsd",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-26x5qsd",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Map中的Key和Value可以是任何引用类型的数据，会封装到HashMap$Node对象中"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-yzmwypb",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-yzmwypb",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-q8aa75f",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-q8aa75f",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Map中的Key重复时，会替换Value"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-a2k5lbj",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20230215210927-a2k5lbj",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-ievjryg",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-ievjryg",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Map中的Value是可以重复的"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-eqfpwdb",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NS4=",
+						"Num": 5
+					},
+					"Properties": {
+						"id": "20230215210927-eqfpwdb",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-vz2umb8",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-vz2umb8",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "常用String来做Key"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-q1oiy71",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Ni4=",
+						"Num": 6
+					},
+					"Properties": {
+						"id": "20230215210927-q1oiy71",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-wraf528",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-wraf528",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "HashMap是线程不安全的、而HashTable是线程安全的"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-lg2wnh8",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-lg2wnh8",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Map接口中的entrySet"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-ijkx67v",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-ijkx67v",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-0tcqmcu",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-0tcqmcu",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-bwdi1ex",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-bwdi1ex",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "为什么要entrySet"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-vfads1b",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-vfads1b",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "因为map不允许使用增强for循环，所以为了方便遍历，以及获取Key和Value还有修改Value，entrySet诞生了。"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-5i6y5hk",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20230215210927-5i6y5hk",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "entrySet底层"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-52y7d4j",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-52y7d4j",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "Map map = new HashMap();\nString str  = new String(\"A\");\nmap.put(str,\"100\");\nSystem.out.println(System.identityHashCode(str));//668386784\n//identityHashCode,返回对象的身份哈希码，（根据内存位置算出）独一无二\n//for(Object obj : map)foreach not applicable to type 'java.util.Map',增强for循环不能直接遍历HashMap，所以就有了entrySet\n\nfor (Object obj : map.entrySet()){\n\tMap.Entry en = (Map.Entry)obj;\n\ten.setValue(\"50000\");//修改了entrySet中的Value，结果map中的value也发生了变化，所以，entry中的key 与value和map中的key与value是映射关系，引用关系\n\tSystem.out.println(System.identityHashCode(str));//668386784\n\t//identityHashCode,返回对象的身份哈希码，（根据内存位置算出）独一无二\n}\n        System.out.println(map);//{A=50000}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-4my7hfa",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-4my7hfa",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-lukk123",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-lukk123",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-gssl9eo",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-gssl9eo",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "entrySet是map的一个方法，entrySet是一个集合"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-ug2a5mg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-ug2a5mg",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Set\u0026lt;Map.Entry\u0026lt;K, V\u0026gt;\u0026gt; entrySet();"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​是一个Entry类型的集合，Entry类型提供了两个重要方法：\n​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "K getKey()"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​和"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "V getValue()"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-uz83wwc",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-uz83wwc",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-kc6om63",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-kc6om63",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-orkgpee",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-orkgpee",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "上述代码可以看到，entrySet集合只是单纯地对map集合的Key和Value做引用"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-s0aqz1x",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-s0aqz1x",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "当我们通过entrySet中的setValue方法去修改entrySet中的一个Value时，map中的Value也发生了变化，所以，他们之间是"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "strong",
+					"TextMarkTextContent": "引用关系"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "。"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-labcji4",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-labcji4",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Map接口常用方法"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-8bfcfwb",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-8bfcfwb",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "public V get(Object key)"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​：通过Key获取一个Value\n​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "public void clear()"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​：清空所有元素\n​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "public Set\u0026lt;Map.Entry\u0026lt;K,V\u0026gt;\u0026gt; entrySet()"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​：返回map的entrySet\n​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "public final int size()"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​：返回元map的长度\n​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "public V put(K key, V value)"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​：往map中添加一个元素\n​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "public boolean containsKey(Object key)"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​：检测map中是否包含这个Key\n​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "public Set\u0026lt;K\u0026gt; keySet()：返回一个集合包含所有Keypublic Collection\u0026lt;V\u0026gt; values()"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​：返回一个集合包含所有value"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-h35f71d",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-h35f71d",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Map的三大遍历方法"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-82b9tgi",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-82b9tgi",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "1.通过keySet遍历"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-iqzlwex",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-iqzlwex",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "Map map = new HashMap();\nmap.put(\"A\",100);\nmap.put(\"B\",80);\nmap.put(\"C\",60);\nmap.put(\"D\",50);\n\nSet keyset = map.keySet();\nfor (Object key : keyset){//set可以使用增强for、迭代器\n\tSystem.out.println(map.get(key));\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-7shq3fw",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-7shq3fw",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-d03sww3",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-d03sww3",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-231htfj",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-231htfj",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "通过values()遍历"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-6f3ep7p",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-6f3ep7p",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "map.values().forEach(\n    j -\u003e{\n        System.out.println(j);\n    }\n);\n//简写\nmap.values().forEach(\n    System.out::println\n);\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-yapripy",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-yapripy",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-ahlvflp",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-ahlvflp",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-1j97vqe",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-1j97vqe",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "使用entrySet"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-gb1ovvb",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-gb1ovvb",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "Set entrySet =  map.entrySet();\nfor (Object entry : entrySet) {\n\tMap.Entry en = (Map.Entry)entry;\n\tSystem.out.println(en.getValue());\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-2ip9tro",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-2ip9tro",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Hashtable的基本介绍"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-dpei2bu",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-dpei2bu",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-zoshkw8",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-zoshkw8",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-98jn9pb",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-98jn9pb",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "存放的元素依然是键值对"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-772ixdc",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-772ixdc",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-aiv26fq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-aiv26fq",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Hashtable的Key与Value都不能为null，否则会抛出NullPointerException"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-4djug6t",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-4djug6t",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-dye3xkp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-dye3xkp",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Hashtable是线程安全的"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-jztto35",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20230215210927-jztto35",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-espvb8k",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-espvb8k",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Hashtable底层维护的是一个"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Entry\u0026lt;?,?\u0026gt;[] table"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-eofasfy",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NS4=",
+						"Num": 5
+					},
+					"Properties": {
+						"id": "20230215210927-eofasfy",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-w0tslsu",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-w0tslsu",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "初始容量是11"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-4fchrid",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Ni4=",
+						"Num": 6
+					},
+					"Properties": {
+						"id": "20230215210927-4fchrid",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-gw40avp",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-gw40avp",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "扩容机制：int newCapacity = (oldCapacity \u003c\u003c 1) + 1;原始容量*2+1"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-oiua89g",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-oiua89g",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Properties的基本介绍"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-ih7kylr",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-ih7kylr",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-l2v7d4p",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-l2v7d4p",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-gcxkzyj",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-gcxkzyj",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Properties继承了Hashtable"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-yy61h2s",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-yy61h2s",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-9sq9mtd",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-9sq9mtd",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Properties可以存储到.properties文件中，再用IO流读取"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-i85uiya",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-i85uiya",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "TreeSet"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-69clvdr",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-69clvdr",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-m0s4pgi",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-m0s4pgi",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-rr8grdh",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-rr8grdh",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "当我们使用"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "无参构造器"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "创建TreeSet时，它是"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "无序"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "的"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-eo9ivbt",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-eo9ivbt",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-v62wpdt",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-v62wpdt",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "使用TreeSet提供的一个构造器，可以传入一个比较器Comparator"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-ifwvnry",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-ifwvnry",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-kolp2rq",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-kolp2rq",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "其内部直接维护了一个红黑树"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-s3l86k3",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-s3l86k3",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": " public static void main(String[] args) {\n        TreeMap ts = new TreeMap(new Comparator() {\n            @Override\n            public int compare(Object o1, Object o2) {\n                return ((String)o1).length()-((String)o2).length();\n            }\n        });\n        ts.put(\"AA\",100);\n        ts.put(\"BB\",80);\n        ts.put(\"DDDD\",50);\n        ts.put(\"CCC\",60);\n        ts.put(\"A\",50);\n        System.out.println(ts);//{A=50, AA=80, CCC=60, DDDD=50}\n    }\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-kbwsv0j",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-kbwsv0j",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "private V put(K key, V value, boolean replaceOld) {//JDK17之后，当Key经过comparator运算之后为0，会替换掉旧的value，所以AA的值从100变成了80，注：JDK17以前是不会替换的\n        Entry\u003cK,V\u003e t = root;//第一个元素\n        if (t == null) {\n            addEntryToEmptyMap(key, value);\n            return null;\n        }\n        int cmp;\n        Entry\u003cK,V\u003e parent;\n        // split comparator and comparable paths\n        Comparator\u003c? super K\u003e cpr = comparator;\n        if (cpr != null) {\n            do {\n                parent = t;\n                cmp = cpr.compare(key, t.key);//第一个参数是新元素的key，第二个是root的key\n                if (cmp \u003c 0)//当cmp小于0时，第一个元素往左移\n                    t = t.left;\n                else if (cmp \u003e 0)\n                    t = t.right;\n                else {\n                    V oldValue = t.value;\n                    if (replaceOld || oldValue == null) {\n                        t.value = value;\n                    }\n                    return oldValue;\n                }\n            } while (t != null);\n\t\t\t//addEntry(K key, V value, Entry\u003cK, V\u003e parent, boolean addToLeft) \n\t\t\taddEntry(key, value, parent, cmp \u003c 0);\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-fhqg04c",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-fhqg04c",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "容器总结"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-u9ld673",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-u9ld673",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-aw6gnud",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-aw6gnud",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-xncp9in",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-xncp9in",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "ArrayList：_ArrayList_实现了_List_接口，是顺序容器，即元素存放的数据与放进去的顺序相同，允许放入null元素，底层通过"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "数组实现"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "。是"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "线程不安全"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "的。"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-vg8wsza",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-vg8wsza",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-83x4ci9",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-83x4ci9",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "_LinkedList_同时实现了_List_接口和_Deque_接口，也就是说它既可以看作一个顺序容器，又可以看作一个队列(_Queue_)，同时又可以看作一个栈(_Stack_)。这样看来，_LinkedList_简直就是个全能冠军。但是，他的效率不高，而且"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "线程不安全"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "，所以不推荐使用"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-bw7xpje",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-bw7xpje",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-57tqgrk",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-57tqgrk",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "Vector：跟ArrayList一样，但是Vector是"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "线程安全"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "的。"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-zr51jin",
+			"Type": "NodeThematicBreak",
+			"Properties": {
+				"id": "20230215210927-zr51jin",
+				"updated": "20230215210927"
+			}
+		},
+		{
+			"ID": "20230215210927-sq3c9k8",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-sq3c9k8",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-tlvhf0t",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20230215210927-tlvhf0t",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-wlv0t00",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-wlv0t00",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "HashSet\u0026HashMap：二者在Java里有着相同的实现，前者仅仅是对后者做了一层包装。二者都是"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "线程不安全"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "的。有两个参数可以影响_HashMap_的性能: 初始容量(inital capacity)和负载系数(load factor)。初始容量指定了初始table的大小，负载系数用来指定自动扩容的临界值。当entry的数量超过capacity*load_factor时，容器将自动扩容并重新哈希。对于插入元素较多的场景，将初始容量设大可以减少重新哈希的次数。"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-6xc4lxf",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NS4=",
+						"Num": 5
+					},
+					"Properties": {
+						"id": "20230215210927-6xc4lxf",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-m4v95rl",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-m4v95rl",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "LinkedHashSet\u0026LinkHashMap：_LinkedHashSet_和_LinkedHashMap_在Java里也有着相同的实现，前者仅仅是对后者做了一层包装。相较于HashSet和HashMap，Linked则是双向的链表。但是LinkedHash是"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "线程不安全"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "的"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-965zrxs",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Ni4=",
+						"Num": 6
+					},
+					"Properties": {
+						"id": "20230215210927-965zrxs",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-t6edafv",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-t6edafv",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "TreeSet\u0026TreeMap：二者在Java里有着相同的实现，前者仅仅是对后者做了一层包装。且二者都是"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "strong",
+									"TextMarkTextContent": "线程不安全"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "的"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-7z35ad8",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-7z35ad8",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Collections工具类"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-slrdhlu",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-slrdhlu",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Collections是一个操作Set、List、Map等集合的工具类，它提供了一系列静态方法，对集合元素经行排序、查操、修改等操作。"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-43w8x4p",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20230215210927-43w8x4p",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Iterator迭代器"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-32vw5qx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210927-32vw5qx",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Iterator接口中有4个抽象方法"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-a0tpbus",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20230215210927-a0tpbus",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"ID": "20230215210927-yaro5xt",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20230215210927-yaro5xt",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-acrsn23",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-acrsn23",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "hasNext：判断有没有下一个元素"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-8ix6va5",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20230215210927-8ix6va5",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-q6q67io",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-q6q67io",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "next：控制指针往下移，获取下一个元素"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-naiiks5",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20230215210927-naiiks5",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-642p2qa",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-642p2qa",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "remove：移除某个元素"
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20230215210927-lwportp",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20230215210927-lwportp",
+						"updated": "20230215210927"
+					},
+					"Children": [
+						{
+							"ID": "20230215210927-0kzdczy",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20230215210927-0kzdczy",
+								"updated": "20230215210927"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "forEachRemaining：？"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-es08426",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20230215210927-es08426",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Iterator的使用"
+				}
+			]
+		},
+		{
+			"ID": "20230215210927-0ie8hjo",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20230215210927-0ie8hjo",
+				"updated": "20230215210927"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "List\u003cString\u003e list = new ArrayList\u003c\u003e();\n//首先创建一个迭代器，\nIterator it = list.iterator;//不用自己new，List中已经创建好了\n\n//使用while循环遍历\nwhile(it.hasNext()){\n  \n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		}
+	]
+}

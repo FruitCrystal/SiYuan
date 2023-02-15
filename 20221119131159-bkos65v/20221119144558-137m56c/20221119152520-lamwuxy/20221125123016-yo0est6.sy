@@ -1,0 +1,22 @@
+{
+	"ID": "20221125123016-yo0est6",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "springBean.svg",
+		"id": "20221125123016-yo0est6",
+		"title": "循环依赖",
+		"title-img": "background-image:linear-gradient(to top, #fddb92 0%, #d1fdff 100%)",
+		"updated": "20221125123016"
+	},
+	"Children": [
+		{
+			"ID": "20221125123016-1v1fvh4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125123016-1v1fvh4",
+				"updated": "20221125123016"
+			}
+		}
+	]
+}

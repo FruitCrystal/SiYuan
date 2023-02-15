@@ -1,0 +1,633 @@
+{
+	"ID": "20221119144558-137m56c",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "bxl-spring-boot.svg",
+		"id": "20221119144558-137m56c",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221119223844-ow1bpj0\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221119155008-qflmod1\u0026quot;,\u0026quot;scrollTop\u0026quot;:0,\u0026quot;focusId\u0026quot;:\u0026quot;20221119223844-9mt5ijq\u0026quot;,\u0026quot;focusStart\u0026quot;:0,\u0026quot;focusEnd\u0026quot;:0}",
+		"title": "SpringFramework",
+		"title-img": "background-image:url(\u0026quot;assets/sp1-dark-07fde4817e8ddc912ce00dbdb3e4758e-20221119221918-z1juvrv.svg\u0026quot;)",
+		"updated": "20221125224455"
+	},
+	"Children": [
+		{
+			"ID": "20221119223844-ow1bpj0",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20221119223844-ow1bpj0",
+				"updated": "20221119223905"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": "\u003e"
+				},
+				{
+					"ID": "20221119223844-9mt5ijq",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221119223844-9mt5ijq",
+						"updated": "20221119223856"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Spring框架解决了两个重要问题："
+						}
+					]
+				},
+				{
+					"ID": "20221119223856-cib3j9x",
+					"Type": "NodeList",
+					"ListData": {
+						"Typ": 1
+					},
+					"Properties": {
+						"id": "20221119223856-cib3j9x",
+						"updated": "20221119223905"
+					},
+					"Children": [
+						{
+							"ID": "20221119223857-nw4mjb2",
+							"Type": "NodeListItem",
+							"ListData": {
+								"Typ": 1,
+								"Delimiter": 46,
+								"Marker": "MS4=",
+								"Num": 1
+							},
+							"Properties": {
+								"id": "20221119223857-nw4mjb2",
+								"updated": "20221119223857"
+							},
+							"Children": [
+								{
+									"ID": "20221119223857-ast40tc",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221119223857-ast40tc",
+										"updated": "20221119223903"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "创建对象"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221119223903-3scz3qa",
+							"Type": "NodeListItem",
+							"ListData": {
+								"Typ": 1,
+								"Delimiter": 46,
+								"Marker": "Mi4=",
+								"Num": 2
+							},
+							"Properties": {
+								"id": "20221119223903-3scz3qa",
+								"updated": "20221119223905"
+							},
+							"Children": [
+								{
+									"ID": "20221119223903-ip0j5ly",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221119223903-ip0j5ly",
+										"updated": "20221119223905"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "管理对象"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221119145303-jrvawo8",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221119145303-jrvawo8",
+				"updated": "20221119152339"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "🔥核心技术"
+				}
+			]
+		},
+		{
+			"ID": "20221119152108-zojdkxi",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221119152108-zojdkxi",
+				"style": "color: var(--b3-card-success-color); background-color: var(--b3-card-success-background);",
+				"updated": "20221125224455"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "col"
+				},
+				{
+					"ID": "20221119152853-qe1529f",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20221119152853-qe1529f",
+						"updated": "20221125224455"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "col"
+						},
+						{
+							"ID": "20221119150109-1qsxy1k",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221119150109-1qsxy1k",
+								"updated": "20221119152423"
+							},
+							"Children": [
+								{
+									"ID": "20221119145823-tlgr7pb",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221119145823-tlgr7pb",
+										"updated": "20221119152423"
+									},
+									"Children": [
+										{
+											"ID": "20221119145823-rsbtgj7",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221119145823-rsbtgj7",
+												"updated": "20221119152423"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20221119152237-ggdu7ze",
+													"TextMarkBlockRefSubtype": "s",
+													"TextMarkTextContent": "🛠SpringFramework的安装配置"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221119152152-xbzp7q7",
+							"Type": "NodeSuperBlock",
+							"Properties": {
+								"id": "20221119152152-xbzp7q7",
+								"updated": "20221125224455"
+							},
+							"Children": [
+								{
+									"Type": "NodeSuperBlockOpenMarker"
+								},
+								{
+									"Type": "NodeSuperBlockLayoutMarker",
+									"Data": "row"
+								},
+								{
+									"ID": "20221119145725-o92qo0x",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221119145725-o92qo0x",
+										"updated": "20221119182200"
+									},
+									"Children": [
+										{
+											"ID": "20221119150047-y2thqws",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221119150047-y2thqws",
+												"updated": "20221119160541"
+											},
+											"Children": [
+												{
+													"ID": "20221119150047-1xej650",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221119150047-1xej650",
+														"updated": "20221119160541"
+													},
+													"Children": [
+														{
+															"Type": "NodeEmoji",
+															"Data": "img",
+															"Children": [
+																{
+																	"Type": "NodeEmojiImg",
+																	"Data": "\u003cimg alt=\"Caffe-Bean\" class=\"emoji\" src=\"/emojis/Caffe-Bean.svg\" title=\"Caffe-Bean\" /\u003e",
+																	"Children": [
+																		{
+																			"Type": "NodeEmojiAlias",
+																			"Data": ":Caffe-Bean:"
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "block-ref",
+															"TextMarkBlockRefID": "20221119152436-z24vyuq",
+															"TextMarkBlockRefSubtype": "s",
+															"TextMarkTextContent": "Bean的介绍"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221119152147-m7wfhjs",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221119152147-m7wfhjs",
+										"updated": "20221119182200"
+									},
+									"Children": [
+										{
+											"ID": "20221119145810-aowosng",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221119145810-aowosng",
+												"updated": "20221119161908"
+											},
+											"Children": [
+												{
+													"ID": "20221119145810-ec6vdjq",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221119145810-ec6vdjq",
+														"updated": "20221119161908"
+													},
+													"Children": [
+														{
+															"Type": "NodeText",
+															"Data": "📂"
+														},
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "block-ref",
+															"TextMarkBlockRefID": "20221119152453-o50lwzw",
+															"TextMarkBlockRefSubtype": "s",
+															"TextMarkTextContent": "Inversion of Control 反转控制"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221119152152-m7at74p",
+									"Type": "NodeList",
+									"ListData": {},
+									"Properties": {
+										"id": "20221119152152-m7at74p",
+										"updated": "20221125224455"
+									},
+									"Children": [
+										{
+											"ID": "20221119145830-5at3ds8",
+											"Type": "NodeListItem",
+											"ListData": {
+												"BulletChar": 42,
+												"Marker": "Kg=="
+											},
+											"Properties": {
+												"id": "20221119145830-5at3ds8",
+												"updated": "20221125224455"
+											},
+											"Children": [
+												{
+													"ID": "20221119145830-shg7mkc",
+													"Type": "NodeParagraph",
+													"Properties": {
+														"id": "20221119145830-shg7mkc",
+														"updated": "20221119160425"
+													},
+													"Children": [
+														{
+															"Type": "NodeEmoji",
+															"Data": "img",
+															"Children": [
+																{
+																	"Type": "NodeEmojiImg",
+																	"Data": "\u003cimg alt=\"InjectionOutline\" class=\"emoji\" src=\"/emojis/InjectionOutline.svg\" title=\"InjectionOutline\" /\u003e",
+																	"Children": [
+																		{
+																			"Type": "NodeEmojiAlias",
+																			"Data": ":InjectionOutline:"
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"Type": "NodeTextMark",
+															"TextMarkType": "block-ref",
+															"TextMarkBlockRefID": "20221119152520-lamwuxy",
+															"TextMarkBlockRefSubtype": "s",
+															"TextMarkTextContent": "Dependencies Injection 依赖注入"
+														}
+													]
+												},
+												{
+													"ID": "20221125224417-mewys27",
+													"Type": "NodeList",
+													"ListData": {},
+													"Properties": {
+														"id": "20221125224417-mewys27",
+														"updated": "20221125224455"
+													},
+													"Children": [
+														{
+															"ID": "20221125224416-s7tuybk",
+															"Type": "NodeListItem",
+															"ListData": {
+																"BulletChar": 42,
+																"Marker": "Kg=="
+															},
+															"Properties": {
+																"id": "20221125224416-s7tuybk",
+																"updated": "20221125224455"
+															},
+															"Children": [
+																{
+																	"ID": "20221125224416-uez7lh7",
+																	"Type": "NodeParagraph",
+																	"Properties": {
+																		"id": "20221125224416-uez7lh7",
+																		"updated": "20221125224455"
+																	},
+																	"Children": [
+																		{
+																			"Type": "NodeText",
+																			"Data": "♾"
+																		},
+																		{
+																			"Type": "NodeTextMark",
+																			"TextMarkType": "block-ref",
+																			"TextMarkBlockRefID": "20221125123016-yo0est6",
+																			"TextMarkBlockRefSubtype": "s",
+																			"TextMarkTextContent": "循环依赖"
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"Type": "NodeSuperBlockCloseMarker"
+								}
+							]
+						},
+						{
+							"ID": "20221119150447-5umuedh",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221119150447-5umuedh",
+								"style": "text-align: left;",
+								"updated": "20221119161926"
+							},
+							"Children": [
+								{
+									"ID": "20221119150449-s9bkv63",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221119150449-s9bkv63",
+										"updated": "20221119161926"
+									},
+									"Children": [
+										{
+											"ID": "20221119150449-tvnpdkv",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221119150449-tvnpdkv",
+												"updated": "20221119161926"
+											},
+											"Children": [
+												{
+													"Type": "NodeEmoji",
+													"Data": "img",
+													"Children": [
+														{
+															"Type": "NodeEmojiImg",
+															"Data": "\u003cimg alt=\"at\" class=\"emoji\" src=\"/emojis/at.svg\" title=\"at\" /\u003e",
+															"Children": [
+																{
+																	"Type": "NodeEmojiAlias",
+																	"Data": ":at:"
+																}
+															]
+														}
+													]
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20221119152526-sj45k7f",
+													"TextMarkBlockRefSubtype": "s",
+													"TextMarkTextContent": "Annotation开发"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221119151443-3xrb0in",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221119151443-3xrb0in",
+										"updated": "20221119161919"
+									},
+									"Children": [
+										{
+											"ID": "20221119151443-f1eje0p",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221119151443-f1eje0p",
+												"updated": "20221119161919"
+											},
+											"Children": [
+												{
+													"Type": "NodeEmoji",
+													"Data": "img",
+													"Children": [
+														{
+															"Type": "NodeEmojiImg",
+															"Data": "\u003cimg alt=\"logo\" class=\"emoji\" src=\"/emojis/logo.svg\" title=\"logo\" /\u003e",
+															"Children": [
+																{
+																	"Type": "NodeEmojiAlias",
+																	"Data": ":logo:"
+																}
+															]
+														}
+													]
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20221119152529-tjgvspn",
+													"TextMarkBlockRefSubtype": "s",
+													"TextMarkTextContent": "整合Mybatis"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221119151525-i6ke9wt",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221119151525-i6ke9wt",
+										"updated": "20221119152219"
+									},
+									"Children": [
+										{
+											"ID": "20221119151525-aef8gku",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221119151525-aef8gku",
+												"updated": "20221119152531"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "🔪"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20221119152531-238z9xb",
+													"TextMarkBlockRefSubtype": "s",
+													"TextMarkTextContent": "AOP面向切面"
+												}
+											]
+										}
+									]
+								},
+								{
+									"ID": "20221119151534-7qjev3i",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221119151534-7qjev3i",
+										"updated": "20221119152230"
+									},
+									"Children": [
+										{
+											"ID": "20221119151534-jhcknqz",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221119151534-jhcknqz",
+												"updated": "20221119152537"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "⚙"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "block-ref",
+													"TextMarkBlockRefID": "20221119152537-mkpsmlt",
+													"TextMarkBlockRefSubtype": "s",
+													"TextMarkTextContent": "Transaction事务管理"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker"
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221119151412-cb4z98n",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119151412-cb4z98n",
+				"updated": "20221119155009"
+			}
+		},
+		{
+			"ID": "20221119155008-qflmod1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119155008-qflmod1"
+			}
+		}
+	]
+}

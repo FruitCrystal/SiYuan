@@ -1,0 +1,985 @@
+{
+	"ID": "20221119152237-ggdu7ze",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f6e0",
+		"id": "20221119152237-ggdu7ze",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221119163241-blwxr99\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221124160755-mwju5td\u0026quot;,\u0026quot;scrollTop\u0026quot;:0,\u0026quot;focusId\u0026quot;:\u0026quot;20221119163644-tljwvze\u0026quot;,\u0026quot;focusStart\u0026quot;:4,\u0026quot;focusEnd\u0026quot;:4}",
+		"title": "SpringFramework的安装配置",
+		"title-img": "background-color: gray;background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);background-size: 50px 50px;",
+		"updated": "20221128184602"
+	},
+	"Children": [
+		{
+			"ID": "20221119163241-blwxr99",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20221119163241-blwxr99",
+				"updated": "20221119183233"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": "\u003e"
+				},
+				{
+					"ID": "20221119163309-9jy8yim",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221119163309-9jy8yim",
+						"updated": "20221119183233"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "这里展示使用Maven构建SpringFramework项目，此项目包括Mybatis、Druid、Spring等。"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221119163157-iqbnqsw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119163157-iqbnqsw",
+				"updated": "20221119183228"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    由于后面XML的配置过于繁琐，故本教程不使用XML来配置Spring."
+				}
+			]
+		},
+		{
+			"ID": "20221119181752-3ldvvx5",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119181752-3ldvvx5",
+				"updated": "20221119181821"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    更详细的注解开发参见："
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221119152526-sj45k7f",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "Annotation开发"
+				}
+			]
+		},
+		{
+			"ID": "20221128184538-3jz9dug",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221128184538-3jz9dug",
+				"updated": "20221128184602"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    配置在将来的SpringBoot中会被取代。"
+				}
+			]
+		},
+		{
+			"ID": "20221119163644-tljwvze",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221119163644-tljwvze",
+				"updated": "20221119163823"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "一些坐标"
+				}
+			]
+		},
+		{
+			"ID": "20221119163825-7h0rdol",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221119163825-7h0rdol",
+				"updated": "20221119165147"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "数据库相关"
+				}
+			]
+		},
+		{
+			"ID": "20221119165150-km5s0fi",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20221119165150-km5s0fi",
+				"updated": "20221119223202"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Mybatis"
+				}
+			]
+		},
+		{
+			"ID": "20221119164203-y0718a6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119164203-y0718a6",
+				"updated": "20221119183227"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    Mybatis与Spring整合，需要导入原始Mybatis以及经由Sping整合的Mybatis."
+				}
+			]
+		},
+		{
+			"ID": "20221119164521-ikvff31",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221119164521-ikvff31",
+				"updated": "20221119164536"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "eG1s"
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "\u003cgroupId\u003eorg.mybatis\u003c/groupId\u003e\n\u003cartifactId\u003emybatis\u003c/artifactId\u003e\n\u003cversion\u003e3.5.10\u003c/version\u003e\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221119163658-megnyq4",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221119163658-megnyq4",
+				"linenumber": "true",
+				"updated": "20221119164103"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "eG1s"
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "\u003cgroupId\u003eorg.mybatis\u003c/groupId\u003e\n\u003cartifactId\u003emybatis-spring\u003c/artifactId\u003e\n\u003cversion\u003e1.3.0\u003c/version\u003e\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221119163550-caib3wa",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119163550-caib3wa",
+				"updated": "20221119183225"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    由于需要连接数据库，需要加载"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "strong",
+					"TextMarkTextContent": "Mysql驱动"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "和DataSource."
+				}
+			]
+		},
+		{
+			"ID": "20221119163844-wjahenh",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20221119163844-wjahenh",
+				"updated": "20221119164158"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Mysql驱动"
+				}
+			]
+		},
+		{
+			"ID": "20221119163836-ww18xou",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221119163836-ww18xou",
+				"updated": "20221119163903"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "eG1s"
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "\u003cgroupId\u003emysql\u003c/groupId\u003e\n\u003cartifactId\u003emysql-connector-java\u003c/artifactId\u003e\n\u003cversion\u003e5.1.17\u003c/version\u003e\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221119163907-mott30q",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20221119163907-mott30q",
+				"updated": "20221119163913"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Druid"
+				}
+			]
+		},
+		{
+			"ID": "20221119164841-len1zo2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119164841-len1zo2",
+				"updated": "20221119164852"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    用Druid来控制数据源和连接池。"
+				}
+			]
+		},
+		{
+			"ID": "20221119163913-97ad7hs",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221119163913-97ad7hs",
+				"updated": "20221119163926"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "eG1s"
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "\u003cgroupId\u003ecom.alibaba\u003c/groupId\u003e\n\u003cartifactId\u003edruid\u003c/artifactId\u003e\n\u003cversion\u003e1.1.16\u003c/version\u003e\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221119164236-fl6z6bi",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221119164236-fl6z6bi",
+				"updated": "20221119164246"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Spring"
+				}
+			]
+		},
+		{
+			"ID": "20221119165105-b4b9h3l",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221119165105-b4b9h3l",
+				"updated": "20221125224335"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221119165056-xjcca4e",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20221119165056-xjcca4e",
+						"updated": "20221125083152"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20221119170922-xsxn531",
+							"Type": "NodeSuperBlock",
+							"Properties": {
+								"id": "20221119170922-xsxn531",
+								"updated": "20221125083152"
+							},
+							"Children": [
+								{
+									"Type": "NodeSuperBlockOpenMarker"
+								},
+								{
+									"Type": "NodeSuperBlockLayoutMarker",
+									"Data": "row"
+								},
+								{
+									"ID": "20221119164326-eho3quu",
+									"Type": "NodeHeading",
+									"HeadingLevel": 3,
+									"Properties": {
+										"id": "20221119164326-eho3quu",
+										"updated": "20221119170922"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "Spring-Context"
+										}
+									]
+								},
+								{
+									"ID": "20221119164810-ag9ybgh",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221119164810-ag9ybgh",
+										"updated": "20221125083152"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "    这是Spring的基础依赖，里面包含了"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": "spring-core"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "​​​、"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code inline-memo",
+											"TextMarkInlineMemoContent": "需要aspectjweaver的支持 ",
+											"TextMarkTextContent": "spring-aop"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "​​​、"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": "spring-expression"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "​​​、"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code block-ref",
+											"TextMarkBlockRefID": "20221119152436-z24vyuq",
+											"TextMarkBlockRefSubtype": "s",
+											"TextMarkTextContent": "spring-beans"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "​​​."
+										}
+									]
+								},
+								{
+									"ID": "20221119164659-7h4g10j",
+									"Type": "NodeCodeBlock",
+									"IsFencedCodeBlock": true,
+									"Properties": {
+										"id": "20221119164659-7h4g10j",
+										"updated": "20221119170922"
+									},
+									"Children": [
+										{
+											"Type": "NodeCodeBlockFenceOpenMarker",
+											"Data": "```"
+										},
+										{
+											"Type": "NodeCodeBlockFenceInfoMarker",
+											"CodeBlockInfo": "eG1s"
+										},
+										{
+											"Type": "NodeCodeBlockCode",
+											"Data": "\u003cgroupId\u003eorg.springframework\u003c/groupId\u003e\n\u003cartifactId\u003espring-context\u003c/artifactId\u003e\n\u003cversion\u003e5.3.20\u003c/version\u003e\n"
+										},
+										{
+											"Type": "NodeCodeBlockFenceCloseMarker",
+											"Data": "```"
+										}
+									]
+								},
+								{
+									"Type": "NodeSuperBlockCloseMarker"
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker"
+						}
+					]
+				},
+				{
+					"ID": "20221119165048-vbprtb5",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20221119165048-vbprtb5",
+						"updated": "20221125224335"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20221119164644-jvlz575",
+							"Type": "NodeHeading",
+							"HeadingLevel": 3,
+							"Properties": {
+								"id": "20221119164644-jvlz575",
+								"updated": "20221125083125"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20221119152531-238z9xb",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "AOP"
+								}
+							]
+						},
+						{
+							"ID": "20221119165017-4qn8noa",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221119165017-4qn8noa",
+								"updated": "20221125224335"
+							},
+							"Children": [
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "inline-memo",
+									"TextMarkInlineMemoContent": "需要spring-aop的支持 ",
+									"TextMarkTextContent": "aspectjweaver"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "依赖用于支持Spring进行切面编程,需要Spring-Context中的"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code inline-memo",
+									"TextMarkInlineMemoContent": "需要aspectjweaver的支持 ",
+									"TextMarkTextContent": "spring-aop"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​的支持。"
+								}
+							]
+						},
+						{
+							"ID": "20221119165005-nzlurvx",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20221119165005-nzlurvx",
+								"updated": "20221119170932"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "eG1s"
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "\u003cgroupId\u003eorg.aspectj\u003c/groupId\u003e\n\u003cartifactId\u003easpectjweaver\u003c/artifactId\u003e\n\u003cversion\u003e1.9.4\u003c/version\u003e\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker"
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221119170910-xqvjjs6",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221119170910-xqvjjs6",
+				"updated": "20221119170940"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "row"
+				},
+				{
+					"ID": "20221119165040-g2iqn1m",
+					"Type": "NodeHeading",
+					"HeadingLevel": 2,
+					"Properties": {
+						"id": "20221119165040-g2iqn1m",
+						"updated": "20221119170910"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "其他一些测试相关"
+						}
+					]
+				},
+				{
+					"ID": "20221119170717-f3na8xv",
+					"Type": "NodeHeading",
+					"HeadingLevel": 3,
+					"Properties": {
+						"id": "20221119170717-f3na8xv",
+						"updated": "20221119170910"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Junit"
+						}
+					]
+				},
+				{
+					"ID": "20221119170721-sxehc36",
+					"Type": "NodeCodeBlock",
+					"IsFencedCodeBlock": true,
+					"Properties": {
+						"id": "20221119170721-sxehc36",
+						"updated": "20221119170910"
+					},
+					"Children": [
+						{
+							"Type": "NodeCodeBlockFenceOpenMarker",
+							"Data": "```"
+						},
+						{
+							"Type": "NodeCodeBlockFenceInfoMarker",
+							"CodeBlockInfo": "eG1s"
+						},
+						{
+							"Type": "NodeCodeBlockCode",
+							"Data": " \u003cgroupId\u003ejunit\u003c/groupId\u003e\n\u003cartifactId\u003ejunit\u003c/artifactId\u003e\n\u003cversion\u003e4.12\u003c/version\u003e\n\u003cscope\u003etest\u003c/scope\u003e\n\u003c!--只在测试环境中生效，导出项目时会删除该模块\u003e\n"
+						},
+						{
+							"Type": "NodeCodeBlockFenceCloseMarker",
+							"Data": "```"
+						}
+					]
+				},
+				{
+					"ID": "20221119170741-6ujl3hm",
+					"Type": "NodeHeading",
+					"HeadingLevel": 3,
+					"Properties": {
+						"id": "20221119170741-6ujl3hm",
+						"updated": "20221119170910"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "Spring-test"
+						}
+					]
+				},
+				{
+					"ID": "20221119170852-7e9pr0e",
+					"Type": "NodeCodeBlock",
+					"IsFencedCodeBlock": true,
+					"Properties": {
+						"id": "20221119170852-7e9pr0e",
+						"updated": "20221119170910"
+					},
+					"Children": [
+						{
+							"Type": "NodeCodeBlockFenceOpenMarker",
+							"Data": "```"
+						},
+						{
+							"Type": "NodeCodeBlockFenceInfoMarker",
+							"CodeBlockInfo": "eG1s"
+						},
+						{
+							"Type": "NodeCodeBlockCode",
+							"Data": "\u003cgroupId\u003eorg.springframework\u003c/groupId\u003e\n\u003cartifactId\u003espring-test\u003c/artifactId\u003e\n\u003cversion\u003e5.1.9.RELEASE\u003c/version\u003e\n\u003cscope\u003etest\u003c/scope\u003e\n"
+						},
+						{
+							"Type": "NodeCodeBlockFenceCloseMarker",
+							"Data": "```"
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221119170902-4tabxrk",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221119170902-4tabxrk",
+				"updated": "20221119182111"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Spring的注解配置"
+				}
+			]
+		},
+		{
+			"ID": "20221119180147-oz1spwu",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119180147-oz1spwu",
+				"updated": "20221119183310"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    本文不采用XML的形式来配置Spring，而采用注解的形式来配置。"
+				}
+			]
+		},
+		{
+			"ID": "20221119183426-nk1l5dx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119183426-nk1l5dx",
+				"updated": "20221119183733"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    首先我们需要一个专门的文件夹来存放我们的配置文件，这个文件夹一般命名为"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "config"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​.这个文件夹以后用来存放各种各样的配置文件。"
+				}
+			]
+		},
+		{
+			"ID": "20221119183737-ssp4omm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119183737-ssp4omm",
+				"updated": "20221119183935"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    我们需要用一个Class文件，作为Spring的配置入口，"
+				}
+			]
+		},
+		{
+			"ID": "20221119183857-d7cd9vm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119183857-d7cd9vm",
+				"updated": "20221119185604"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    使用"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Configuration"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​注解，标记这个类为Spring配置类，添加后会出现"
+				},
+				{
+					"Type": "NodeEmoji",
+					"Data": "img",
+					"Children": [
+						{
+							"Type": "NodeEmojiImg",
+							"Data": "\u003cimg alt=\"gutter/springJavaBean\" class=\"emoji\" src=\"/emojis/gutter/springJavaBean.svg\" title=\"gutter/springJavaBean\" /\u003e",
+							"Children": [
+								{
+									"Type": "NodeEmojiAlias",
+									"Data": ":gutter/springJavaBean:"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "图标，意思是这个类变成了一个Bean，"
+				}
+			]
+		},
+		{
+			"ID": "20221119183937-nvuiwve",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119183937-nvuiwve",
+				"updated": "20221119185346"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    使用"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@ComponentScan(String pakage_name)"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​注解，告知Spring扫描指定包"
+				},
+				{
+					"Type": "NodeTextMark",
+					"Properties": {
+						"style": "color: var(--b3-font-color8);"
+					},
+					"TextMarkType": "text",
+					"TextMarkTextContent": "及其子包"
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: style=\"color: var(--b3-font-color8);\"}"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "下的Bean，添加后会出现"
+				},
+				{
+					"Type": "NodeEmoji",
+					"Data": "img",
+					"Children": [
+						{
+							"Type": "NodeEmojiImg",
+							"Data": "\u003cimg alt=\"gutter/springScan\" class=\"emoji\" src=\"/emojis/gutter/springScan.svg\" title=\"gutter/springScan\" /\u003e",
+							"Children": [
+								{
+									"Type": "NodeEmojiAlias",
+									"Data": ":gutter/springScan:"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "图标"
+				}
+			]
+		},
+		{
+			"ID": "20221119184104-ovntzyp",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119184104-ovntzyp",
+				"updated": "20221124160953"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    当项目有其他配置文件（如Mybatis、Druid的配置文件）时，可以使用"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Import(Class[] Classes)"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​注解告知Spring处理这些配置"
+				}
+			]
+		},
+		{
+			"ID": "20221119184249-gmdfn3a",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119184249-gmdfn3a",
+				"updated": "20221119184412"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    当项目要使用"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221119152537-mkpsmlt",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "数据库事务（Transaction）"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "时，可以使用"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@EnableTransaction"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​注解告知Spring开启事务。"
+				}
+			]
+		},
+		{
+			"ID": "20221119183843-tpuryzh",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221119183843-tpuryzh",
+				"updated": "20221124160023"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Configuration\n@ComponentScan(\"com.xxx\")\n@Import({DruidConfig.class,MybatisConfig.class})\n@EnableTransactionManagement\npublic class SpringConfig {}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221119183635-i1g1llz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119183635-i1g1llz",
+				"updated": "20221124160553"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    到这里，Spring的配置就已经完成了。"
+				}
+			]
+		},
+		{
+			"ID": "20221124160755-mwju5td",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221124160755-mwju5td",
+				"updated": "20221124160823"
+			}
+		}
+	]
+}

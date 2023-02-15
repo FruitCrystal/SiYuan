@@ -1,0 +1,22 @@
+{
+	"ID": "20221129203848-1nl012g",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "logo.svg",
+		"id": "20221129203848-1nl012g",
+		"title": "Mybatis",
+		"title-img": "background:radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent),radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;background-color: slategray;background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;",
+		"updated": "20221129203853"
+	},
+	"Children": [
+		{
+			"ID": "20221129203848-vjxsjl1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221129203848-vjxsjl1",
+				"updated": "20221129203848"
+			}
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+	"ID": "20221129203931-may7ire",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f5a5",
+		"id": "20221129203931-may7ire",
+		"title": "SpringMVC",
+		"title-img": "background-image:linear-gradient(to top, #9890e3 0%, #b1f4cf 100%)",
+		"updated": "20221209211930"
+	},
+	"Children": [
+		{
+			"ID": "20221129203931-8ojjjl0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221129203931-8ojjjl0",
+				"updated": "20221209210521"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    SpringMVC是Spring为了开发Web程序而研发的一款基于Spring的框架。SpringMVC是对Servlet的封装，他们的功能一样，都用于开发Controller层。"
+				}
+			]
+		},
+		{
+			"ID": "20221209210522-8gxt6r5",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221209210522-8gxt6r5",
+				"updated": "20221209211930"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    使用SpringMVC，我们只需要使用简单的注解，就可以完成DispatcherServlet等操作。"
+				}
+			]
+		}
+	]
+}

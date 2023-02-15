@@ -1,0 +1,2207 @@
+{
+	"ID": "20221119152531-238z9xb",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f52a",
+		"id": "20221119152531-238z9xb",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221201203504-4dyybtt\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221206221709-d6zqqzj\u0026quot;,\u0026quot;scrollTop\u0026quot;:6783,\u0026quot;focusId\u0026quot;:\u0026quot;20221206221836-k7g8qnn\u0026quot;,\u0026quot;focusStart\u0026quot;:4,\u0026quot;focusEnd\u0026quot;:4}",
+		"title": "AOP面向切面",
+		"title-img": "background-image:linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)",
+		"updated": "20221206225355"
+	},
+	"Children": [
+		{
+			"ID": "20221201203504-4dyybtt",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20221201203504-4dyybtt",
+				"updated": "20221201203507"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": "\u003e"
+				},
+				{
+					"ID": "20221201203507-ve1kz5t",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221201203507-ve1kz5t",
+						"updated": "20221201203507"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "学习AOP编程的一大难点就是理解面向切面中一系列晦涩难懂的术语。鉴于此笔记是二次笔记，故先安排术语的讲解。"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221201203015-86xv9dz",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221201203015-86xv9dz",
+				"updated": "20221201203017"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "绪论"
+				}
+			]
+		},
+		{
+			"ID": "20221201203017-vh45vph",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201203017-vh45vph",
+				"updated": "20221201203722"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    AOP面向切面编程，解决了不修改已写好的源代码无法拓展功能的问题，使得可以实现不修改已写好的源代码，只需要新增别的代码，就可以实现对原始操作的增强。"
+				}
+			]
+		},
+		{
+			"ID": "20221201203918-5qti9jy",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201203918-5qti9jy",
+				"updated": "20221201203948"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    AOP不是一种语言，不是一个工具，而是一个思想，而Spring-aop实现了这一思想。"
+				}
+			]
+		},
+		{
+			"ID": "20221201202656-eqtrmrk",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221201202656-eqtrmrk",
+				"updated": "20221201202854"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "术语"
+				}
+			]
+		},
+		{
+			"ID": "20221201204457-wnpeurx",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221201204457-wnpeurx",
+				"updated": "20221201205225"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "连接点 JoinPoint"
+				}
+			]
+		},
+		{
+			"ID": "20221201205129-7ercqjq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201205129-7ercqjq",
+				"updated": "20221201211026"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    绪论中提到，我们利用AOP来实现对某一方法的增强，"
+				},
+				{
+					"Type": "NodeTextMark",
+					"Properties": {
+						"style": "background-color: var(--b3-font-background1);"
+					},
+					"TextMarkType": "text",
+					"TextMarkTextContent": "能被增强"
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: style=\"background-color: var(--b3-font-background1);\"}"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "能"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "inline-memo",
+					"TextMarkInlineMemoContent": "Spring的AOP只能强化方法，AOP的其他实现还可以强化字段，变量之类的。",
+					"TextMarkTextContent": "方法"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "就是连接点"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "JoinPoint"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​，所以所有的方法都是连接点，但是你不需要每一个方法都强化，真正接受强化的是切入点"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Pointcut"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​，所以JoinPoint往往作为一个参数传递给Pointcut"
+				}
+			]
+		},
+		{
+			"ID": "20221201204412-27dddtz",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221201204412-27dddtz",
+				"updated": "20221201205055"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "切入点 Pointcut"
+				}
+			]
+		},
+		{
+			"ID": "20221201205255-ccn2w34",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201205255-ccn2w34",
+				"updated": "20221201211357"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    Spring要求我们使用"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Pointcut"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​注解，修饰一个切入点，该注解接收一个execution表达式"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "execution expression"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​，用来告知Spring，将此方法与"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "inline-memo",
+					"TextMarkInlineMemoContent": "即原始方法",
+					"TextMarkTextContent": "连接点"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "发生关联。Spring会在执行到这个连接点的时候拦截，并按照你设定的通知类型经行强化。"
+				},
+				{
+					"Type": "NodeTextMark",
+					"Properties": {
+						"style": "background-color: var(--b3-font-background8);"
+					},
+					"TextMarkType": "text",
+					"TextMarkTextContent": "在Spring的底层实现中，实际上代理的是切入点，而不是连接点！"
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: style=\"background-color: var(--b3-font-background8);\"}"
+				}
+			]
+		},
+		{
+			"ID": "20221201202854-0lpb37z",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221201202854-0lpb37z",
+				"updated": "20221201205938"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "通知 Advice"
+				}
+			]
+		},
+		{
+			"ID": "20221201203005-flqkxa1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201203005-flqkxa1",
+				"updated": "20221201214616"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    通知就是你要增强功能的具体实现。Spring要求我们使用注解声明一个通知并表明该通知的通知类型。如："
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Before"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​、"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@After"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​、"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@AfterReturning"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​、"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@AfterThrowing"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​、"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code strong",
+					"TextMarkTextContent": "@Around"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​，这些注解都要求接收一个切入点"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Pointcut"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​，使通知与切入点发生绑定，形成一个"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221201204903-dedokg4",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "切面"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "。"
+				}
+			]
+		},
+		{
+			"ID": "20221201204903-dedokg4",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221201204903-dedokg4",
+				"updated": "20221201205057"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "切面 Aspect"
+				}
+			]
+		},
+		{
+			"ID": "20221201211840-9wst6e2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201211840-9wst6e2",
+				"updated": "20221201212309"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    当一个切入点与通知完成绑定后，通知旁边会出现类似"
+				},
+				{
+					"Type": "NodeEmoji",
+					"Data": "img",
+					"Children": [
+						{
+							"Type": "NodeEmojiImg",
+							"Data": "\u003cimg alt=\"around_advice@2x\" class=\"emoji\" src=\"/emojis/around_advice@2x.svg\" title=\"around_advice@2x\" /\u003e",
+							"Children": [
+								{
+									"Type": "NodeEmojiAlias",
+									"Data": ":around_advice@2x:"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "的图标，表示切面已经生成，点击该图标可以跳转到连接点JoinPoint，同时连接点的旁边会出现类似"
+				},
+				{
+					"Type": "NodeEmoji",
+					"Data": "img",
+					"Children": [
+						{
+							"Type": "NodeEmojiImg",
+							"Data": "\u003cimg alt=\"around_advice@2x\" class=\"emoji\" src=\"/emojis/around_advice@2x.svg\" title=\"around_advice@2x\" /\u003e",
+							"Children": [
+								{
+									"Type": "NodeEmojiAlias",
+									"Data": ":around_advice@2x:"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "的图标。"
+				}
+			]
+		},
+		{
+			"ID": "20221201212430-sckqpb1",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221201212430-sckqpb1",
+				"style": "text-align: justify; width: 50%; flex: 0 0 auto;",
+				"updated": "20221201214948"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "col"
+				},
+				{
+					"ID": "20221201212314-gswlvtp",
+					"Type": "NodeTable",
+					"TableAligns": [
+						0,
+						0,
+						0
+					],
+					"Properties": {
+						"colgroup": "|width: 189px;|",
+						"id": "20221201212314-gswlvtp",
+						"style": "width: 75%; flex: 0 0 auto;",
+						"updated": "20221201214948"
+					},
+					"Children": [
+						{
+							"Type": "NodeTableHead",
+							"Data": "thead",
+							"Children": [
+								{
+									"Type": "NodeTableRow",
+									"Data": "tr",
+									"Children": [
+										{
+											"Type": "NodeTableCell",
+											"Data": "th",
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "图标"
+												}
+											]
+										},
+										{
+											"Type": "NodeTableCell",
+											"Data": "th",
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "含义"
+												}
+											]
+										},
+										{
+											"Type": "NodeTableCell",
+											"Data": "th",
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "注解"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"Type": "NodeTableRow",
+							"Data": "tr",
+							"Children": [
+								{
+									"Type": "NodeTableCell",
+									"Data": "td",
+									"Children": [
+										{
+											"Type": "NodeEmoji",
+											"Data": "img",
+											"Children": [
+												{
+													"Type": "NodeEmojiImg",
+													"Data": "\u003cimg alt=\"around_advice@2x\" class=\"emoji\" src=\"/emojis/around_advice@2x.svg\" title=\"around_advice@2x\" /\u003e",
+													"Children": [
+														{
+															"Type": "NodeEmojiAlias",
+															"Data": ":around_advice@2x:"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "td",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "环绕通知"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "td",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "​"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": "@Around"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "​"
+										}
+									]
+								}
+							]
+						},
+						{
+							"Type": "NodeTableRow",
+							"Data": "tr",
+							"Children": [
+								{
+									"Type": "NodeTableCell",
+									"Data": "td",
+									"Children": [
+										{
+											"Type": "NodeEmoji",
+											"Data": "img",
+											"Children": [
+												{
+													"Type": "NodeEmojiImg",
+													"Data": "\u003cimg alt=\"before_advice\" class=\"emoji\" src=\"/emojis/before_advice.svg\" title=\"before_advice\" /\u003e",
+													"Children": [
+														{
+															"Type": "NodeEmojiAlias",
+															"Data": ":before_advice:"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "td",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "前置通知"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "td",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "​"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": "@Before"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "​"
+										}
+									]
+								}
+							]
+						},
+						{
+							"Type": "NodeTableRow",
+							"Data": "tr",
+							"Children": [
+								{
+									"Type": "NodeTableCell",
+									"Data": "td",
+									"Children": [
+										{
+											"Type": "NodeEmoji",
+											"Data": "img",
+											"Children": [
+												{
+													"Type": "NodeEmojiImg",
+													"Data": "\u003cimg alt=\"after_advice@2x\" class=\"emoji\" src=\"/emojis/after_advice@2x.svg\" title=\"after_advice@2x\" /\u003e",
+													"Children": [
+														{
+															"Type": "NodeEmojiAlias",
+															"Data": ":after_advice@2x:"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "td",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "后置通知"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "td",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "​"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": "@After"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "​"
+										}
+									]
+								}
+							]
+						},
+						{
+							"Type": "NodeTableRow",
+							"Data": "tr",
+							"Children": [
+								{
+									"Type": "NodeTableCell",
+									"Data": "td",
+									"Children": [
+										{
+											"Type": "NodeEmoji",
+											"Data": "img",
+											"Children": [
+												{
+													"Type": "NodeEmojiImg",
+													"Data": "\u003cimg alt=\"after_returning_advice\" class=\"emoji\" src=\"/emojis/after_returning_advice.svg\" title=\"after_returning_advice\" /\u003e",
+													"Children": [
+														{
+															"Type": "NodeEmojiAlias",
+															"Data": ":after_returning_advice:"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "td",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "返回后通知"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "td",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "​"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": "@AfterReturning"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "​"
+										}
+									]
+								}
+							]
+						},
+						{
+							"Type": "NodeTableRow",
+							"Data": "tr",
+							"Children": [
+								{
+									"Type": "NodeTableCell",
+									"Data": "td",
+									"Children": [
+										{
+											"Type": "NodeEmoji",
+											"Data": "img",
+											"Children": [
+												{
+													"Type": "NodeEmojiImg",
+													"Data": "\u003cimg alt=\"after_throwing_advice@2x\" class=\"emoji\" src=\"/emojis/after_throwing_advice@2x.svg\" title=\"after_throwing_advice@2x\" /\u003e",
+													"Children": [
+														{
+															"Type": "NodeEmojiAlias",
+															"Data": ":after_throwing_advice@2x:"
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "td",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "抛出异常后通知"
+										}
+									]
+								},
+								{
+									"Type": "NodeTableCell",
+									"Data": "td",
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "​"
+										},
+										{
+											"Type": "NodeTextMark",
+											"TextMarkType": "code",
+											"TextMarkTextContent": "@AfterThrowing"
+										},
+										{
+											"Type": "NodeText",
+											"Data": "​"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221201212422-7joyg2j",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221201212422-7joyg2j",
+						"updated": "20221201212830"
+					},
+					"Children": [
+						{
+							"Type": "NodeEmoji",
+							"Data": "img",
+							"Children": [
+								{
+									"Type": "NodeEmojiImg",
+									"Data": "\u003cimg alt=\"macro\" class=\"emoji\" src=\"/emojis/macro.svg\" title=\"macro\" /\u003e",
+									"Children": [
+										{
+											"Type": "NodeEmojiAlias",
+											"Data": ":macro:"
+										}
+									]
+								}
+							]
+						},
+						{
+							"Type": "NodeText",
+							"Data": "代表方法\n灰色的两条带子表示通知，"
+						},
+						{
+							"Type": "NodeEmoji",
+							"Data": "img",
+							"Children": [
+								{
+									"Type": "NodeEmojiImg",
+									"Data": "\u003cimg alt=\"macro\" class=\"emoji\" src=\"/emojis/macro.svg\" title=\"macro\" /\u003e",
+									"Children": [
+										{
+											"Type": "NodeEmojiAlias",
+											"Data": ":macro:"
+										}
+									]
+								}
+							]
+						},
+						{
+							"Type": "NodeText",
+							"Data": "的上面代表Before，下面代表After\n弯箭头表示返回，闪电表示抛出异常"
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221201204501-ft6fbat",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221201204501-ft6fbat",
+				"updated": "20221201205056"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "织入 Wave"
+				}
+			]
+		},
+		{
+			"ID": "20221201205503-nic88z0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201205503-nic88z0",
+				"updated": "20221201212912"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    当切入点经过动态代理生成增强之后的方法，就表示织入完成了。"
+				}
+			]
+		},
+		{
+			"ID": "20221201212929-onfmif7",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221201212929-onfmif7",
+				"updated": "20221201212937"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "如何使用AOP"
+				}
+			]
+		},
+		{
+			"ID": "20221201212949-el7bsy8",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221201212949-el7bsy8",
+				"updated": "20221201213007"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "配置AOP"
+				}
+			]
+		},
+		{
+			"ID": "20221201213008-e62jnxg",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201213008-e62jnxg",
+				"updated": "20221201213133"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    想要使用AOP，我们需要告诉Spring开启面向切面编程，在"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221119183857-d7cd9vm",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "Spring配置类"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "中加入注解"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@EnableAspectJAutoProxy"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​允许AspectJ自动代理，即开启用面向切面。"
+				}
+			]
+		},
+		{
+			"ID": "20221201213133-p2ysr2q",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201213133-p2ysr2q",
+				"updated": "20221201213201"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    为了方便管理，我们一般将通知放在一个特定的包中，包名为advice."
+				}
+			]
+		},
+		{
+			"ID": "20221201213202-jvw6hds",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221201213202-jvw6hds",
+				"updated": "20221201213226"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "编写切入点"
+				}
+			]
+		},
+		{
+			"ID": "20221201213226-maimnmb",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201213226-maimnmb",
+				"updated": "20221201213403"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    切入点使一个没有方法体的方法，他的方法体由Spring经动态代理后生成。使用"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Pointcut"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​注解标记一个切入点，传入一个execution expression，这个表达式需要表明连接点的具体位置，以方便动态代理拦截。"
+				}
+			]
+		},
+		{
+			"ID": "20221201213411-x7iqbav",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221201213411-x7iqbav",
+				"updated": "20221201213424"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Pointcut(\"execution(void com.transaction.dao.Test.show())\")\nprivate void pt(){}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221201212938-d85uhka",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20221201212938-d85uhka",
+				"updated": "20221201213440"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "execution表达式"
+				}
+			]
+		},
+		{
+			"ID": "20221201213440-n4ldz08",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201213440-n4ldz08",
+				"updated": "20221201213511"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    execution表达式整体上是一个字符串，但是IDEA会识别他，并给予提示。"
+				}
+			]
+		},
+		{
+			"ID": "20221201213519-l38mujf",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201213519-l38mujf",
+				"updated": "20221201213938"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    这个表达式由自己的一套语法规则："
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "动作关键词(访问修饰符 返回值 包名.类/接口名.方法名(参数类型) 异常名)"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20221201213718-2nfg8xz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201213718-2nfg8xz",
+				"updated": "20221201213810"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    我们强化一个方法时，需要在方法执行的时候拦截，所以动作关键词是execution"
+				}
+			]
+		},
+		{
+			"ID": "20221201213812-xz3g42q",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201213812-xz3g42q",
+				"updated": "20221201213931"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    访问修饰符一般是可以省略的，而返回值类型、参数不可以省略。"
+				}
+			]
+		},
+		{
+			"ID": "20221201213931-wb5zqex",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201213931-wb5zqex",
+				"updated": "20221201214000"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    且execution表达式可以使用通配符："
+				}
+			]
+		},
+		{
+			"ID": "20221201213536-nrrlb5r",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20221201213536-nrrlb5r",
+				"updated": "20221201214536"
+			},
+			"Children": [
+				{
+					"ID": "20221201214536-4vtg404",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20221201214536-4vtg404",
+						"updated": "20221201214536"
+					},
+					"Children": [
+						{
+							"ID": "20221201214536-w2w4rm1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221201214536-w2w4rm1",
+								"updated": "20221201214536"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "使用"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "*"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​表示任意，用"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "*"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​代表参数时，表示"
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "background-color: var(--b3-font-background8);"
+									},
+									"TextMarkType": "strong text",
+									"TextMarkTextContent": "至少有一个"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"background-color: var(--b3-font-background8);\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "参数。"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221201214227-zl1p4v6",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201214227-zl1p4v6",
+				"updated": "20221201214227"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "execution(public * com.springlesson.*.BookDao.deleteById(*))"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20221201214342-koz0ou9",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201214342-koz0ou9",
+				"updated": "20221201214358"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    表示：任意返回类型，任意参数但至少有一个参数"
+				}
+			]
+		},
+		{
+			"ID": "20221201214241-qub0ez5",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20221201214241-qub0ez5",
+				"updated": "20221201214539"
+			},
+			"Children": [
+				{
+					"ID": "20221201214539-7qq7qd8",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20221201214539-7qq7qd8",
+						"updated": "20221201214539"
+					},
+					"Children": [
+						{
+							"ID": "20221201214539-bgx38zr",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221201214539-bgx38zr",
+								"updated": "20221201214539"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "使用"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".."
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​匹配多个任意，当用"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": ".."
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​匹配参数时，可以无参，也可以任意个参数。"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221201214334-ygu9f3f",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201214334-ygu9f3f",
+				"updated": "20221201214335"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "execution(* * com..*Dao+.*(..))"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20221201214400-3cj4yuz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201214400-3cj4yuz",
+				"updated": "20221201214517"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    表示任意访问修饰符，任意返回值，com包下的任意个子包下的名字以Dao结尾的类及其子类的所有方法且不限参数"
+				}
+			]
+		},
+		{
+			"ID": "20221201214520-6u4v9af",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20221201214520-6u4v9af",
+				"updated": "20221201214541"
+			},
+			"Children": [
+				{
+					"ID": "20221201214541-et4372c",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20221201214541-et4372c",
+						"updated": "20221201214541"
+					},
+					"Children": [
+						{
+							"ID": "20221201214541-14a1glh",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221201214541-14a1glh",
+								"updated": "20221201214541"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "使用"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "+"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​表示及其子类"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221201214530-lca8nky",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201214530-lca8nky",
+				"updated": "20221201214533"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "例子如上"
+				}
+			]
+		},
+		{
+			"ID": "20221201214549-oak5d5o",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221201214549-oak5d5o",
+				"updated": "20221201214552"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "通知类型"
+				}
+			]
+		},
+		{
+			"ID": "20221201214553-4q8q5hc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201214553-4q8q5hc",
+				"updated": "20221201214626"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "   在"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221201202854-0lpb37z",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "通知"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "中我们提到了5种通知类型："
+				}
+			]
+		},
+		{
+			"ID": "20221201214723-eptd34z",
+			"Type": "NodeBlockQueryEmbed",
+			"Properties": {
+				"id": "20221201214723-eptd34z",
+				"style": "width: 81%; flex: 0 0 auto; text-align: justify;",
+				"updated": "20221201214748"
+			},
+			"Children": [
+				{
+					"Type": "NodeOpenBrace"
+				},
+				{
+					"Type": "NodeOpenBrace"
+				},
+				{
+					"Type": "NodeBlockQueryEmbedScript",
+					"Data": "select * from blocks where id='20221201212430-sckqpb1'"
+				},
+				{
+					"Type": "NodeCloseBrace"
+				},
+				{
+					"Type": "NodeCloseBrace"
+				}
+			]
+		},
+		{
+			"ID": "20221201214738-bz2yu0e",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201214738-bz2yu0e",
+				"updated": "20221201215121"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    这些注解很明确的表示了通知的执行时间，比较重要的就是环绕通知，因为环绕通知可以模拟其他几种通知，所以我们需要知道何为环绕通知。"
+				}
+			]
+		},
+		{
+			"ID": "20221201215220-ktshwj0",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221201215220-ktshwj0",
+				"updated": "20221201215310"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "public void show(){//连接点\n    System.out.println(\"Mike\");\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221201215122-i5o3s5a",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221201215122-i5o3s5a",
+				"updated": "20221201215316"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Pointcut(\"execution(void com.transaction.dao.Test.show())\")\nprivate void pt(){}//切入点\n\n@Around(\"pt()\")\npublic void extend(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {//通知\n    System.out.println(\"hi\");\n    proceedingJoinPoint.proceed();\n    System.out.println(\"goodbye\");\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221201215127-4qoq6tb",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221201215127-4qoq6tb",
+				"updated": "20221201220556"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "环绕通知的参数ProceedingJoinPoint调用JoinPoint方法"
+				}
+			]
+		},
+		{
+			"ID": "20221201220416-djhpkkm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201220416-djhpkkm"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    环绕通知的参数默认是ProceedingJoinPoint执行中的JoinPoint，也就是被拦截下来的方法。调用他的proceed方法，就可以执行JoinPoint。"
+				}
+			]
+		},
+		{
+			"ID": "20221201215624-s45186m",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201215624-s45186m",
+				"updated": "20221201220205"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    根据IDEA的提示，proceed方法有一个重载"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "public Object proceed(Object[] adviceBindings) throws Throwable"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​，不难看出，如果JoinPoint的方法是有参的，就需要调用这个方法。"
+				}
+			]
+		},
+		{
+			"ID": "20221201220206-8t3ez4i",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221201220206-8t3ez4i",
+				"updated": "20221201220213"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "public void show(String name){//连接点\n    System.out.println(name);\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221201220206-ayjrluw",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221201220206-ayjrluw",
+				"updated": "20221201220311"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Pointcut(\"execution(void com.transaction.dao.Test.show())\")\nprivate void pt(){}//切入点\n\n@Around(\"pt()\")\npublic void extend(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {//通知\n    System.out.println(\"hi\");\n    Object[] args = proceedingJoinPoint.getArgs();//获取参数列表\n    //当然你也可以自己定义proceedingJoinPoint.proceed(new Object[]{\"李\"});\n    proceedingJoinPoint.proceed(args);\n    System.out.println(\"goodbye\");\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221201215451-i3yondk",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221201215451-i3yondk",
+				"updated": "20221201220355"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "ApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringConfig.class);\nTest bean = applicationContext.getBean(Test.class);\nbean.show(\"Liu\");\n/*\nhi\nLiu\ngoodbye\n*/\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221201220401-i6l6u45",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221201220401-i6l6u45",
+				"updated": "20221201220607"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "JoinPoint的返回值"
+				}
+			]
+		},
+		{
+			"ID": "20221201220608-3feo7br",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201220608-3feo7br",
+				"updated": "20221201220652"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    在我们调用proceed方法时，会返回一个Object对象，这个对象就是执行完JoinPoint之后的返回值。"
+				}
+			]
+		},
+		{
+			"ID": "20221201220654-cdnr8e2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221201220654-cdnr8e2",
+				"updated": "20221201220834"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    如果在通知中写了return语句，调用JointPoint后的返回值则是通知中的返回值，而不是JointPoint本身的返回值。"
+				}
+			]
+		},
+		{
+			"ID": "20221201220727-0ap4pk5",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221201220727-0ap4pk5",
+				"updated": "20221201221040"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Around(\"pt()\")\npublic Object extend(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {//通知\n    System.out.println(\"hi\");\n    Object[] args = proceedingJoinPoint.getArgs();//获取参数列表\n    Object result = proceedingJoinPoint.proceed(args);//执行完之后拿到返回值\n    System.out.println(\"goodbye\");\n    return result;\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221206214958-on24ftl",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221206214958-on24ftl",
+				"updated": "20221206215052"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "补充：AOP失效的场景"
+				}
+			]
+		},
+		{
+			"ID": "20221206215052-22xw6ju",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221206215052-22xw6ju",
+				"updated": "20221206215510"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    由于AOP是使用动态代理技术实现的，所以如果在"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "inline-memo",
+					"TextMarkInlineMemoContent": "内部调用即是在类里面调用，直接通过方法名调用即可",
+					"TextMarkTextContent": "内部方法调用"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "的时候，AOP是不会生效的。"
+				}
+			]
+		},
+		{
+			"ID": "20221206215511-qd087vt",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221206215511-qd087vt",
+				"updated": "20221206215804"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    因为内部调用具有隐式的this对象，它指向的仍是原来的对象，所以调用的不是“代理后的对象”，而是代理前的对象"
+				}
+			]
+		},
+		{
+			"ID": "20221206215815-fiubod5",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221206215815-fiubod5",
+				"updated": "20221206220016"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "class Test{\n    //普通方法\n    public void method(){\n        System.out.println(\"method\");\n        this.show(\"Liu\");//this可以不写，它默认是隐式的\n    }\n\n    //此方法是切入点\n    public void show(String name){\n        System.out.println(name);\n    }\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221206220034-3dk6y0e",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221206220034-3dk6y0e",
+				"updated": "20221206220106"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "Test bean = applicationContext.getBean(Test.class);\nbean.method();\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221206220106-n4ob05z",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221206220106-n4ob05z",
+				"updated": "20221206220152"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    这里用bean去调用method方法，所以"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "this"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​指向这个bean，而不是被代理后的对象！所以在method里调用show方法，调用的也是原始的show方法，而不是代理后增强的show方法！"
+				}
+			]
+		},
+		{
+			"ID": "20221206220159-v8d2oz2",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221206220159-v8d2oz2",
+				"updated": "20221206220214"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "那我们该怎么解决这一问题？"
+				}
+			]
+		},
+		{
+			"ID": "20221206220215-6woesjs",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20221206220215-6woesjs",
+				"updated": "20221206220551"
+			},
+			"Children": [
+				{
+					"ID": "20221206221833-y369l98",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20221206221833-y369l98",
+						"updated": "20221206220551"
+					},
+					"Children": [
+						{
+							"ID": "20221206221833-2pflzc0",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221206221833-2pflzc0",
+								"updated": "20221206221833"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": " AOP为我们提供了一个方法"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "currentProxy"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​用于获取当前被代理的对象。"
+								}
+							]
+						},
+						{
+							"ID": "20221206220532-dyui3zv",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20221206220532-dyui3zv",
+								"updated": "20221206220551"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "amF2YQ=="
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "public class Test {\n\n    public void method(){\n        System.out.println(\"method\");\n        this.show(\"Liu\");//调用普通方法show\n        ((Test)(AopContext.currentProxy())).show(\"Liu\");//调用被代理后的show方法\n    }\n\n    public void show(String name){\n        System.out.println(name);\n    }\n}\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						},
+						{
+							"ID": "20221206220558-u23yq40",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221206220558-u23yq40",
+								"updated": "20221206220659"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "    在Test类中使用"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "currentProxy"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​可以获取"
+								},
+								{
+									"Type": "NodeTextMark",
+									"Properties": {
+										"style": "background-color: var(--b3-font-background1);"
+									},
+									"TextMarkType": "text",
+									"TextMarkTextContent": "被代理的Test对象"
+								},
+								{
+									"Type": "NodeKramdownSpanIAL",
+									"Data": "{: style=\"background-color: var(--b3-font-background1);\"}"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "，从而调用到增强后的show方法！"
+								}
+							]
+						},
+						{
+							"ID": "20221206221341-45fb7lj",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221206221341-45fb7lj",
+								"updated": "20221206221612"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "    "
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "currentProxy"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​方法需要在"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "block-ref",
+									"TextMarkBlockRefID": "20221119183857-d7cd9vm",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "Spring配置类"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "中的"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code block-ref",
+									"TextMarkBlockRefID": "20221204215411-bk94asd",
+									"TextMarkBlockRefSubtype": "s",
+									"TextMarkTextContent": "@EnableTransactionManager"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​注解中启用："
+								}
+							]
+						},
+						{
+							"ID": "20221206221609-fx6ygli",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20221206221609-fx6ygli"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "amF2YQ=="
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "@EnableAspectJAutoProxy(exposeProxy = true)\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						},
+						{
+							"ID": "20221206221613-0dpaicz",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221206221613-0dpaicz",
+								"updated": "20221206221628"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "    修改暴露代理为true即可。"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221206221709-d6zqqzj",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20221206221709-d6zqqzj",
+				"updated": "20221206225355"
+			},
+			"Children": [
+				{
+					"ID": "20221206221836-w7clhg7",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20221206221836-w7clhg7",
+						"updated": "20221206225355"
+					},
+					"Children": [
+						{
+							"ID": "20221206221836-k7g8qnn",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221206221836-k7g8qnn",
+								"updated": "20221206221838"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "自我注入"
+								}
+							]
+						},
+						{
+							"ID": "20221206221841-6lun0f1",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221206221841-6lun0f1",
+								"updated": "20221206222818"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "如果一个Bean中有一个方法经过AOP动态代理增强，那么我们通过SpringApplicationContext获得的bean，就是被增强之后的代理对象。"
+								}
+							]
+						},
+						{
+							"ID": "20221206224836-h19hqxf",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221206224836-h19hqxf",
+								"updated": "20221206225355"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "编译时是"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Test"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​类型，运行时是"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "Test$$EnhancerBySpringCGLIB$$"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​类型"
+								}
+							]
+						},
+						{
+							"ID": "20221206222819-z9gxqnj",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20221206222819-z9gxqnj",
+								"updated": "20221206223239"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "amF2YQ=="
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "Test bean = applicationContext.getBean(Test.class);\nSystem.out.println(bean.getClass());\n//class com.transaction.dao.Test$$EnhancerBySpringCGLIB$$a0ff85c6\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						},
+						{
+							"ID": "20221206222852-10cg7iu",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221206222852-10cg7iu",
+								"updated": "20221206222914"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "所以我们可以通过自我注入的方式来解决内部调用出现的AOP失效问题："
+								}
+							]
+						},
+						{
+							"ID": "20221206222914-132w7bp",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20221206222914-132w7bp",
+								"updated": "20221206223212"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "amF2YQ=="
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "public class Test {\n    @AutoWired\n    private Test proxyTest;//获取代理后的bean\n\n    public void method(){\n        System.out.println(\"method\");\n        this.show(\"Liu\");//调用普通方法show\n        proxyTest.show(\"Liu\");//通过获取代理对象调用被代理后的show方法\n    }\n\n    public void show(String name){\n        System.out.println(name);\n    }\n}\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

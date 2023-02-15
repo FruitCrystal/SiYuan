@@ -1,0 +1,448 @@
+{
+	"ID": "20221119152529-tjgvspn",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "logo.svg",
+		"id": "20221119152529-tjgvspn",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221129201413-cm6yt5y\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221129220138-3e7ewbi\u0026quot;,\u0026quot;scrollTop\u0026quot;:1926,\u0026quot;focusId\u0026quot;:\u0026quot;20221129201413-cm6yt5y\u0026quot;,\u0026quot;focusStart\u0026quot;:0,\u0026quot;focusEnd\u0026quot;:0}",
+		"title": "整合Mybatis",
+		"title-img": "background-image:linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%)",
+		"updated": "20221129220138"
+	},
+	"Children": [
+		{
+			"ID": "20221129201413-cm6yt5y",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221129201413-cm6yt5y",
+				"updated": "20221129201422"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "绪论"
+				}
+			]
+		},
+		{
+			"ID": "20221119152529-4pztusf",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119152529-4pztusf",
+				"updated": "20221129200948"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    之前我们在配置Mybatis的时候，也是使用了大量的XML配置，但用了Spring与Mybatis的结合“mybatis-spring”之后，我们就不需要写Mybatis的配置XML了。"
+				}
+			]
+		},
+		{
+			"ID": "20221129200950-tqyd2wk",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221129200950-tqyd2wk",
+				"updated": "20221129201200"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    首先，我们要导入坐标，由于和Spring合并，所以我们还需要导入一个拓展依赖——mybatis-spring。"
+				}
+			]
+		},
+		{
+			"ID": "20221129201044-pkqzewh",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221129201044-pkqzewh",
+				"linewrap": "true",
+				"updated": "20221129201426"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "eG1s"
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "        \u003cdependency\u003e\n            \u003cgroupId\u003eorg.mybatis\u003c/groupId\u003e\n            \u003cartifactId\u003emybatis\u003c/artifactId\u003e\n            \u003cversion\u003e3.5.10\u003c/version\u003e\n        \u003c/dependency\u003e\n        \u003cdependency\u003e\n            \u003cgroupId\u003eorg.mybatis\u003c/groupId\u003e\n            \u003cartifactId\u003emybatis-spring\u003c/artifactId\u003e\n            \u003cversion\u003e1.3.0\u003c/version\u003e\n        \u003c/dependency\u003e\n        \u003cdependency\u003e\n            \u003cgroupId\u003ecom.alibaba\u003c/groupId\u003e\n            \u003cartifactId\u003edruid\u003c/artifactId\u003e\n            \u003cversion\u003e1.1.16\u003c/version\u003e\n        \u003c/dependency\u003e\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221129200903-p5eknee",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221129200903-p5eknee",
+				"updated": "20221129201438"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "数据源的配置"
+				}
+			]
+		},
+		{
+			"ID": "20221129201427-153memu",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221129201427-153memu"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    配置数据库，最重要的就是数据源dataSource，本教程使用Druid作为数据源。我们在config包下新建一个DruidConfig.java作为我们Druid的配置文件。"
+				}
+			]
+		},
+		{
+			"ID": "20221129201453-46osydm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221129201453-46osydm",
+				"updated": "20221129201542"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    在配置第三方依赖时，我们需要用"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Bean"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​注解来修饰一个方法，告知Spring自动调用这个方法，并将返回值作为Bean，交由IoC容器管理。"
+				}
+			]
+		},
+		{
+			"ID": "20221129201449-0a76pmz",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221129201449-0a76pmz",
+				"updated": "20221129201607"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Bean\nDruidDataSource dataSource(){\n    DruidDataSource dataSource = new DruidDataSource();\n    dataSource.setUsername(\"root\");\n    dataSource.setPassword(\"root\");\n    dataSource.setUrl(\"jdbc:mysql://localhost:3306/study\");\n    dataSource.setDriverClassName(\"com.mysql.jdbc.Driver\");\n    return  dataSource;\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221129201404-twhhkqw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221129201404-twhhkqw",
+				"updated": "20221129201853"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    写好之后，注解的旁边会出现"
+				},
+				{
+					"Type": "NodeEmoji",
+					"Data": "img",
+					"Children": [
+						{
+							"Type": "NodeEmojiImg",
+							"Data": "\u003cimg alt=\"showAutowiredCandidates\" class=\"emoji\" src=\"/emojis/showAutowiredCandidates.svg\" title=\"showAutowiredCandidates\" /\u003e",
+							"Children": [
+								{
+									"Type": "NodeEmojiAlias",
+									"Data": ":showAutowiredCandidates:"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "图标，表示该Bean已经交由IoC容器管理。这样，我们的数据源就配置完成了。"
+				}
+			]
+		},
+		{
+			"ID": "20221129202038-pfc73vt",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221129202038-pfc73vt",
+				"updated": "20221129202045"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "开启Druid的事务管理器"
+				}
+			]
+		},
+		{
+			"ID": "20221129202047-bb6344g",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221129202047-bb6344g",
+				"updated": "20221129203735"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    待补充...参见"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221119152537-mkpsmlt",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "Transaction事务管理"
+				}
+			]
+		},
+		{
+			"ID": "20221129201853-g8l26ms",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221129201853-g8l26ms",
+				"updated": "20221129201903"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Mybatis的配置"
+				}
+			]
+		},
+		{
+			"ID": "20221129201903-129gpxw",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221129201903-129gpxw",
+				"updated": "20221129203504"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    根据以往的经验，我们知道Mybatis的配置有几个关键的属性：数据源dataSource、映射mapper.数据源是为了获取sqlSession，映射是为了构建SQL语句与DAO层之间的关系。所以在mybatis-spring中，为了省去繁杂的XML配置，mybatis-spring为我们提供了"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "SqlSessionFactoryBean"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​和"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "MapperScannerConfiguration"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​这两个类，方便我们用Java代码的方式快速构建sqlSession和Mapper映射。"
+				}
+			]
+		},
+		{
+			"ID": "20221129202501-mzvm7dw",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221129202501-mzvm7dw",
+				"updated": "20221129202544"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Bean\npublic SqlSessionFactoryBean sqlSessionBean(@AutoWired DruidDataSource dataSource){\n    SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();\n    sqlSessionFactoryBean.setDataSource(dataSource);\n    return sqlSessionFactoryBean;\n}\n\n@Bean\npublic MapperScannerConfigurer mapperScannerConfigurer(){\n    MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();\n    mapperScannerConfigurer.setBasePackage(\"com.transaction.dao\");\n    return mapperScannerConfigurer;\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221129201858-ryk7nfl",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221129201858-ryk7nfl",
+				"updated": "20221129202847"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    有几个值得注意的点，在sqlSession方法中，我们自动注入了一个dataSource，Spring会为我们按"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221125190941-vdg92uv",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "类型注入"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "我们刚才在"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "DruidConfig.java"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​中配置的dataSource. 其中"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@AutoWired"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​注解可以省略。"
+				}
+			]
+		},
+		{
+			"ID": "20221129202847-imdqzgn",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221129202847-imdqzgn",
+				"updated": "20221129203702"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    MapperScannerConfiguration中的setBasePakage方法要求指定一个"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "inline-memo",
+					"TextMarkInlineMemoContent": "一般是DAO层的包 ",
+					"TextMarkTextContent": "包"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "，Mybatis会自动扫描包下的"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "inline-memo",
+					"TextMarkInlineMemoContent": "一般是接口",
+					"TextMarkTextContent": "内容"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "，建立与mapper.xml中同名的映射器之间的关系。"
+				}
+			]
+		},
+		{
+			"ID": "20221129203704-pbioe28",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221129203704-pbioe28",
+				"updated": "20221129203801"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "编写SQL"
+				}
+			]
+		},
+		{
+			"ID": "20221129203802-w07brx7",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221129203802-w07brx7",
+				"updated": "20221129203817"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    配置工作完成以后，我们就可以在DAO层书写Mybatis的SQL语句了。"
+				}
+			]
+		},
+		{
+			"ID": "20221129203836-es9to71",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221129203836-es9to71",
+				"updated": "20221129203837"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Repository(\"transferDao\")\n@Transactional(transactionManager = \"TransactionManager\")\npublic interface TransferDao {\n    @Update(\"update study.user_tb SET money = money-#{transfer} WHERE `name`=#{from}\")\n    void transferOut(@Param(\"from\") String from,@Param(\"transfer\") double transfer);\n\n    @Update(\"update study.user_tb SET money = money+#{transfer} WHERE `name`=#{to}\")\n    void transferIn(@Param(\"to\") String to,@Param(\"transfer\") double transfer);\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221129220138-3e7ewbi",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221129220138-3e7ewbi"
+			}
+		}
+	]
+}

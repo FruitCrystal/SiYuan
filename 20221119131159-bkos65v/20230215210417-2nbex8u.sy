@@ -1,0 +1,21 @@
+{
+	"ID": "20230215210417-2nbex8u",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "java.svg",
+		"id": "20230215210417-2nbex8u",
+		"title": "JavaEE",
+		"updated": "20230215210426"
+	},
+	"Children": [
+		{
+			"ID": "20230215210417-djb6q4k",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20230215210417-djb6q4k",
+				"updated": "20230215210417"
+			}
+		}
+	]
+}

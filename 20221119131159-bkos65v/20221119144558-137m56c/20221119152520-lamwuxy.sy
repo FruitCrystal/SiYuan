@@ -1,0 +1,2480 @@
+{
+	"ID": "20221119152520-lamwuxy",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "InjectionOutline.svg",
+		"id": "20221119152520-lamwuxy",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221125091522-o3yrhya\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221125221522-5k6yh8y\u0026quot;,\u0026quot;scrollTop\u0026quot;:4700}",
+		"title": "Dependencies Injection 依赖注入",
+		"title-img": "background-image:linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%)",
+		"updated": "20221125221243"
+	},
+	"Children": [
+		{
+			"ID": "20221125091522-o3yrhya",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221125091522-o3yrhya",
+				"updated": "20221125091530"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "依赖注入概述"
+				}
+			]
+		},
+		{
+			"ID": "20221125084619-3chyt2g",
+			"Type": "NodeBlockQueryEmbed",
+			"Properties": {
+				"id": "20221125084619-3chyt2g",
+				"updated": "20221125084619"
+			},
+			"Children": [
+				{
+					"Type": "NodeOpenBrace"
+				},
+				{
+					"Type": "NodeOpenBrace"
+				},
+				{
+					"Type": "NodeBlockQueryEmbedScript",
+					"Data": "select * from blocks where id='20221119224101-j2e0im3'"
+				},
+				{
+					"Type": "NodeCloseBrace"
+				},
+				{
+					"Type": "NodeCloseBrace"
+				}
+			]
+		},
+		{
+			"ID": "20221125084621-fu3q00b",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125084621-fu3q00b",
+				"updated": "20221125224138"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    前文提到，Spring将需要跨层复用的对象从程序中“抽离”出来，交由IoC容器管理。而当我们需要的时候，我们就可以按需注入，即直接从容器里取出需要的对象来使用。"
+				}
+			]
+		},
+		{
+			"ID": "20221125084817-3t1o2o0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125084817-3t1o2o0",
+				"updated": "20221125093213"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "     在注解出现之前，我们使用XML的形式经行注入，常用的方法有Setter注入、构造器注入以及接口注入，但究其根本，都是通过反射实现的。"
+				}
+			]
+		},
+		{
+			"ID": "20221125085404-76uqq80",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125085404-76uqq80",
+				"updated": "20221125091228"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "     现在，注解开发已经取代了配置XML。我们需要知道的是，注解开发的底层实现也是反射。"
+				}
+			]
+		},
+		{
+			"ID": "20221125091230-kwynku9",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125091230-kwynku9",
+				"updated": "20221125121931"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "     我们使用"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@AutoWired"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​​注解进行依赖注入，跟XML配置依赖注入一样，"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@AutoWired"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​​也有三种注入形式，分别是：Setter注入、构造器注入、属性（Field注）入。分别对应反射中的三部分内容Method、Field、Constructor."
+				}
+			]
+		},
+		{
+			"ID": "20221125185953-7343fib",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125185953-7343fib",
+				"updated": "20221125190124"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "     "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "strong",
+					"TextMarkTextContent": "在使用XML配置的时候，我们可以通过一定的"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code strong",
+					"TextMarkTextContent": "标识"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "strong",
+					"TextMarkTextContent": "来指定注入什么Bean, 这个"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code strong",
+					"TextMarkTextContent": "标识"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "strong",
+					"TextMarkTextContent": "可以是Bean的ID，Bean的类型。"
+				}
+			]
+		},
+		{
+			"ID": "20221125092917-5w20gjf",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221125092917-5w20gjf",
+				"updated": "20221125092927"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "三种注入方式"
+				}
+			]
+		},
+		{
+			"ID": "20221125085538-dby2x94",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221125085538-dby2x94",
+				"updated": "20221125091555"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Setter注入"
+				}
+			]
+		},
+		{
+			"ID": "20221125091020-jkl2sl4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125091020-jkl2sl4",
+				"updated": "20221125092615"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "     我们在使用Setter注入时，需要把"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@AutoWired"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​​注解写在Setter方法之上，此时该注解不能省略。"
+				}
+			]
+		},
+		{
+			"ID": "20221125091637-b31k3nz",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221125091637-b31k3nz",
+				"updated": "20221125091716"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "public NewDao newDao;\n\n@Autowired\npublic void setNewDao(NewDao newDao){\n    this.newDao = newDao;\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221125091727-t4yjwlf",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125091727-t4yjwlf",
+				"updated": "20221125224110"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    此时，Setter方法的旁边就会出现图标"
+				},
+				{
+					"Type": "NodeEmoji",
+					"Data": "img",
+					"Children": [
+						{
+							"Type": "NodeEmojiImg",
+							"Data": "\u003cimg alt=\"showAutowiredDependencies\" class=\"emoji\" src=\"/emojis/showAutowiredDependencies.svg\" title=\"showAutowiredDependencies\" /\u003e",
+							"Children": [
+								{
+									"Type": "NodeEmojiAlias",
+									"Data": ":showAutowiredDependencies:"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "，表示依赖注入成功。"
+				}
+			]
+		},
+		{
+			"ID": "20221125091909-k1eefvb",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221125091909-k1eefvb",
+				"updated": "20221125091918"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "构造器注入"
+				}
+			]
+		},
+		{
+			"ID": "20221125091920-vtr8149",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125091920-vtr8149",
+				"updated": "20221125224047"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    我们在使用构造器注入时，需要把"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@AutoWired"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​注解写在构造器之上，但此时，该注解可以省略。"
+				}
+			]
+		},
+		{
+			"ID": "20221125091935-z3u2hzj",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221125091935-z3u2hzj",
+				"updated": "20221125092804"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "public NewDao newDao;\n\n/*注解可省略*/@Autowired\npublic StudentServiceImpl(NewDao newDao){\n      this.newDao = newDao;\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221125092503-fbi8nl4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125092503-fbi8nl4",
+				"updated": "20221125224045"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    此时，构造器的旁边就会出现图标"
+				},
+				{
+					"Type": "NodeEmoji",
+					"Data": "img",
+					"Children": [
+						{
+							"Type": "NodeEmojiImg",
+							"Data": "\u003cimg alt=\"showAutowiredDependencies\" class=\"emoji\" src=\"/emojis/showAutowiredDependencies.svg\" title=\"showAutowiredDependencies\" /\u003e",
+							"Children": [
+								{
+									"Type": "NodeEmojiAlias",
+									"Data": ":showAutowiredDependencies:"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "，表示依赖注入成功。"
+				}
+			]
+		},
+		{
+			"ID": "20221125092111-f55552u",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221125092111-f55552u",
+				"updated": "20221125092147"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Field注入"
+				}
+			]
+		},
+		{
+			"ID": "20221125092149-2ky1cf2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125092149-2ky1cf2",
+				"updated": "20221125224042"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    当我们使用Field注入时，需要把"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@AutoWired"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​注解写在成员变量之上，此时该注解不能省略。"
+				}
+			]
+		},
+		{
+			"ID": "20221125092251-y53g1oh",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221125092251-y53g1oh",
+				"updated": "20221125092714"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Autowired\npublic NewDao newDao;\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221125092627-5l4iub0",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125092627-5l4iub0",
+				"updated": "20221125224039"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    此时，成员变量的旁边就会出现图标"
+				},
+				{
+					"Type": "NodeEmoji",
+					"Data": "img",
+					"Children": [
+						{
+							"Type": "NodeEmojiImg",
+							"Data": "\u003cimg alt=\"showAutowiredDependencies\" class=\"emoji\" src=\"/emojis/showAutowiredDependencies.svg\" title=\"showAutowiredDependencies\" /\u003e",
+							"Children": [
+								{
+									"Type": "NodeEmojiAlias",
+									"Data": ":showAutowiredDependencies:"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "，表示依赖注入成功。"
+				}
+			]
+		},
+		{
+			"ID": "20221125092844-egnmh2z",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221125092844-egnmh2z",
+				"updated": "20221125092911"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "三种注入方式的优与劣"
+				}
+			]
+		},
+		{
+			"ID": "20221125093307-e949d5t",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125093307-e949d5t",
+				"updated": "20221125093516"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    这三种方式都有自己的优点与缺点。常见的缺点是"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "循环依赖问题"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​。"
+				}
+			]
+		},
+		{
+			"ID": "20221125093113-02z78hd",
+			"Type": "NodeHeading",
+			"HeadingLevel": 4,
+			"Properties": {
+				"id": "20221125093113-02z78hd",
+				"updated": "20221125121736"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Setter注入"
+				}
+			]
+		},
+		{
+			"ID": "20221125122540-dmwzoyo",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221125122540-dmwzoyo",
+				"updated": "20221125223749"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "col"
+				},
+				{
+					"ID": "20221125121736-khieflj",
+					"Type": "NodeList",
+					"ListData": {
+						"Typ": 1
+					},
+					"Properties": {
+						"id": "20221125121736-khieflj",
+						"updated": "20221125223749"
+					},
+					"Children": [
+						{
+							"ID": "20221125121737-38kbgxc",
+							"Type": "NodeListItem",
+							"ListData": {
+								"Typ": 1,
+								"Delimiter": 46,
+								"Marker": "MS4=",
+								"Num": 1
+							},
+							"Properties": {
+								"id": "20221125121737-38kbgxc",
+								"updated": "20221125223749"
+							},
+							"Children": [
+								{
+									"ID": "20221125122527-7toejiu",
+									"Type": "NodeSuperBlock",
+									"Properties": {
+										"id": "20221125122527-7toejiu",
+										"style": "color: var(--b3-card-success-color); background-color: var(--b3-card-success-background);",
+										"updated": "20221125223749"
+									},
+									"Children": [
+										{
+											"Type": "NodeSuperBlockOpenMarker"
+										},
+										{
+											"Type": "NodeSuperBlockLayoutMarker",
+											"Data": "row"
+										},
+										{
+											"ID": "20221125121737-yczu9pq",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221125121737-yczu9pq",
+												"updated": "20221125121741"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "优点："
+												}
+											]
+										},
+										{
+											"ID": "20221125121742-xzvrw7i",
+											"Type": "NodeList",
+											"ListData": {
+												"Typ": 1
+											},
+											"Properties": {
+												"id": "20221125121742-xzvrw7i",
+												"updated": "20221125223749"
+											},
+											"Children": [
+												{
+													"ID": "20221125121742-recxx2l",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "MS4=",
+														"Num": 1
+													},
+													"Properties": {
+														"id": "20221125121742-recxx2l"
+													},
+													"Children": [
+														{
+															"ID": "20221125121742-f86cqyd",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221125121742-f86cqyd",
+																"updated": "20221125121822"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "专一性：Setter注入一个方法只针对一个依赖，符合单一职责设计原则。"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221125223736-onb81bs",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "Mi4=",
+														"Num": 2
+													},
+													"Properties": {
+														"id": "20221125223736-onb81bs",
+														"updated": "20221125223749"
+													},
+													"Children": [
+														{
+															"ID": "20221125223736-pvqp2wu",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221125223736-pvqp2wu",
+																"updated": "20221125223749"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "造成的依赖循环Spring可以自己解决"
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"Type": "NodeSuperBlockCloseMarker"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221125121817-nu9mnss",
+					"Type": "NodeList",
+					"ListData": {
+						"Typ": 1
+					},
+					"Properties": {
+						"id": "20221125121817-nu9mnss",
+						"updated": "20221125122533"
+					},
+					"Children": [
+						{
+							"ID": "20221125121820-mohlnio",
+							"Type": "NodeListItem",
+							"ListData": {
+								"Typ": 1,
+								"Delimiter": 46,
+								"Marker": "Mi4=",
+								"Num": 2
+							},
+							"Properties": {
+								"id": "20221125121820-mohlnio",
+								"updated": "20221125122533"
+							},
+							"Children": [
+								{
+									"ID": "20221125122533-tiz2v2e",
+									"Type": "NodeSuperBlock",
+									"Properties": {
+										"id": "20221125122533-tiz2v2e",
+										"style": "color: var(--b3-card-error-color); background-color: var(--b3-card-error-background);"
+									},
+									"Children": [
+										{
+											"Type": "NodeSuperBlockOpenMarker"
+										},
+										{
+											"Type": "NodeSuperBlockLayoutMarker",
+											"Data": "row"
+										},
+										{
+											"ID": "20221125121820-lpfhfi3",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221125121820-lpfhfi3",
+												"updated": "20221125121840"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "缺点："
+												}
+											]
+										},
+										{
+											"ID": "20221125121841-xg4q7iq",
+											"Type": "NodeList",
+											"ListData": {
+												"Typ": 1
+											},
+											"Properties": {
+												"id": "20221125121841-xg4q7iq"
+											},
+											"Children": [
+												{
+													"ID": "20221125121840-gj263kk",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "MS4=",
+														"Num": 1
+													},
+													"Properties": {
+														"id": "20221125121840-gj263kk"
+													},
+													"Children": [
+														{
+															"ID": "20221125121840-timwfio",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221125121840-timwfio",
+																"updated": "20221125122118"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "不可注入不可变对象（Final）"
+																}
+															]
+														},
+														{
+															"ID": "20221125122118-ia70upz",
+															"Type": "NodeCodeBlock",
+															"IsFencedCodeBlock": true,
+															"Properties": {
+																"id": "20221125122118-ia70upz",
+																"updated": "20221125122155"
+															},
+															"Children": [
+																{
+																	"Type": "NodeCodeBlockFenceOpenMarker",
+																	"Data": "```"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceInfoMarker",
+																	"CodeBlockInfo": "amF2YQ=="
+																},
+																{
+																	"Type": "NodeCodeBlockCode",
+																	"Data": "@Autowired\npublic final NewDao newDao;//Variable 'newDao' might not have been initialized\n  \n@Autowired\npublic void setNewDao(NewDao newDao) {\n    this.newDao = newDao;\n//Cannot assign a value to final variable 'newDao'\n}\n"
+																},
+																{
+																	"Type": "NodeCodeBlockFenceCloseMarker",
+																	"Data": "```"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221125122028-umcw130",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "Mi4=",
+														"Num": 2
+													},
+													"Properties": {
+														"id": "20221125122028-umcw130"
+													},
+													"Children": [
+														{
+															"ID": "20221125122028-ef78z4z",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221125122028-ef78z4z",
+																"updated": "20221125122313"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "容易被修改"
+																}
+															]
+														},
+														{
+															"ID": "20221125122316-pej8at6",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221125122316-pej8at6",
+																"updated": "20221125122359"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "可以在别的地方调用set方法，达到修改注入的目的，引起不稳定性。"
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"Type": "NodeSuperBlockCloseMarker"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221125121827-679nlaw",
+			"Type": "NodeHeading",
+			"HeadingLevel": 4,
+			"Properties": {
+				"id": "20221125121827-679nlaw",
+				"updated": "20221125123005"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "构造器注入（推荐使用）"
+				}
+			]
+		},
+		{
+			"ID": "20221125122424-4vbjqvi",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125122424-4vbjqvi"
+			}
+		},
+		{
+			"ID": "20221125122717-2w27zyo",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221125122717-2w27zyo",
+				"updated": "20221125223752"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "col"
+				},
+				{
+					"ID": "20221125122425-8hahm0k",
+					"Type": "NodeList",
+					"ListData": {
+						"Typ": 1
+					},
+					"Properties": {
+						"id": "20221125122425-8hahm0k",
+						"updated": "20221125122715"
+					},
+					"Children": [
+						{
+							"ID": "20221125122426-3kbeqtz",
+							"Type": "NodeListItem",
+							"ListData": {
+								"Typ": 1,
+								"Delimiter": 46,
+								"Marker": "MS4=",
+								"Num": 1
+							},
+							"Properties": {
+								"id": "20221125122426-3kbeqtz",
+								"updated": "20221125122715"
+							},
+							"Children": [
+								{
+									"ID": "20221125122715-w7cdmpz",
+									"Type": "NodeSuperBlock",
+									"Properties": {
+										"id": "20221125122715-w7cdmpz",
+										"style": "color: var(--b3-card-success-color); background-color: var(--b3-card-success-background);"
+									},
+									"Children": [
+										{
+											"Type": "NodeSuperBlockOpenMarker"
+										},
+										{
+											"Type": "NodeSuperBlockLayoutMarker",
+											"Data": "row"
+										},
+										{
+											"ID": "20221125122426-efe7fjs",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221125122426-efe7fjs",
+												"updated": "20221125122428"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "优点"
+												}
+											]
+										},
+										{
+											"ID": "20221125122429-4jahp17",
+											"Type": "NodeList",
+											"ListData": {
+												"Typ": 1
+											},
+											"Properties": {
+												"id": "20221125122429-4jahp17"
+											},
+											"Children": [
+												{
+													"ID": "20221125122428-l8oe4ov",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "MS4=",
+														"Num": 1
+													},
+													"Properties": {
+														"id": "20221125122428-l8oe4ov"
+													},
+													"Children": [
+														{
+															"ID": "20221125122428-4vskz0u",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221125122428-4vskz0u",
+																"updated": "20221125122437"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "可以注入不可变对象"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221125122443-hc5y7w6",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "Mi4=",
+														"Num": 2
+													},
+													"Properties": {
+														"id": "20221125122443-hc5y7w6"
+													},
+													"Children": [
+														{
+															"ID": "20221125122443-1hirwfi",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221125122443-1hirwfi",
+																"updated": "20221125122459"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "构造器不容易被修改，稳定性强"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221125122458-3axf76g",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "My4=",
+														"Num": 3
+													},
+													"Properties": {
+														"id": "20221125122458-3axf76g"
+													},
+													"Children": [
+														{
+															"ID": "20221125122458-gsphduo",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221125122458-gsphduo",
+																"updated": "20221125122856"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "通用性好（无论是不是"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "inline-memo",
+																	"TextMarkInlineMemoContent": "采用了IoC思想的框架，如Spring",
+																	"TextMarkTextContent": "IoC框架"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "都能用）"
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"Type": "NodeSuperBlockCloseMarker"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221125122515-zpw0553",
+					"Type": "NodeList",
+					"ListData": {
+						"Typ": 1
+					},
+					"Properties": {
+						"id": "20221125122515-zpw0553",
+						"updated": "20221125223752"
+					},
+					"Children": [
+						{
+							"ID": "20221125122516-vmafpcq",
+							"Type": "NodeListItem",
+							"ListData": {
+								"Typ": 1,
+								"Delimiter": 46,
+								"Marker": "Mi4=",
+								"Num": 2
+							},
+							"Properties": {
+								"id": "20221125122516-vmafpcq",
+								"updated": "20221125223752"
+							},
+							"Children": [
+								{
+									"ID": "20221125122712-n45rxci",
+									"Type": "NodeSuperBlock",
+									"Properties": {
+										"id": "20221125122712-n45rxci",
+										"style": "color: var(--b3-card-error-color); background-color: var(--b3-card-error-background);",
+										"updated": "20221125223752"
+									},
+									"Children": [
+										{
+											"Type": "NodeSuperBlockOpenMarker"
+										},
+										{
+											"Type": "NodeSuperBlockLayoutMarker",
+											"Data": "row"
+										},
+										{
+											"ID": "20221125122516-4rwgstd",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221125122516-4rwgstd",
+												"updated": "20221125122545"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "缺点"
+												}
+											]
+										},
+										{
+											"ID": "20221125122548-gl3qxlz",
+											"Type": "NodeList",
+											"ListData": {
+												"Typ": 1
+											},
+											"Properties": {
+												"id": "20221125122548-gl3qxlz",
+												"updated": "20221125223752"
+											},
+											"Children": [
+												{
+													"ID": "20221125122548-5rkqvj8",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "MS4=",
+														"Num": 1
+													},
+													"Properties": {
+														"id": "20221125122548-5rkqvj8",
+														"updated": "20221125223752"
+													},
+													"Children": [
+														{
+															"ID": "20221125122548-3pizmdt",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221125122548-3pizmdt",
+																"updated": "20221125223752"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "会导致"
+																},
+																{
+																	"Type": "NodeTextMark",
+																	"TextMarkType": "block-ref",
+																	"TextMarkBlockRefID": "20221125123016-yo0est6",
+																	"TextMarkBlockRefSubtype": "s",
+																	"TextMarkTextContent": "循环依赖"
+																},
+																{
+																	"Type": "NodeText",
+																	"Data": "（Spring无法自己解决"
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"Type": "NodeSuperBlockCloseMarker"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221125122639-t2cv9r2",
+			"Type": "NodeHeading",
+			"HeadingLevel": 4,
+			"Properties": {
+				"id": "20221125122639-t2cv9r2",
+				"updated": "20221125122724"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "属性注入"
+				}
+			]
+		},
+		{
+			"ID": "20221125122907-4ohvp0c",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221125122907-4ohvp0c",
+				"updated": "20221125223756"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "col"
+				},
+				{
+					"ID": "20221125122725-k0jsfnq",
+					"Type": "NodeList",
+					"ListData": {
+						"Typ": 1
+					},
+					"Properties": {
+						"id": "20221125122725-k0jsfnq",
+						"updated": "20221125223756"
+					},
+					"Children": [
+						{
+							"ID": "20221125122726-a1br29p",
+							"Type": "NodeListItem",
+							"ListData": {
+								"Typ": 1,
+								"Delimiter": 46,
+								"Marker": "MS4=",
+								"Num": 1
+							},
+							"Properties": {
+								"id": "20221125122726-a1br29p",
+								"updated": "20221125223756"
+							},
+							"Children": [
+								{
+									"ID": "20221125122901-75hmjcb",
+									"Type": "NodeSuperBlock",
+									"Properties": {
+										"id": "20221125122901-75hmjcb",
+										"style": "color: var(--b3-card-success-color); background-color: var(--b3-card-success-background);",
+										"updated": "20221125223756"
+									},
+									"Children": [
+										{
+											"Type": "NodeSuperBlockOpenMarker"
+										},
+										{
+											"Type": "NodeSuperBlockLayoutMarker",
+											"Data": "row"
+										},
+										{
+											"ID": "20221125122726-nzxvn50",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221125122726-nzxvn50",
+												"updated": "20221125122727"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "优点："
+												}
+											]
+										},
+										{
+											"ID": "20221125122729-5uxi3t7",
+											"Type": "NodeList",
+											"ListData": {
+												"Typ": 1
+											},
+											"Properties": {
+												"id": "20221125122729-5uxi3t7",
+												"updated": "20221125223756"
+											},
+											"Children": [
+												{
+													"ID": "20221125122729-yc4lkh8",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "MS4=",
+														"Num": 1
+													},
+													"Properties": {
+														"id": "20221125122729-yc4lkh8"
+													},
+													"Children": [
+														{
+															"ID": "20221125122729-0bkrdrr",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221125122729-0bkrdrr",
+																"updated": "20221125122740"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "方便，简单"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221125223756-e9kxqew",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "Mi4=",
+														"Num": 2
+													},
+													"Properties": {
+														"id": "20221125223756-e9kxqew",
+														"updated": "20221125223756"
+													},
+													"Children": [
+														{
+															"ID": "20221125223756-egghicp",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221125223756-egghicp",
+																"updated": "20221125223756"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "造成的依赖循环Spring可以自己解决"
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"Type": "NodeSuperBlockCloseMarker"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221125122742-tmbjfiz",
+					"Type": "NodeList",
+					"ListData": {
+						"Typ": 1
+					},
+					"Properties": {
+						"id": "20221125122742-tmbjfiz",
+						"updated": "20221125122904"
+					},
+					"Children": [
+						{
+							"ID": "20221125122743-1yqde1l",
+							"Type": "NodeListItem",
+							"ListData": {
+								"Typ": 1,
+								"Delimiter": 46,
+								"Marker": "Mi4=",
+								"Num": 2
+							},
+							"Properties": {
+								"id": "20221125122743-1yqde1l",
+								"updated": "20221125122904"
+							},
+							"Children": [
+								{
+									"ID": "20221125122904-xmj8c2s",
+									"Type": "NodeSuperBlock",
+									"Properties": {
+										"id": "20221125122904-xmj8c2s",
+										"style": "color: var(--b3-card-error-color); background-color: var(--b3-card-error-background);"
+									},
+									"Children": [
+										{
+											"Type": "NodeSuperBlockOpenMarker"
+										},
+										{
+											"Type": "NodeSuperBlockLayoutMarker",
+											"Data": "row"
+										},
+										{
+											"ID": "20221125122743-t60mzi7",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221125122743-t60mzi7",
+												"updated": "20221125122745"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "缺点："
+												}
+											]
+										},
+										{
+											"ID": "20221125122746-6qttb5y",
+											"Type": "NodeList",
+											"ListData": {
+												"Typ": 1
+											},
+											"Properties": {
+												"id": "20221125122746-6qttb5y"
+											},
+											"Children": [
+												{
+													"ID": "20221125122745-znwdriz",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "MS4=",
+														"Num": 1
+													},
+													"Properties": {
+														"id": "20221125122745-znwdriz"
+													},
+													"Children": [
+														{
+															"ID": "20221125122745-e6j5io9",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221125122745-e6j5io9",
+																"updated": "20221125122804"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "无法注入不可变对象"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221125122804-xcji2up",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "Mi4=",
+														"Num": 2
+													},
+													"Properties": {
+														"id": "20221125122804-xcji2up"
+													},
+													"Children": [
+														{
+															"ID": "20221125122804-l4u4abh",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221125122804-l4u4abh",
+																"updated": "20221125122816"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "违背了单一职能原则"
+																}
+															]
+														}
+													]
+												},
+												{
+													"ID": "20221125122817-pu77auh",
+													"Type": "NodeListItem",
+													"ListData": {
+														"Typ": 1,
+														"Delimiter": 46,
+														"Marker": "My4=",
+														"Num": 3
+													},
+													"Properties": {
+														"id": "20221125122817-pu77auh"
+													},
+													"Children": [
+														{
+															"ID": "20221125122817-59bcb4r",
+															"Type": "NodeParagraph",
+															"Properties": {
+																"id": "20221125122817-59bcb4r",
+																"updated": "20221125122825"
+															},
+															"Children": [
+																{
+																	"Type": "NodeText",
+																	"Data": "通用性差"
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"Type": "NodeSuperBlockCloseMarker"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221125185434-76k91pk",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221125185434-76k91pk",
+				"updated": "20221125185709"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@AutoWired"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​存在的一些问题"
+				}
+			]
+		},
+		{
+			"ID": "20221125185715-m6vi8et",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125185715-m6vi8et",
+				"updated": "20221125190130"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    我们不妨看一看"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@AutoWired"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​的源代码，来分析一下它存在什么问题。"
+				}
+			]
+		},
+		{
+			"ID": "20221125190130-ps12yhp",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221125190130-ps12yhp",
+				"updated": "20221125190223"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "public @interface Autowired {\n    boolean required() default true;\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221125190241-zo0vhui",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125190241-zo0vhui",
+				"updated": "20221125190704"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    可以看见，"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@AutoWired"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​中只有一个"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "required"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​属性，它表示注入的Bean的实现类必须存在与容器中，否则注入失败，抛出异常。如果手动设置为false，在注入的时候如果容器中没有这个Bean，则会默认跳过，这个属性就会变为"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Null"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​。"
+				}
+			]
+		},
+		{
+			"ID": "20221125190706-a0b0n8d",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125190706-a0b0n8d",
+				"updated": "20221125190808"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    可以看见，我们在这里没有指定Bean，而是Spring帮我们在容器中匹配每一个Bean的类型，筛选出合适的Bean，并自动注入的。"
+				}
+			]
+		},
+		{
+			"ID": "20221125190914-t9un78k",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221125190914-t9un78k",
+				"updated": "20221125190914"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "col"
+				},
+				{
+					"ID": "20221125190807-jl1eoui",
+					"Type": "NodeCodeBlock",
+					"IsFencedCodeBlock": true,
+					"Properties": {
+						"id": "20221125190807-jl1eoui",
+						"updated": "20221125190914"
+					},
+					"Children": [
+						{
+							"Type": "NodeCodeBlockFenceOpenMarker",
+							"Data": "```"
+						},
+						{
+							"Type": "NodeCodeBlockFenceInfoMarker",
+							"CodeBlockInfo": "amF2YQ=="
+						},
+						{
+							"Type": "NodeCodeBlockCode",
+							"Data": "@Autowired\npublic NewDao newDao;\n"
+						},
+						{
+							"Type": "NodeCodeBlockFenceCloseMarker",
+							"Data": "```"
+						}
+					]
+				},
+				{
+					"ID": "20221125190824-nfw166d",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221125190824-nfw166d",
+						"updated": "20221125190914"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "\tSpring会在IoC容器中，匹配类型为NewDao的Bean，并自动注入。"
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221125190941-vdg92uv",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125190941-vdg92uv",
+				"updated": "20221125191256"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    这就会存在一个问题，如果一个IoC容器中有两个Bean的类型都是NewDao呢？这时就会出现注入失败的问题，应为"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@AutoWired"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​是根据类型注入的。"
+				}
+			]
+		},
+		{
+			"ID": "20221125191256-zpgp77m",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125191256-zpgp77m",
+				"updated": "20221125191306"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    这个问题有两种解决方式："
+				}
+			]
+		},
+		{
+			"ID": "20221125191307-m436cba",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221125191307-m436cba",
+				"updated": "20221125191350"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Qualifier"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​按名注入"
+				}
+			]
+		},
+		{
+			"ID": "20221125191820-ns95ao0",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"id": "20221125191820-ns95ao0",
+				"style": "width: 100%; flex: 0 0 auto;",
+				"updated": "20221125192725"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "col"
+				},
+				{
+					"ID": "20221125191743-1pf1jw4",
+					"Type": "NodeBlockQueryEmbed",
+					"Properties": {
+						"id": "20221125191743-1pf1jw4",
+						"style": "width: 50%; flex: 0 0 auto;",
+						"updated": "20221125191743"
+					},
+					"Children": [
+						{
+							"Type": "NodeOpenBrace"
+						},
+						{
+							"Type": "NodeOpenBrace"
+						},
+						{
+							"Type": "NodeBlockQueryEmbedScript",
+							"Data": "select * from blocks where id='20221119230830-p1pozj6'"
+						},
+						{
+							"Type": "NodeCloseBrace"
+						},
+						{
+							"Type": "NodeCloseBrace"
+						}
+					]
+				},
+				{
+					"ID": "20221125192429-33otbin",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20221125192429-33otbin",
+						"updated": "20221125192725"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20221125191814-fy4i6sm",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221125191814-fy4i6sm",
+								"updated": "20221125192417"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "在介绍注册Bean用的注解时，有提到这些注解都接收一个参数"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "String bean_name"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​，用于按名标记Bean，在需要时候可以配合"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "@Qulifier"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​注解按名注入。\n所以，"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "@Qualifier"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​注解接收的参数就是Bean的名字。"
+								}
+							]
+						},
+						{
+							"ID": "20221125192523-9in1m28",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20221125192523-9in1m28",
+								"updated": "20221125192611"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "amF2YQ=="
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "@Component(\"newDao\")\npublic class NewDao{\n//some codes...\n}\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						},
+						{
+							"ID": "20221125192417-q1h4lyg",
+							"Type": "NodeCodeBlock",
+							"IsFencedCodeBlock": true,
+							"Properties": {
+								"id": "20221125192417-q1h4lyg",
+								"updated": "20221125192457"
+							},
+							"Children": [
+								{
+									"Type": "NodeCodeBlockFenceOpenMarker",
+									"Data": "```"
+								},
+								{
+									"Type": "NodeCodeBlockFenceInfoMarker",
+									"CodeBlockInfo": "amF2YQ=="
+								},
+								{
+									"Type": "NodeCodeBlockCode",
+									"Data": "@Autowired\n@Qulifier(\"newDao\")\npublic NewDao newDao;\n"
+								},
+								{
+									"Type": "NodeCodeBlockFenceCloseMarker",
+									"Data": "```"
+								}
+							]
+						},
+						{
+							"ID": "20221125192700-vxpxh1b",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221125192700-vxpxh1b",
+								"updated": "20221125192725"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "这样，就实现了依赖的按名注入。"
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker"
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221125192729-kgwa29n",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221125192729-kgwa29n",
+				"updated": "20221125192956"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Resource"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​注入（推荐）"
+				}
+			]
+		},
+		{
+			"ID": "20221125192746-i1f4r0k",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125192746-i1f4r0k",
+				"updated": "20221125192908"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    与"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Qualifier"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​按名注入一样，"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Resource"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​也是按名注入，不过"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Resource"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​这个注解是来自JavaEE的，而"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Qualifier"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​只Spring独有的。所以"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Resource"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​是适用性更好。"
+				}
+			]
+		},
+		{
+			"ID": "20221125192908-mfxw78w",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125192908-mfxw78w",
+				"updated": "20221125193348"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    不同的是，"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Resource"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​注入的参数不止"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "String bean_name"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​一个，也就是说，"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Resource"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​注入不仅仅可以按名注入，还可以按类型注入。"
+				}
+			]
+		},
+		{
+			"ID": "20221125193433-59tfkbf",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221125193433-59tfkbf",
+				"updated": "20221125193452"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Resource(name = \"StudentDao\")\nprivate StudentDao studentDao;\n\n@Resource(type = NewDao.class)\npublic NewDao newDao;\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221125193502-imnpzel",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125193502-imnpzel",
+				"updated": "20221125193527"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    name和type都要写，不可以省略。注入后，变量旁边会出现"
+				},
+				{
+					"Type": "NodeEmoji",
+					"Data": "img",
+					"Children": [
+						{
+							"Type": "NodeEmojiImg",
+							"Data": "\u003cimg alt=\"showAutowiredDependencies\" class=\"emoji\" src=\"/emojis/showAutowiredDependencies.svg\" title=\"showAutowiredDependencies\" /\u003e",
+							"Children": [
+								{
+									"Type": "NodeEmojiAlias",
+									"Data": ":showAutowiredDependencies:"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "图标。"
+				}
+			]
+		},
+		{
+			"ID": "20221125123001-8469xnj",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221125123001-8469xnj",
+				"updated": "20221125123150"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "简单类型的注入"
+				}
+			]
+		},
+		{
+			"ID": "20221125123202-qt5tr9g",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125123202-qt5tr9g",
+				"updated": "20221125185051"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    上文介绍的是引用类型的注入，Spring提供了"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Value"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​注解供我们注入简单类型的依赖。"
+				}
+			]
+		},
+		{
+			"ID": "20221125202307-s4nrbvq",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221125202307-s4nrbvq",
+				"updated": "20221125214254"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Value(\"58\")\npublic String NewID;\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221125123147-g32dugc",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125123147-g32dugc",
+				"updated": "20221125215431"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    注入List、Map等类型时，可以采用Properties的形式读取参数并且注入。"
+				}
+			]
+		},
+		{
+			"ID": "20221125215432-p0yoo2g",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125215432-p0yoo2g",
+				"updated": "20221125220011"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    想要让Spring能读取到Properties文件，就需要在"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code block-ref",
+					"TextMarkBlockRefID": "20221119183843-tpuryzh",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "SpringConfig"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​上通过注解"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@PropertySource(String[] value)"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​告知Spring，Properties的源。"
+				}
+			]
+		},
+		{
+			"ID": "20221125215807-qqdey8i",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20221125215807-qqdey8i",
+				"updated": "20221125220816"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": "\u003e"
+				},
+				{
+					"ID": "20221125215859-hbim5gl",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221125215859-hbim5gl",
+						"updated": "20221125220209"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "这个参数用于指示要加载的Properties文件的资源位置。"
+						}
+					]
+				},
+				{
+					"ID": "20221125220039-bqi5s3e",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221125220039-bqi5s3e",
+						"updated": "20221125220506"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "它支持传统Properties和XML，如：classpath:xxx.properties或file:/xxx.xml"
+						}
+					]
+				},
+				{
+					"ID": "20221125220532-km6q7m0",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221125220532-km6q7m0",
+						"updated": "20221125220600"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "它不允许使用通配符匹配多个文件，如需匹配多个文件，请写成数组的形式"
+						}
+					]
+				},
+				{
+					"ID": "20221125220601-0hpv2mj",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221125220601-0hpv2mj",
+						"updated": "20221125220628"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "它支持${...}占位符"
+						}
+					]
+				},
+				{
+					"ID": "20221125220728-drqlt98",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221125220728-drqlt98",
+						"updated": "20221125220816"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "请将它写在您的"
+						},
+						{
+							"Type": "NodeTextMark",
+							"TextMarkType": "block-ref",
+							"TextMarkBlockRefID": "20221119183857-d7cd9vm",
+							"TextMarkBlockRefSubtype": "s",
+							"TextMarkTextContent": "配置类"
+						},
+						{
+							"Type": "NodeText",
+							"Data": "上"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221125215912-kdpj3d1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125215912-kdpj3d1",
+				"updated": "20221125220824"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "\t如："
+				}
+			]
+		},
+		{
+			"ID": "20221125220838-umwx2p1",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221125220838-umwx2p1",
+				"updated": "20221125221032"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Configuration\n@ComponentScan(\"com.transaction\")\n@Import({DruidConfig.class,MybatisConfig.class})\n@EnableTransactionManagement\n@PropertySource(\"classpath:data.properties\")\npublic class SpringConfig {}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221125220837-of97qv1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125220837-of97qv1",
+				"updated": "20221125221243"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    当我们需要读取Properties文件中的资源，并注入依赖的时候，我们一样使用"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Value"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​注解，但是其参数要使用"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "${...}"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​占位符。"
+				}
+			]
+		},
+		{
+			"ID": "20221125221236-rp021hi",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221125221236-rp021hi",
+				"updated": "20221125221316"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "cHJvcGVydGllcw=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "names=张三,李四,王五\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221125221237-ov1h9gb",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221125221237-ov1h9gb",
+				"updated": "20221125221809"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Value(\"${names}\")\nList\u003cString\u003e names;\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221125221522-5k6yh8y",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125221522-5k6yh8y"
+			}
+		}
+	]
+}

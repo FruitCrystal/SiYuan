@@ -1,0 +1,28 @@
+{
+	"ID": "20221129203909-8bn2m77",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "fileFormat.svg",
+		"id": "20221129203909-8bn2m77",
+		"title": "待补充",
+		"title-img": "background-image:linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%)",
+		"updated": "20221129203914"
+	},
+	"Children": [
+		{
+			"ID": "20221129203909-h55inma",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221129203909-h55inma",
+				"updated": "20221129203914"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "待补充"
+				}
+			]
+		}
+	]
+}

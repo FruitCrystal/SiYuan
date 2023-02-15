@@ -1,0 +1,688 @@
+{
+	"ID": "20221209210759-jziykn0",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "SingleRunningContainer.svg",
+		"id": "20221209210759-jziykn0",
+		"title": "SpringMVC的配置",
+		"title-img": "background-color: #6d695c;background-image:repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));background-size: 70px 120px;",
+		"updated": "20221210152711"
+	},
+	"Children": [
+		{
+			"ID": "20221209210759-zxghde9",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221209210759-zxghde9",
+				"updated": "20221209211034"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "一些相关的坐标"
+				}
+			]
+		},
+		{
+			"ID": "20221209211216-a4nxxdp",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221209211216-a4nxxdp",
+				"updated": "20221209211229"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    SpringMVC的核心："
+				}
+			]
+		},
+		{
+			"ID": "20221209211057-k007etc",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221209211057-k007etc"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "    \u003cdependency\u003e\n      \u003cgroupId\u003eorg.springframework\u003c/groupId\u003e\n      \u003cartifactId\u003espring-webmvc\u003c/artifactId\u003e\n      \u003cversion\u003e5.2.10.RELEASE\u003c/version\u003e\n    \u003c/dependency\u003e\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221209211212-ickixxx",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221209211212-ickixxx",
+				"updated": "20221209211252"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    SpringMVC的钩子函数可能用到Servlet的一些API，所以需要导入。"
+				}
+			]
+		},
+		{
+			"ID": "20221209211201-r5tr9xz",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221209211201-r5tr9xz"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "    \u003cdependency\u003e\n      \u003cgroupId\u003ejavax.servlet\u003c/groupId\u003e\n      \u003cartifactId\u003ejavax.servlet-api\u003c/artifactId\u003e\n      \u003cversion\u003e3.1.0\u003c/version\u003e\n    \u003c/dependency\u003e"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221209211255-crz48fo",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221209211255-crz48fo",
+				"updated": "20221209211307"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "配置"
+				}
+			]
+		},
+		{
+			"ID": "20221209211344-p4tv69k",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221209211344-p4tv69k",
+				"updated": "20221210145313"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    Spring为我们提供了一个抽象类"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "AbstractAnnotationConfigDispatcherServletInitializer"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​，供我们用注解快速配置一个Servlet派发器。"
+				}
+			]
+		},
+		{
+			"ID": "20221210145321-eap5fpn",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221210145321-eap5fpn",
+				"updated": "20221210150847"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "public class WebInit extends AbstractAnnotationConfigDispatcherServletInitializer {\n\n    @Override\n    protected WebApplicationContext createRootApplicationContext() {\n        return null;\n    }\n\n    @Override\n    protected WebApplicationContext createServletApplicationContext() {//Servlet容器：父容器\n        AnnotationConfigWebApplicationContext applicationContext = new AnnotationConfigWebApplicationContext();//Web应用容器：子容器\n        applicationContext.register(SpringMVC.class);//\n        return applicationContext;\n    }\n\n    @Override\n    protected String[] getServletMappings() {//指定DispatcherServlet映射规则\n        return new String[]{\"/\"};//一个斜杠代表所有请求都要拦截\n    }\n\n    @Override\n    protected Class\u003c?\u003e[] getRootConfigClasses() {//指定Spring配置类\n        return new Class[]{SpringConfig.class};\n    }\n\n    @Override\n    protected Class\u003c?\u003e[] getServletConfigClasses() {//指定SpringMVC配置类\n        return new Class[]{SpringMVC.class};\n    }\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221210142645-29ahlk6",
+			"Type": "NodeList",
+			"ListData": {
+				"Typ": 1
+			},
+			"Properties": {
+				"id": "20221210142645-29ahlk6",
+				"updated": "20221210145646"
+			},
+			"Children": [
+				{
+					"ID": "20221210145646-qp1d7le",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "MS4=",
+						"Num": 1
+					},
+					"Properties": {
+						"id": "20221210145646-qp1d7le",
+						"updated": "20221210145646"
+					},
+					"Children": [
+						{
+							"ID": "20221210145646-c49112t",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221210145646-c49112t",
+								"updated": "20221210145649"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "createRootApplicationContext"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"ID": "20221210145653-64vyotj",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20221210145653-64vyotj"
+							},
+							"Children": [
+								{
+									"ID": "20221210145651-n4huu7t",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20221210145651-n4huu7t"
+									},
+									"Children": [
+										{
+											"ID": "20221210145651-3qpbbkb",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221210145651-3qpbbkb",
+												"updated": "20221210150202"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "这个方法用于创建根应用上下文，这个容器一般用于管理Service层相关的Bean，在此处无需用到。\n"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221210150210-5lhgf7t",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "Mi4=",
+						"Num": 2
+					},
+					"Properties": {
+						"id": "20221210150210-5lhgf7t"
+					},
+					"Children": [
+						{
+							"ID": "20221210150210-htccaxo",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221210150210-htccaxo",
+								"updated": "20221210150223"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "createServletApplicationContext"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"ID": "20221210150225-h0ougu2",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20221210150225-h0ougu2"
+							},
+							"Children": [
+								{
+									"ID": "20221210150224-ku6vkvu",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20221210150224-ku6vkvu"
+									},
+									"Children": [
+										{
+											"ID": "20221210150224-uaep5ro",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221210150224-uaep5ro",
+												"updated": "20221210151023"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "这个方法用于创建Servlet容器，所有的Servlet都在这个容器里统一管理。可以看到整个方法内部我们实例化了一个"
+												},
+												{
+													"Type": "NodeTextMark",
+													"TextMarkType": "code",
+													"TextMarkTextContent": "WebApplicationContext"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "​，它是Web应用容器，所有的"
+												},
+												{
+													"Type": "NodeTextMark",
+													"Properties": {
+														"style": "background-color: var(--b3-font-background3);"
+													},
+													"TextMarkType": "text",
+													"TextMarkTextContent": "请求映射规则"
+												},
+												{
+													"Type": "NodeKramdownSpanIAL",
+													"Data": "{: style=\"background-color: var(--b3-font-background3);\"}"
+												},
+												{
+													"Type": "NodeText",
+													"Data": "都由他统一管理。"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221210150426-0c8fbn8",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "My4=",
+						"Num": 3
+					},
+					"Properties": {
+						"id": "20221210150426-0c8fbn8"
+					},
+					"Children": [
+						{
+							"ID": "20221210150426-f3h622b",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221210150426-f3h622b",
+								"updated": "20221210150436"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "getServletMappings"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"ID": "20221210150457-w0pkpsq",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20221210150457-w0pkpsq"
+							},
+							"Children": [
+								{
+									"ID": "20221210150455-f687maz",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20221210150455-f687maz"
+									},
+									"Children": [
+										{
+											"ID": "20221210150455-w4chh8f",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221210150455-w4chh8f",
+												"updated": "20221210150727"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "这个方法用于指定请求映射，应为我们的Web应用运行在Tomcat的基础之上，而Tomcat也是用来管理Servlet的，但是我们现在使用SpringMVC去管理Servlet，所以我们需要设置一个映射，不让Tomcat管理这些映射对应的Servlet. 单个斜杠代表所有的映射。"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221210150820-dxl7rb5",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NC4=",
+						"Num": 4
+					},
+					"Properties": {
+						"id": "20221210150820-dxl7rb5"
+					},
+					"Children": [
+						{
+							"ID": "20221210150820-jc1n5qz",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221210150820-jc1n5qz",
+								"updated": "20221210150826"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "getRootConfigClasses"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"ID": "20221210150828-aqssbu9",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20221210150828-aqssbu9"
+							},
+							"Children": [
+								{
+									"ID": "20221210150827-9e7ogbm",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20221210150827-9e7ogbm"
+									},
+									"Children": [
+										{
+											"ID": "20221210150827-vcp2rp1",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221210150827-vcp2rp1",
+												"updated": "20221210151058"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "这个方法用于指定Spring配置。"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ID": "20221210150849-hm1nvej",
+					"Type": "NodeListItem",
+					"ListData": {
+						"Typ": 1,
+						"Delimiter": 46,
+						"Marker": "NS4=",
+						"Num": 5
+					},
+					"Properties": {
+						"id": "20221210150849-hm1nvej"
+					},
+					"Children": [
+						{
+							"ID": "20221210150849-0jj6g9c",
+							"Type": "NodeParagraph",
+							"Properties": {
+								"id": "20221210150849-0jj6g9c",
+								"updated": "20221210150854"
+							},
+							"Children": [
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								},
+								{
+									"Type": "NodeTextMark",
+									"TextMarkType": "code",
+									"TextMarkTextContent": "getServletConfigClasses"
+								},
+								{
+									"Type": "NodeText",
+									"Data": "​"
+								}
+							]
+						},
+						{
+							"ID": "20221210150855-8zs840h",
+							"Type": "NodeList",
+							"ListData": {
+								"Typ": 1
+							},
+							"Properties": {
+								"id": "20221210150855-8zs840h"
+							},
+							"Children": [
+								{
+									"ID": "20221210150855-3reaq4s",
+									"Type": "NodeListItem",
+									"ListData": {
+										"Typ": 1,
+										"Delimiter": 46,
+										"Marker": "MS4=",
+										"Num": 1
+									},
+									"Properties": {
+										"id": "20221210150855-3reaq4s"
+									},
+									"Children": [
+										{
+											"ID": "20221210150855-nwujnn7",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221210150855-nwujnn7",
+												"updated": "20221210151057"
+											},
+											"Children": [
+												{
+													"Type": "NodeText",
+													"Data": "这个方法用于指定SpringMVC配置。"
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221210151237-v9ryug1",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221210151237-v9ryug1",
+				"updated": "20221210151254"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "这样，SpringMVC就配置暂时完成了。"
+				}
+			]
+		},
+		{
+			"ID": "20221210152151-o8nomn6",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221210152151-o8nomn6",
+				"updated": "20221210152154"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "补充："
+				}
+			]
+		},
+		{
+			"ID": "20221210152154-5w8t42i",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221210152154-5w8t42i",
+				"updated": "20221210152210"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "两容器问题"
+				}
+			]
+		},
+		{
+			"ID": "20221210152210-f6rhwjq",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221210152210-f6rhwjq",
+				"updated": "20221210152329"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    现在我们项目中有好几个容器了，一个是Spring容器，一个是Servlet容器，还有一个Web应用容器。"
+				}
+			]
+		},
+		{
+			"ID": "20221210152330-ubzchk4",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221210152330-ubzchk4",
+				"updated": "20221210152649"
+			}
+		},
+		{
+			"ID": "20221210152158-7ge5hj2",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221210152158-7ge5hj2"
+			}
+		},
+		{
+			"ID": "20221210151114-dxwls1g",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221210151114-dxwls1g"
+			}
+		}
+	]
+}

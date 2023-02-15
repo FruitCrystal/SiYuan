@@ -1,0 +1,402 @@
+{
+	"ID": "20221119152453-o50lwzw",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "1f4c2",
+		"id": "20221119152453-o50lwzw",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221119152453-51kc7ou\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221122144756-gagkpvi\u0026quot;,\u0026quot;scrollTop\u0026quot;:261,\u0026quot;focusId\u0026quot;:\u0026quot;20221120232358-lg50zzk\u0026quot;,\u0026quot;focusStart\u0026quot;:4,\u0026quot;focusEnd\u0026quot;:4}",
+		"title": "Inversion of Control 反转控制",
+		"title-img": "background-color: gray;background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);",
+		"updated": "20221120233237"
+	},
+	"Children": [
+		{
+			"ID": "20221119152453-51kc7ou",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119152453-51kc7ou",
+				"updated": "20221120230849"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    反转控制（IoC）是一种思想，它将对象的创建权，和控制权交由IoC容器管理。"
+				}
+			]
+		},
+		{
+			"ID": "20221120230948-i4u3i59",
+			"Type": "NodeSuperBlock",
+			"Properties": {
+				"custom-f": "20",
+				"id": "20221120230948-i4u3i59",
+				"updated": "20221120232046"
+			},
+			"Children": [
+				{
+					"Type": "NodeSuperBlockOpenMarker"
+				},
+				{
+					"Type": "NodeSuperBlockLayoutMarker",
+					"Data": "col"
+				},
+				{
+					"ID": "20221120230940-hvn343f",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"custom-style": "\u0026quot;border-right:solid;\u0026quot;",
+						"id": "20221120230940-hvn343f",
+						"style": "width: 50%; flex: 0 0 auto; text-align: left;",
+						"updated": "20221120232046"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20221120230912-u3x7jow",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221120230912-u3x7jow",
+								"updated": "20221120230912"
+							},
+							"Children": [
+								{
+									"ID": "20221120230912-zvca6j0",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221120230912-zvca6j0",
+										"updated": "20221120230912"
+									},
+									"Children": [
+										{
+											"ID": "20221120230912-xjf5vkn",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221120230912-xjf5vkn",
+												"updated": "20221120232402"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"Properties": {
+														"style": "font-size: 32px;"
+													},
+													"TextMarkType": "strong text",
+													"TextMarkTextContent": "谁控制谁，控制什么"
+												},
+												{
+													"Type": "NodeKramdownSpanIAL",
+													"Data": "{: style=\"font-size: 32px;\"}"
+												},
+												{
+													"Type": "NodeTextMark",
+													"Properties": {
+														"style": "font-size: 32px;"
+													},
+													"TextMarkType": "text",
+													"TextMarkTextContent": " ？"
+												},
+												{
+													"Type": "NodeKramdownSpanIAL",
+													"Data": "{: style=\"font-size: 32px;\"}"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221120232533-6dljqam",
+							"Type": "NodeSuperBlock",
+							"Properties": {
+								"id": "20221120232533-6dljqam",
+								"style": "color: var(--b3-card-info-color); background-color: var(--b3-card-info-background);"
+							},
+							"Children": [
+								{
+									"Type": "NodeSuperBlockOpenMarker"
+								},
+								{
+									"Type": "NodeSuperBlockLayoutMarker",
+									"Data": "row"
+								},
+								{
+									"ID": "20221120230912-h37fpz9",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221120230912-h37fpz9",
+										"updated": "20221120230912"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "\t传统Java SE程序设计，我们直接在对象内部通过new进行创建对象，是程序主动去创建依赖对象；"
+										}
+									]
+								},
+								{
+									"ID": "20221120232501-yweiipo",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221120232501-yweiipo",
+										"updated": "20221120232510"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "\t而IoC是有专门一个容器来创建这些对象，即由Ioc容器来控制对象的创建；"
+										}
+									]
+								},
+								{
+									"ID": "20221120232512-gxzh5xm",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221120232512-gxzh5xm"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "\t谁控制谁？当然是IoC 容器控制了对象；控制什么？那就是主要控制了外部资源获取（不只是对象包括比如文件等）。"
+										}
+									]
+								},
+								{
+									"Type": "NodeSuperBlockCloseMarker"
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker"
+						}
+					]
+				},
+				{
+					"ID": "20221120230945-knn4dm9",
+					"Type": "NodeSuperBlock",
+					"Properties": {
+						"id": "20221120230945-knn4dm9",
+						"updated": "20221120232600"
+					},
+					"Children": [
+						{
+							"Type": "NodeSuperBlockOpenMarker"
+						},
+						{
+							"Type": "NodeSuperBlockLayoutMarker",
+							"Data": "row"
+						},
+						{
+							"ID": "20221120230912-mdlhrqz",
+							"Type": "NodeList",
+							"ListData": {},
+							"Properties": {
+								"id": "20221120230912-mdlhrqz",
+								"updated": "20221120232409"
+							},
+							"Children": [
+								{
+									"ID": "20221120230912-3bowms9",
+									"Type": "NodeListItem",
+									"ListData": {
+										"BulletChar": 42,
+										"Marker": "Kg=="
+									},
+									"Properties": {
+										"id": "20221120230912-3bowms9",
+										"updated": "20221120232409"
+									},
+									"Children": [
+										{
+											"ID": "20221120230912-b8fk886",
+											"Type": "NodeParagraph",
+											"Properties": {
+												"id": "20221120230912-b8fk886",
+												"updated": "20221120232409"
+											},
+											"Children": [
+												{
+													"Type": "NodeTextMark",
+													"Properties": {
+														"style": "font-size: 32px;"
+													},
+													"TextMarkType": "strong text",
+													"TextMarkTextContent": "为何是反转，哪些方面反转了"
+												},
+												{
+													"Type": "NodeKramdownSpanIAL",
+													"Data": "{: style=\"font-size: 32px;\"}"
+												},
+												{
+													"Type": "NodeTextMark",
+													"Properties": {
+														"style": "font-size: 32px;"
+													},
+													"TextMarkType": "text",
+													"TextMarkTextContent": " ?"
+												},
+												{
+													"Type": "NodeKramdownSpanIAL",
+													"Data": "{: style=\"font-size: 32px;\"}"
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"ID": "20221120232600-jjz4p48",
+							"Type": "NodeSuperBlock",
+							"Properties": {
+								"id": "20221120232600-jjz4p48",
+								"style": "color: var(--b3-card-info-color); background-color: var(--b3-card-info-background);"
+							},
+							"Children": [
+								{
+									"Type": "NodeSuperBlockOpenMarker"
+								},
+								{
+									"Type": "NodeSuperBlockLayoutMarker",
+									"Data": "row"
+								},
+								{
+									"ID": "20221120230912-hih99oi",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221120230912-hih99oi",
+										"updated": "20221120230922"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "\t有反转就有正转，"
+										}
+									]
+								},
+								{
+									"ID": "20221120232443-dr4z9m0",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221120232443-dr4z9m0"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "\t传统应用程序是由我们自己在对象中主动控制去直接获取依赖对象，也就是正转；"
+										}
+									]
+								},
+								{
+									"ID": "20221120232449-mc1tq4x",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221120232449-mc1tq4x",
+										"updated": "20221120232454"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "\t而反转则是由容器来帮忙创建及注入依赖对象；"
+										}
+									]
+								},
+								{
+									"ID": "20221120232454-y8r1g9j",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221120232454-y8r1g9j"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "\t为何是反转？因为由容器帮我们查找及注入依赖对象，对象只是被动的接受依赖对象，所以是反转；"
+										}
+									]
+								},
+								{
+									"ID": "20221120232458-alepefh",
+									"Type": "NodeParagraph",
+									"Properties": {
+										"id": "20221120232458-alepefh"
+									},
+									"Children": [
+										{
+											"Type": "NodeText",
+											"Data": "\t哪些方面反转了？依赖对象的获取被反转了。"
+										}
+									]
+								},
+								{
+									"Type": "NodeSuperBlockCloseMarker"
+								}
+							]
+						},
+						{
+							"Type": "NodeSuperBlockCloseMarker"
+						}
+					]
+				},
+				{
+					"Type": "NodeSuperBlockCloseMarker"
+				}
+			]
+		},
+		{
+			"ID": "20221120232358-lg50zzk",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221120232358-lg50zzk",
+				"updated": "20221120233237"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    反转控制之后，我们就不需要自己主动地创建对象了，而是将对象打包成"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221119152436-z24vyuq",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "Bean"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "，交由IoC容器管理，需要的时候，进行"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221119152520-lamwuxy",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "依赖注入、自动装配"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "。"
+				}
+			]
+		},
+		{
+			"ID": "20221122144756-gagkpvi",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221122144756-gagkpvi",
+				"updated": "20221125091829"
+			}
+		}
+	]
+}

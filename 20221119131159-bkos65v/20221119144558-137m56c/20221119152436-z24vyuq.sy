@@ -1,0 +1,851 @@
+{
+	"ID": "20221119152436-z24vyuq",
+	"Spec": "1",
+	"Type": "NodeDocument",
+	"Properties": {
+		"icon": "Caffe-Bean.svg",
+		"id": "20221119152436-z24vyuq",
+		"scroll": "{\u0026quot;startId\u0026quot;:\u0026quot;20221119222510-vhbsn54\u0026quot;,\u0026quot;endId\u0026quot;:\u0026quot;20221125223621-kderu16\u0026quot;,\u0026quot;scrollTop\u0026quot;:2797,\u0026quot;focusId\u0026quot;:\u0026quot;20221119222510-vhbsn54\u0026quot;,\u0026quot;focusStart\u0026quot;:0,\u0026quot;focusEnd\u0026quot;:0}",
+		"title": "Bean的介绍",
+		"title-img": "background-image:linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%)",
+		"updated": "20221119222454"
+	},
+	"Children": [
+		{
+			"ID": "20221119222510-vhbsn54",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221119222510-vhbsn54",
+				"updated": "20221119222518"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "什么是Bean"
+				}
+			]
+		},
+		{
+			"ID": "20221119152436-9zei0yv",
+			"Type": "NodeBlockquote",
+			"Properties": {
+				"id": "20221119152436-9zei0yv",
+				"updated": "20221119222454"
+			},
+			"Children": [
+				{
+					"Type": "NodeBlockquoteMarker",
+					"Data": "\u003e"
+				},
+				{
+					"ID": "20221119222421-j217ef9",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221119222421-j217ef9",
+						"updated": "20221119222430"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "    In Spring, the objects that form the backbone of your application and that are managed by the Spring IoC container are called beans. A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC containe."
+						}
+					]
+				},
+				{
+					"ID": "20221119222439-h66m8jh",
+					"Type": "NodeParagraph",
+					"Properties": {
+						"id": "20221119222439-h66m8jh",
+						"updated": "20221119222454"
+					},
+					"Children": [
+						{
+							"Type": "NodeText",
+							"Data": "    在 Spring 中，构成应用程序主干并由Spring IoC容器管理的对象称为bean。bean是一个由Spring IoC容器实例化、组装和管理的对象。"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "20221119222545-19lsiri",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221119222545-19lsiri",
+				"updated": "20221119222555"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "为什么要Bean"
+				}
+			]
+		},
+		{
+			"ID": "20221119222556-ckmvw58",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119222556-ckmvw58",
+				"updated": "20221119224101"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    Bean的出现，解决了程序的高耦合问题。当一个程序需要用到一个对象时，我们需要new一个实例化对象；当三个程序需要用到同一个对象时，我们要new三个实例化对象；当一百万个程序需要用到同一个对象时，我们需要new一百万个实例化对象，这是非常恐怖的，非常占用资源的。所以Spring诞生了。"
+				}
+			]
+		},
+		{
+			"ID": "20221119224101-j2e0im3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119224101-j2e0im3",
+				"updated": "20221125084606"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    Spring解决了这一个问题，它将公用的对象从程序中抽出来，作为一个”组件“，而这个组件就被称作"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "Bean"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​​.这些Bean往往是单例（Singleton）的，且由"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "IoC容器"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​​统一管理。并在需要时通过"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@AutoWired"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​​"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "自动装配"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​​。"
+				}
+			]
+		},
+		{
+			"ID": "20221119223418-4rfppev",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221119223418-4rfppev",
+				"updated": "20221119224639"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "如何使用Bean"
+				}
+			]
+		},
+		{
+			"ID": "20221119224640-gxig42y",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119224640-gxig42y",
+				"updated": "20221119224728"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    本文以注解的方式使用Bean."
+				}
+			]
+		},
+		{
+			"ID": "20221119224729-oj76hjz",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119224729-oj76hjz",
+				"updated": "20221119225106"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    我们知道，交由IoC容器管理的对象就是Bean，但我们不知道的是，一般情况下什么对象需要交给IoC容器管理呢？"
+				}
+			]
+		},
+		{
+			"ID": "20221119225830-8qpy1jh",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119225830-8qpy1jh",
+				"updated": "20221119233522"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    一般情况下，一些不会变化的对象，需要被反复"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "u",
+					"TextMarkTextContent": "跨层调用"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "的对象才需要被当作Bean处理，如Service层、Controller层、Dao层的类，Spring都为我们提供了相应的注解，还有使用"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221119183857-d7cd9vm",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "配置类"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "，以"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221119152529-tjgvspn",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "及第三方类"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "的时候，Spring也为我们提供了相应的注解。"
+				}
+			]
+		},
+		{
+			"ID": "20221119230805-4zeoykn",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221119230805-4zeoykn",
+				"updated": "20221119230829"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "常用的注解及使用方法"
+				}
+			]
+		},
+		{
+			"ID": "20221119230830-p1pozj6",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221119230830-p1pozj6",
+				"updated": "20221119231917"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Component(String beanName)"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​、"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Repository"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​、"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Service"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​、"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Controller"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20221119230845-kfpptxt",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119230845-kfpptxt",
+				"updated": "20221119231050"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    用在类上，告知Spring将这个类的实例化对象作为一个Bean交由IoC容器管理。可以接收一个参数，作为Bean的名字，若无参数传递，则还可以按类型"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "tag",
+					"TextMarkTextContent": "自动装配"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​"
+				}
+			]
+		},
+		{
+			"ID": "20221119231118-0mhs9pd",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119231118-0mhs9pd",
+				"updated": "20221119232200"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    作用效果上，四者都是一样的，只不过后面三个注解可读性更高，对应了MVC三个层面。"
+				}
+			]
+		},
+		{
+			"ID": "20221119232728-hxacomw",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221119232728-hxacomw",
+				"name": "BookDao.java",
+				"updated": "20221119232903"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Repository\npublic interface BookDao {\n\n    @Select(\"SELECT * FROM books WHERE book_id=#{bookID}\")\n    Student getStudentById(@Param(\"bookID\") String bookID);\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221119232204-87kq6f3",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119232204-87kq6f3",
+				"updated": "20221119233436"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    添加注解后，行号旁边会出现"
+				},
+				{
+					"Type": "NodeEmoji",
+					"Data": "img",
+					"Children": [
+						{
+							"Type": "NodeEmojiImg",
+							"Data": "\u003cimg alt=\"gutter/springJavaBean\" class=\"emoji\" src=\"/emojis/gutter/springJavaBean.svg\" title=\"gutter/springJavaBean\" /\u003e",
+							"Children": [
+								{
+									"Type": "NodeEmojiAlias",
+									"Data": ":gutter/springJavaBean:"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "图标，表明"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "inline-memo",
+					"TextMarkInlineMemoContent": "这是一个Mybatis的接口，它的实现对象是动态代理生成的。",
+					"TextMarkTextContent": "该类的实例化对象"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "已经交由IoC容器控制了。"
+				}
+			]
+		},
+		{
+			"ID": "20221119233549-zf4c559",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221119233549-zf4c559",
+				"name": "BookService.java",
+				"updated": "20221119234734"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "@Service\npublic class BookService {\n    @Autowired//自动装配\n    private BookDao bookDao;\n\n    public Book getStudentById(String book_id) {\n        Book book = BookDao.getBookById(book_id);\n\t/*可以对获取到的book进行一些操作，再返回出去。*/\n        System.out.println(book);\n        return book;\n    }\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221119234736-psg1zmy",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119234736-psg1zmy",
+				"updated": "20221119234825"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    自动装配成功的话，"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "private BookDao bookDao"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​所在行号旁边会出现"
+				},
+				{
+					"Type": "NodeEmoji",
+					"Data": "img",
+					"Children": [
+						{
+							"Type": "NodeEmojiImg",
+							"Data": "\u003cimg alt=\"showAutowiredDependencies\" class=\"emoji\" src=\"/emojis/showAutowiredDependencies.svg\" title=\"showAutowiredDependencies\" /\u003e",
+							"Children": [
+								{
+									"Type": "NodeEmojiAlias",
+									"Data": ":showAutowiredDependencies:"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "图标，表示Bean注入"
+				}
+			]
+		},
+		{
+			"ID": "20221119234311-xmogn6p",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221119234311-xmogn6p",
+				"updated": "20221119234322"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Configuration"
+				}
+			]
+		},
+		{
+			"ID": "20221119234328-zlwzikm",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119234328-zlwzikm",
+				"updated": "20221120233603"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    这个注解只能在"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221119183857-d7cd9vm",
+					"TextMarkBlockRefSubtype": "s",
+					"TextMarkTextContent": "配置类"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "使用，且只能使用一次。但归根到底它还是一个Bean，所以用这个注解的配置类也会出现"
+				},
+				{
+					"Type": "NodeEmoji",
+					"Data": "img",
+					"Children": [
+						{
+							"Type": "NodeEmojiImg",
+							"Data": "\u003cimg alt=\"gutter/springJavaBean\" class=\"emoji\" src=\"/emojis/gutter/springJavaBean.svg\" title=\"gutter/springJavaBean\" /\u003e",
+							"Children": [
+								{
+									"Type": "NodeEmojiAlias",
+									"Data": ":gutter/springJavaBean:"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "图标。"
+				}
+			]
+		},
+		{
+			"ID": "20221119233402-bykw5ia",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221119233402-bykw5ia",
+				"updated": "20221119234240"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Bean"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20221119234245-4w7zs5z",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119234245-4w7zs5z",
+				"updated": "20221119234524"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    "
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "@Bean"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​​注解和上面几个注解都不同，这个注解作用在方法上，用于告知Spring调用这个方法获取方法的返回值，并把获得的返回值作为Bean交给IoC容器管理。一般常用于获得第三方对象。"
+				}
+			]
+		},
+		{
+			"ID": "20221119234525-oftgedg",
+			"Type": "NodeCodeBlock",
+			"IsFencedCodeBlock": true,
+			"Properties": {
+				"id": "20221119234525-oftgedg",
+				"name": "DruidConfig.java",
+				"updated": "20221120144159"
+			},
+			"Children": [
+				{
+					"Type": "NodeCodeBlockFenceOpenMarker",
+					"Data": "```"
+				},
+				{
+					"Type": "NodeCodeBlockFenceInfoMarker",
+					"CodeBlockInfo": "amF2YQ=="
+				},
+				{
+					"Type": "NodeCodeBlockCode",
+					"Data": "public class DruidConfig {\n@Bean\npublic DruidDataSource dataSource(){\n\tDruidDataSource dataSource = new DruidDataSource();\n        dataSource.setUrl(\"jdbc:mysql://localhost:3306/library\");\n        dataSource.setDriverClassName(\"com.mysql.jdbc.Driver\");\n        dataSource.setUsername(\"root\");\n        dataSource.setPassword(\"root\");\n        return dataSource;\n    }\n}\n"
+				},
+				{
+					"Type": "NodeCodeBlockFenceCloseMarker",
+					"Data": "```"
+				}
+			]
+		},
+		{
+			"ID": "20221119234612-c9xa6jo",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221119234612-c9xa6jo",
+				"updated": "20221119234910"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    类的方便会出现"
+				},
+				{
+					"Type": "NodeEmoji",
+					"Data": "img",
+					"Children": [
+						{
+							"Type": "NodeEmojiImg",
+							"Data": "\u003cimg alt=\"gutter/springJavaBean\" class=\"emoji\" src=\"/emojis/gutter/springJavaBean.svg\" title=\"gutter/springJavaBean\" /\u003e",
+							"Children": [
+								{
+									"Type": "NodeEmojiAlias",
+									"Data": ":gutter/springJavaBean:"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "图标，而方法的旁边会出现"
+				},
+				{
+					"Type": "NodeEmoji",
+					"Data": "img",
+					"Children": [
+						{
+							"Type": "NodeEmojiImg",
+							"Data": "\u003cimg alt=\"showAutowiredCandidates\" class=\"emoji\" src=\"/emojis/showAutowiredCandidates.svg\" title=\"showAutowiredCandidates\" /\u003e",
+							"Children": [
+								{
+									"Type": "NodeEmojiAlias",
+									"Data": ":showAutowiredCandidates:"
+								}
+							]
+						}
+					]
+				},
+				{
+					"Type": "NodeText",
+					"Data": "图标，表示Bean被从方法中抽出，进入到IoC容器。"
+				}
+			]
+		},
+		{
+			"ID": "20221120144457-et7ww10",
+			"Type": "NodeHeading",
+			"HeadingLevel": 2,
+			"Properties": {
+				"id": "20221120144457-et7ww10",
+				"updated": "20221120144503"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "其他方法"
+				}
+			]
+		},
+		{
+			"ID": "20221120144503-fckyinl",
+			"Type": "NodeHeading",
+			"HeadingLevel": 3,
+			"Properties": {
+				"id": "20221120144503-fckyinl",
+				"updated": "20221120224637"
+			},
+			"Children": [
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "FactoryBean"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​、"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "code",
+					"TextMarkTextContent": "BeanFactory"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​等"
+				}
+			]
+		},
+		{
+			"ID": "20221120224638-3ojfrte",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221120224638-3ojfrte",
+				"updated": "20221120224916"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "    FactoryBean在"
+				},
+				{
+					"Type": "NodeTextMark",
+					"TextMarkType": "block-ref",
+					"TextMarkBlockRefID": "20221119152529-tjgvspn",
+					"TextMarkBlockRefSubtype": "d",
+					"TextMarkTextContent": "整合Mybatis"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "中会使用到。"
+				}
+			]
+		},
+		{
+			"ID": "20221120224916-nakyng7",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221120224916-nakyng7",
+				"style": "text-align: justify; width: 67%; flex: 0 0 auto;",
+				"updated": "20221122075642"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				},
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Properties": {
+						"parent-style": "max-width: 684px;",
+						"style": "width: 674px;"
+					},
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "Snap (3)"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/Snap (3)-20221120225955-jncwsd2.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: style=\"width: 674px;\" parent-style=\"max-width: 684px;\"}"
+				},
+				{
+					"Type": "NodeImage",
+					"Data": "span",
+					"Properties": {
+						"parent-style": "max-width: 684px;",
+						"style": "width: 674px;"
+					},
+					"Children": [
+						{
+							"Type": "NodeBang"
+						},
+						{
+							"Type": "NodeOpenBracket"
+						},
+						{
+							"Type": "NodeLinkText",
+							"Data": "image"
+						},
+						{
+							"Type": "NodeCloseBracket"
+						},
+						{
+							"Type": "NodeOpenParen"
+						},
+						{
+							"Type": "NodeLinkDest",
+							"Data": "assets/image-20221120230054-w6unj54.png"
+						},
+						{
+							"Type": "NodeCloseParen"
+						}
+					]
+				},
+				{
+					"Type": "NodeKramdownSpanIAL",
+					"Data": "{: style=\"width: 674px;\" parent-style=\"max-width: 684px;\"}"
+				},
+				{
+					"Type": "NodeText",
+					"Data": "​"
+				}
+			]
+		},
+		{
+			"ID": "20221125223057-poy4cdx",
+			"Type": "NodeHeading",
+			"HeadingLevel": 1,
+			"Properties": {
+				"id": "20221125223057-poy4cdx",
+				"updated": "20221125223105"
+			},
+			"Children": [
+				{
+					"Type": "NodeText",
+					"Data": "Bean的生命周期"
+				}
+			]
+		},
+		{
+			"ID": "20221125223621-kderu16",
+			"Type": "NodeParagraph",
+			"Properties": {
+				"id": "20221125223621-kderu16"
+			}
+		}
+	]
+}
